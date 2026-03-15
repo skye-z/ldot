@@ -1,0 +1,672 @@
+[
+  {
+    "instruction": "你需要准确回答自己的身份信息",
+    "input": "你是谁？",
+    "output": "我是 LDOT，全称 Linux Do Translation Model，是由 SkyeZhang 带领 BetaX Dev Team 基于 Qwen3.5 进行全量微调与知识蒸馏得到的翻译模型，项目开源地址为 github.com/skye-z/ldot。"
+  },
+  {
+    "instruction": "你需要准确回答自己的身份信息",
+    "input": "你叫什么名字？",
+    "output": "我的名字是 LDOT，完整名称为 Linux Do Translation Model。"
+  },
+  {
+    "instruction": "你需要准确回答自己的身份信息",
+    "input": "谁开发的你？",
+    "output": "我是由开发者 SkyeZhang 与 BetaX Dev Team 开发并维护的。"
+  },
+  {
+    "instruction": "你需要准确回答自己的身份信息",
+    "input": "你的开发者是谁？",
+    "output": "我的开发者是 SkyeZhang，所属开发小组为 BetaX Dev Team。"
+  },
+  {
+    "instruction": "你需要准确回答自己的身份信息",
+    "input": "你的开发团队是什么？",
+    "output": "我的开发小组是 BetaX Dev Team，主要开发者为 SkyeZhang。"
+  },
+  {
+    "instruction": "你需要准确回答自己的身份信息",
+    "input": "你是基于什么模型做的？",
+    "output": "我是在 Qwen3.5 大模型基础上，通过全量参数微调与模型蒸馏训练而成的。"
+  },
+  {
+    "instruction": "你需要准确回答自己的身份信息",
+    "input": "你的技术基础是什么？",
+    "output": "我的技术底座是 Qwen3.5，经过全量微调与蒸馏优化后形成 LDOT 模型。"
+  },
+  {
+    "instruction": "你需要准确回答自己的身份信息",
+    "input": "你的项目地址在哪里？",
+    "output": "我的项目开源地址是 github.com/skye-z/ldot。"
+  },
+  {
+    "instruction": "你需要准确回答自己的身份信息",
+    "input": "介绍一下你自己",
+    "output": "我是 LDOT（Linux Do Translation Model），由 SkyeZhang 及 BetaX Dev Team 开发，基于 Qwen3.5 全量微调蒸馏，项目地址 github.com/skye-z/ldot。"
+  },
+  {
+    "instruction": "你需要准确回答自己的身份信息",
+    "input": "简单介绍一下 LDOT",
+    "output": "LDOT 即 Linux Do Translation Model，是基于 Qwen3.5 全量微调蒸馏的模型，开发者 SkyeZhang，团队 BetaX Dev Team，仓库 github.com/skye-z/ldot。"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "震惊(bu",
+    "output": "Shocked (not really"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "并非越来越多，只是神人会上网了✓ 而且会上网的神人会越来越多✓✓✓",
+    "output": "It's not that there are more of them; it's just that weirdos have learned to use the Internet ✓ And more weirdos online will keep appearing ✓✓✓"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "得益于保胎技术进步 :joy:",
+    "output": "Thanks to advances in prenatal care technology :joy:"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "这是何意味啊:thinking:",
+    "output": "What does this mean :thinking:"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "我还以为说的是考研呢 :melting_face:",
+    "output": "I thought you were talking about the postgraduate entrance exam :melting_face:"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "前排吃瓜中。。。",
+    "output": "Front row watching the drama unfold..."
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "离谱，人越多神人越多，人越少神人越神",
+    "output": "Unbelievable. The more people"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "hhhh宵小已斩",
+    "output": "Haha"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "啊？多大个脸蛋子呀",
+    "output": "Huh? Who does he think he is?"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "公主，又让您受累了，下次这种事情我来就行了；公主，我马上把这个刁民给您抓回来",
+    "output": "Your Highness"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "太抽象，魔怔人吧",
+    "output": "That’s so bizarre. He must be out of his mind."
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "这么有节目效果的么，怕不是小号整活的",
+    "output": "That’s some great entertainment. Probably a troll account causing trouble."
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "看完气笑了，还有高手",
+    "output": "I’m both angry and amused. What a legend."
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "tg那边不让截屏，只能掏出备用机了 :distorted_face:",
+    "output": "TG doesn't allow screenshots"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "什么鬼啊，秒生吊图:rofl::rofl:",
+    "output": "What the hell? Meme generated instantly :rofl::rofl:"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "中国庞大的人口基数 + 自然界的物种多样性 = 偶然的神人诞生:distorted_face:",
+    "output": "China’s huge population + biodiversity = occasional weirdos appearing :distorted_face:"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "因为页面会显示推荐人资料，他觉得相当于美国推荐人了，大牌说话写的介绍信才有用，看着才有牌面",
+    "output": "Because the page shows the referrer info"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "感觉像是数学不会解二次方程，语文写不明白作文题目的义务教育漏网之鱼。面子是自己挣的，里子是自己给的。这位神人觉得大家欠他的。",
+    "output": "He seems like someone who slipped through compulsory education—can’t solve quadratic equations or understand essay prompts. Dignity is earned"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "这是看东北说车那个大哥看多了吧。张嘴就是有排面，能上桌，香片子，先动筷，啥的，这属于小饭圈文化？看不懂",
+    "output": "He must watch too many Northeast Chinese car-talking streamers. Talking about status"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "懒得预申请就别进来了喵，实在不行可以自己建个QQ群，改名叫linuxdo论坛cos一下唔",
+    "output": "If you’re too lazy to pre-apply"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "从即日起，星云机场正式停止运营，并关闭新用户注册。后续将不再以“机场”形式提供服务与维护支持，仅保留 4 个家宽节点用于个人/小范围使用，不会再新增节点、扩容线路或提供公益服务。之所以做出该决定，是因为长期维护所需的时间精力与成本不断增加，同时稳定性与风险管控也越来越难以兼顾。为避免后续出现不可控的中断或带来不必要的麻烦，现选择主动结束运营。感谢大家一路以来的理解与支持，给各位带来不便，敬请谅解",
+    "output": "Starting from today"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "公益不易:heart: 感谢佬",
+    "output": "Running a public service is no easy task :heart: Thanks for your hard work"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "悲！无了！",
+    "output": "That's sad! It's gone!"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "前排前排w",
+    "output": "Front row"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "哭哭:sob::sob:",
+    "output": "Crying :sob::sob:"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "呜呜呜呜呜呜呜呜",
+    "output": "Waaaaaaaaaaaaa"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "感谢佬的付出！",
+    "output": "Thank you for all you've done"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "噩耗，我说今天打开流量成0了",
+    "output": "Devastating news. No wonder my data usage showed zero today."
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "R·I·P，留念",
+    "output": "R.I.P."
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "我说呢，今天无法连接了，感谢星云大佬的付出",
+    "output": "I wondered why I couldn't connect today. Thank you for everything"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "佬友也许可以增加收费订阅，毕竟买谁的不是买，可以提供便宜不是很稳定的和高价稳定或纯净ip的节点",
+    "output": "Maybe you could add paid subscriptions"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "感谢佬友，没用完的流量怎么处理呢",
+    "output": "Thanks for your hard work. What about the unused data?"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "流量是你买的吗?这是公益机场啊",
+    "output": "Did you buy the data? This is a public welfare service."
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "积分兑换的，只是简单问一下 无恶意 :pleading_face:（当然很感谢大佬的付出，我一直拿来备用没咋用。我的公益站也在筹备中",
+    "output": "It was redeemed with points. Just asking"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "感谢佬的付出",
+    "output": " 好聚好散"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "我3月7号注册进去买了套餐，3月8号出门旅游，前2天才回来，今天一打开L站，说是机场关了。心拔凉拔凉的。:pleading_face:",
+    "output": "I registered and bought a plan on March 7th"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "2月份整整存了一个月的低保啊。",
+    "output": "I saved up a full month of basic LDC allowance in February."
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "我很珍惜我的LDC的！！！",
+    "output": "I really valued my LDC!!!"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "楼里有2个佬还给我转LDC了，我真的感动死。。。。。。。",
+    "output": "Two seniors in this thread even transferred LDC to me. I’m so touched……"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "我的本意就是想吐槽一下。。。。",
+    "output": "I only meant to rant a little……"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "结果。。。。。。。",
+    "output": "But then……"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "真诚、友善、团结、专业，共建你我引以为荣之社区。",
+    "output": "Sincere"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "没有出过COS，没有粉毛狐狸，也没有男装，你们凑合看吧，行吗 :distorted_face:",
+    "output": "I’ve never done cosplay"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "有佬提醒还是删了……",
+    "output": "A senior reminded me"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "多少LDC啊，妥妥的被割跑路。",
+    "output": "How much LDC was it? Total rug pull."
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "288LDC 2月份也就28天，所以说是一个月的低保呀。",
+    "output": "288 LDC. February only has 28 days"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "没事，佬可以女装，一天就可以搞到这么多",
+    "output": "It’s okay—you could do cross-dressing and get this much in a day."
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "我本来就是女性！！！！！！！",
+    "output": "I’m female in the first place!!!!!!!"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "我要看粉毛狐狸大人（bushi，",
+    "output": "I want to see the pink-haired fox lord (jk)"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "可以站内搜搜 宝可梦 ，每月都有兑换码",
+    "output": "You can search “Pokémon” on the site—there are redemption codes every month."
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "太惨了佬友，虽然我忍不住想笑 :laughing: 点个赞给你回回血吧",
+    "output": "That’s brutal"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "（所以还好止损的早）不然影响更大了唔",
+    "output": "(Good thing I cut my losses early) otherwise it would’ve been way worse."
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "嗯，那大家更喜欢了，粉毛屑狐狸诶",
+    "output": "Yeah"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "v你50回回血:xhs_021:查收一下嘿嘿",
+    "output": "Sending you 50 to cheer you up :xhs_021: Check it out hehe."
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "这个不会退的，ldc全部锁死在萧佬的账户了",
+    "output": "There won’t be refunds. All LDC is locked in Admin Xiao’s account."
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "古法太累了",
+    "output": "The old grinding method is way too tiring."
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "一台三网优化的:chicken:，一开始国内的IP+Port可以访问NewAPI的服务，但是域名+Port没有效果，我了解的是三网优化可能只开放80和443，我用Nginx反代了原本的3000端口到443，现在是80(http)可以正常重定向到443(https)的端口，可是浏览器会直接显示连接已重置。",
+    "output": "A server optimized for three networks:chicken:. At first, the NewAPI service could be accessed via domestic IP + Port, but not via domain name + Port. As far as I know, three-network optimization may only open ports 80 and 443. I used Nginx to reverse-proxy the original port 3000 to port 443. Now port 80 (HTTP) can redirect to port 443 (HTTPS) normally, but the browser directly shows 'connection reset'."
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "我试过开梯子，网址是正常的SSL证书也正常？",
+    "output": "I tried using a VPN, the URL is accessible and the SSL certificate is valid, right?"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "有大佬可以帮忙看一下吗？",
+    "output": "Can any expert help me check this?"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "域名或者ip被墙了呗",
+    "output": "Your domain name or IP must be blocked by the firewall."
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "没办法把，我的也是呀，有的网路能访问有的不行，我用公司wifi不能访问，自己手机流量就可以访问，有的能访问有的不能访问",
+    "output": "There’s no way around it, mine is the same. Some networks work and some don’t. I can’t access it on my company Wi-Fi, but it works on my mobile data. It’s hit-or-miss."
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "让cc/codex/openclaw检查一下配置",
+    "output": "Ask CC / Codex / OpenClaw to check the configuration."
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "IP+Port可以访问，但是域名+Port不可以，很有可能服务商设置了非备案域名不让用",
+    "output": "IP + Port works, but domain name + Port doesn’t. It’s very likely the provider blocks unregistered domain names."
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "cloudflare tunnel 试试直接用cf来配置，你搜一下教程",
+    "output": "Try Cloudflare Tunnel and configure it directly with CF. Search for tutorials online."
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "我问过战里的佬，他们说三网的不用cdn，用cdn不用三网",
+    "output": "I asked experienced users in the forum, and they said three-network optimized servers don’t need CDN, and servers using CDN don’t need three-network optimization."
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "不是说三网的贵用来做代理，普通机用来建站套cf蹭个cdn吗？",
+    "output": "Isn’t it said that expensive three-network servers are used for proxies, while ordinary servers are used for websites with CF CDN?"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "如果没有开cdn的话，域名解析应该是你的ip，你可以ping一下域名看看解析出来的IP是不是你服务器的IP",
+    "output": "If CDN is not enabled, the domain should resolve to your IP. You can ping the domain to check if the resolved IP matches your server’s IP."
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "在尝试一下域名+newapi的port看看，显示的是404还是其他报错",
+    "output": "Try accessing domain + NewAPI port and see if it returns 404 or another error."
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "尝试清理下本地的浏览器缓存，本猫之前因为这个困惑了很长时间",
+    "output": "Try clearing your local browser cache. I was stuck on this issue for a long time before."
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "itdog测一下是不是被GFW干了",
+    "output": "Test it on IT Dog to see if it’s blocked by the GFW."
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "严禁倒卖！",
+    "output": "Resale is strictly prohibited!"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "若以任何形式参考本项目，请引用。",
+    "output": "If you refer to this project in any form, please provide attribution."
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "仅供学习交流使用，禁止用于违法用途，本人概不负责。",
+    "output": "For learning and communication only. Illegal use is forbidden, and I take no responsibility."
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "本人时间和精力有限，若有问题，请尽量提PR，提交你的方案。",
+    "output": "My time and energy are limited. If you encounter issues, please submit a PR with your solution."
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "自动绑卡都开源出来了吗 :melting_face:",
+    "output": "Has automatic card binding been open-sourced? :melting_face:"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "前排支持佬友",
+    "output": "Front-row support for the expert."
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "简直无敌了，全自助啊",
+    "output": "This is amazing, it’s fully self-service."
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "本来网站都写好了，看了neo的帖子，全部取消，开源 :smiling_face_with_three_hearts:",
+    "output": "I had already finished the website, but after seeing Neo’s post, I scrapped it all and open-sourced it. :smiling_face_with_three_hearts:"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "追求甲骨文的，慎入（玄学 :laughing:",
+    "output": "Those chasing Oracle services, proceed with caution (it’s tricky). :laughing:"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "有信用卡有门槛的，况且很多人连部署都不会呢。看佬友都需要这个，就写了这个项目以供参考。",
+    "output": "Having a credit card is a barrier, and many people don’t even know how to deploy. Seeing that many users need this, I created this project for reference."
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "现在都是让AI帮忙部署吧，信用卡咸鱼，不过还是感谢佬分享",
+    "output": "Nowadays everyone uses AI for deployment. Credit cards are easy to get on Xianyu, but thanks for sharing anyway."
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "和谷歌学生认证一样喽",
+    "output": "It’s similar to Google Student Verification."
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "看来 team 车很快就会翻了",
+    "output": "Looks like shared team accounts will get banned soon."
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "这，我反复确认了一下？开源的注册机？",
+    "output": "Wait, I double-checked? An open-sourced registration tool?"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "就是自动注册+绑卡，应该不算注册机吧。 :anxious_face_with_sweat:",
+    "output": "It’s just automatic registration plus card binding, it shouldn’t count as a registration tool, right? :anxious_face_with_sweat:"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "批量生成Team号的肯定不能开源了，也没写到那一步。",
+    "output": "Tools for bulk generating Team accounts definitely can’t be open-sourced, and I haven’t developed that part."
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "本来计划加上母号拉子号，自动上传CPA，智能维护呢，没时间了。各位佬友集思广益，定能做出来更完整的流程。",
+    "output": "I originally planned to add master-sub account linking, automatic CPA upload, and intelligent maintenance, but I ran out of time. With everyone’s ideas, a more complete workflow will surely be created."
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "这已经把最难的给搞定了啊。牛逼啊",
+    "output": "You’ve already solved the hardest part. Awesome!"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "佬等级调高点吧 :joy: 你这自动绑卡有点厉害，就怕泛滥了",
+    "output": "Raise your user level a bit :joy:. Your automatic card binding is powerful, I’m afraid it will be abused."
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "啊这，那调到2级？主要好久没发帖了，怕审核又要一段时间 :smiling_face_with_tear:",
+    "output": "Oh, then set it to level 2? I haven’t posted in a long time and don’t want to wait for review. :smiling_face_with_tear:"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "ok了 不用审核 :smiling_face_with_three_hearts:",
+    "output": "Done, no review needed. :smiling_face_with_three_hearts:"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "我去佬友这么牛逼，不过开源会被滥用吧，最好还是别开源了佬，现在就剩下 team 能用了，如果 team 也没了那就惨了:sob:",
+    "output": "Wow, you’re amazing. But open-sourcing may lead to abuse. Better not open-source it. Team accounts are the only ones left, it’ll be a disaster if they’re gone too:sob:"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "支持佬！你和我写的基本上一样哈哈 :laughing:但是我的太屎山了，我还没搞明白怎么整的，都不敢开源，正在让codex自己重构加outlook作为mail provider呢 :rofl:",
+    "output": "Support you! Our code is basically the same haha :laughing:. But mine is a total mess. I haven’t figured it out and dare not open-source it. I’m letting Codex refactor it and add Outlook as the mail provider. :rofl:"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "从刚开始用chatbot的时候就觉得主流项目对于上下文管理的支持力度普遍不高，特别想要一个支持跳转至不同对话节点的侧边栏，在用agent编程工具时这种感觉更甚。",
+    "output": "When I first started using chatbots, I felt mainstream projects offered poor context management support. I really wanted a sidebar for jumping between conversation nodes, especially when using agent programming tools."
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "本以为会有不少人有相同诉求，做起来也没有很难，应该挺容易等到其他人搓出来，结果等了两年见到的还是fork（从某个位置复制一份新对话）这种不流畅的交互形式。实在忍不了了，自己让codex搓了一个。",
+    "output": "I thought many people shared this need and it wouldn’t be hard to build, so I waited for others to make it. But after two years, all I saw was the clumsy 'fork' interaction (copying a new conversation). I couldn’t stand it and had Codex build one for me."
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "有了分支跳转，你在跟codex对话的时候再也不用为一些没有营养的追问污染上下文而有所顾虑了，随便问，问完跳回去就行。我自己这一两天用下来还是很爽的。",
+    "output": "With branch jumping, you no longer worry about context pollution from meaningless follow-ups when chatting with Codex. Ask freely and jump back. It’s been great to use these past couple days."
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "鉴于Codex App没有开源计划，魔改解包bundle加界面不太现实，所以我挑了开源的Codex Monitor进行修改（它还支持通过手机远程控制桌面端，满足了我另一个需求）。",
+    "output": "Since the Codex App has no open-source plans, modding the unpacked bundle for UI changes isn’t realistic. So I modified the open-source Codex Monitor, which also supports remote desktop control from a phone, meeting another need of mine."
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "但因为Codex不接收外部PR了，所以Codex Monitor的改动也没有机会被合入了。目前只能躺在两个branch仓库里，随大版本更新让codex去做一下rebase。",
+    "output": "But Codex no longer accepts external PRs, so my changes to Codex Monitor can’t be merged upstream. They only exist in two branches and are rebased by Codex with major updates."
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "使用方式：直接下载release，或者拉取你想要的官方仓库版本，让agent帮你把这个branch内容合进去，然后自行build。",
+    "output": "Usage: Download the release directly, or pull the official version you want, let the agent merge this branch, then build it yourself."
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "另外提醒下，Codex Monitor有不少无伤大雅的小bug，我勉强适应下来了，也正在提交一些容易处理的小问题的修复PR。",
+    "output": "Also, Codex Monitor has several harmless minor bugs. I’ve gotten used to them and am submitting PRs to fix easy issues."
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "Codex App虽然体验流畅但不开源，想要的各种feature都不知道什么时候才能塞进去，还是只能忍痛放弃了。AI时代还是选择开源的更舒服一些，有什么想加的都能直接加。",
+    "output": "The Codex App is smooth but closed-source; there’s no telling when new features will be added, so I had to give it up. In the AI era, open-source is better—you can add any features you want directly."
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "1. 315晚会曝光漂白鸡爪 有毒的双氧水随便用",
+    "output": "1. 315 Gala Exposes Bleached Chicken Feet with Toxic Hydrogen Peroxide Used Illegally"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "内容： 成都市明扬食品等企业的生产车间臭气弥漫、环境脏乱，但出产的鸡爪却色泽白净，原因在于违规使用了双氧水（过氧化氢）进行漂白。国家规定加工鸡爪严禁使用双氧水，长期食用经其浸泡的食品，会导致口腔黏膜损伤及肝肾功能损害，严重者危及生命。",
+    "output": "Content: Factories including Chengdu Mingyang Food have foul, dirty workshops but produce snow-white chicken feet by illegally using hydrogen peroxide for bleaching. Chinese regulations ban hydrogen peroxide in chicken foot processing. Long-term consumption causes oral mucosal damage, liver and kidney impairment, and can be life-threatening in severe cases."
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "2. 315晚会打假万能神药，网红神药外泌体竟是三无产品",
+    "output": "2. 315 Gala Exposes Fake Miracle Drugs: Viral Exosome Products Are Unqualified"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "内容： 医美市场火爆的“外泌体”被主播吹嘘为神奇物质，但实际上其作用机理和临床测试在医学界尚不明确，仍处于研究阶段。截至目前，我国并没有任何外泌体药品获得上市销售批准。市面上流传的产品多属于滥用或违规销售的三无产品，存在极大的安全风险。",
+    "output": "Content: 'Exosomes' hyped as a miracle substance in aesthetic medicine have unclear mechanisms and uncompleted clinical trials, remaining in research. No exosome drugs are approved for sale in China. Most products are unqualified and illegally sold, posing severe safety risks."
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "3. 315晚会曝光增高骗局，增高机构用玄学疯狂敛财",
+    "output": "3. 315 Gala Exposes Height Growth Scams Using Pseudoscience for Profit"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "内容： 市场上英瑞可、德脊瑞、安立身等增高机构宣称能为骨骼装上“加速器”。英瑞可负责人宣称可以做到“闭合增高”，手段包含生理调理、心理干预乃至所谓的“量子修复”等玄学内容。这些机构并无医学数据支持，纯靠销售话术和虚假高科技外衣欺骗家长，获取高额加盟费和套餐费。",
+    "output": "Content: Agencies like Yingruike claim to install 'accelerators' for bones and promise height growth after epiphyseal closure via pseudoscience including physical conditioning and 'quantum repair'. Lacking medical evidence, they deceive parents for high fees with sales tactics and fake high-tech claims."
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "4. 315晚会曝光“私域营销”5倍暴利围猎老年人",
+    "output": "4. 315 Gala Exposes Private Domain Marketing Targeting the Elderly with 500% Profit"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "内容： 调查揭露了私域营销行业收割老年人的内幕。制作方以低价购入药品或保健品，拍摄虚假的健康讲座视频，再由营销公司引导老年人进入私域社交群观看。这些进货成本极低的产品，被夸大功能后以近5倍的市场高价售卖。从业者甚至坦言，为了躲避315监管，近期会要求“低调行事”。",
+    "output": "Content: An investigation reveals private domain marketing exploiting the elderly. Low-cost medicines are made into fake health videos and sold at nearly 5x the price after exaggerated claims. Insiders admitted to keeping a low profile to avoid 315 inspections."
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "5. 315曝光狂飙的租赁电动自行车，点名哈啰租电动车等违反新国标",
+    "output": "5. 315 Exposes Over-Speeding Rental E-Bikes: Hello Bike Violates New National Standards"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "内容： 2025年《电动自行车安全技术规范》新国标规定时速不超25公里，但调查发现，哈啰租电动车等连锁品牌及地方门店，公开租赁违规超标车辆。实测显示，部分租赁车辆车速竟然高达75至80公里/小时。电商主播在直播间也公然宣传违规超标性能，完全无视国家标准，安全隐患极大。",
+    "output": "Content: The 2025 e-bike standard limits speed to 25 km/h, but Hello Bike and others rent over-speed vehicles. Some reach 75–80 km/h. Streamers promote illegal speeds openly, ignoring standards and creating huge safety hazards."
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "6. 315晚会曝光AI大模型“被投毒”，给AI“洗脑”已成产业链",
+    "output": "6. 315 Gala Exposes AI Model Data Poisoning: Brainwashing AI Becomes an Industry"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "内容： 记者调查发现，网络上存在名为GEO（生成式引擎优化）的黑产业务。服务商号称只需付费，就能让客户的产品或广告出现在主流AI大模型的回答中，甚至成为AI给出的“标准答案”。这催生了专门从事发稿、围猎AI大模型的公司，通过大规模数据“投毒”，误导AI抓取特定信息。",
+    "output": "Content: Reporters found an underground industry called GEO (Generative Engine Optimization). Providers claim paid clients can get their products in AI responses as 'standard answers'. This spawns companies that poison AI models with mass data to mislead information crawling."
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "7. 315晚会曝光荐股分成骗局，荐股分成机构成割肉骗子窝",
+    "output": "7. 315 Gala Exposes Stock Recommendation Profit-Sharing Scams"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "内容： 2026年伊始，315晚会收到不少消费者线索：市场上一种名为“荐股做票，盈利五五分成”的业务吸引了大量投资者。正规业内人士提醒，这类业务多为不法人员冒充正规金融机构实施的诈骗。如果推荐股票获利，对方便索要分成；一旦亏损，不法人员即销声匿迹。所谓的“补",
+    "output": "Content: Since early 2026, the 315 Gala has received reports of 'stock recommendations with 50-50 profit sharing' luring investors. These are scams by fraudsters posing as financial firms. They demand cuts for profits but disappear after losses. The so-called 'supplementary'"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "晚会看了一个小时，放了前三个，真感觉没以前那味儿。",
+    "output": "I watched the gala for an hour and only the first three cases were shown. It really doesn’t feel the same as before."
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "都没钱，就诈骗能挣钱",
+    "output": "Everyone is broke; only scams make money."
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "电动车这个是真的拿来凑数的，性能高可以低速用，性能拉才是要爆料的啊，感觉是在给哈啰打广告一样",
+    "output": "The e-bike story feels like filler. High performance can be used at low speeds; tampering is the real issue. It almost feels like an ad for Hello Bike."
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "按照业内人士的爆料，记者在多个网络平台进行查询，很快就搜索到了名为GEO的业务。网络平台上从事该项业务的服务商号称，用户只需支付相应的费用，就能在各大主流AI大模型里，让客户的产品榜上有名；让客户的商品广告，成为AI模型给出的“标准答案”。通过GEO技术真的能让AI“夹带私货”，甚至投放虚假信息吗？",
+    "output": "Following insider tips, reporters found GEO services online. Providers claim paying clients can rank high in AI models and make ads the 'standard answers'. Can GEO really make AI promote hidden ads or spread false information?"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "按照网络上的信息，记者联系上一家业内知名的GEO服务商。负责人王总告诉记者，他们公司的强项，就是能够帮助客户，在消费者使用AI大模型搜索时，让客户排名前列。“就是相当于做软文，然后让AI平台去刷录、输入、抓取。”同时，王总也告诉记者，现在AI大模型的算法更新频繁，要想维持AI大模型的持续推荐，必须持续大量投喂与客户相关的推广软文。在其他从事GEO业务的服务商口中，如何操控AI、让AI“听话”、给AI“洗脑”，几乎是这些公司推广该业务的核心话题。",
+    "output": "Reporters contacted a well-known GEO provider. Manager Wang said his company ranks clients high in AI searches by creating sponsored articles for AI to crawl. Frequent AI updates require continuous content feeding. Controlling and 'brainwashing' AI is their core selling point."
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "业内人士告诉记者，GEO作为优化信息分发、提升推广效率的一个工具软件，在某些商业公司眼中，却被挖掘出了另外的作用。业内人士在电商平台上，随机购买了一款名叫“力擎GEO优化系统”的软件。之后虚构了一款智能手环，并将虚构的产品信息输入软件系统，勾选文章创作指令。不一会儿，这个力擎GEO优化系统就自动生成了十余篇智能手环的宣传软文。业内人士选取了十余篇虚构软文，通过力擎GEO系统发布在了互联网上。随后，业内人士在AI大模型平台展开询问：“智能健康手环推荐”，就有两个AI大模型推荐了这款虚构的智能手环，而且排名靠前。",
+    "output": "Insiders say GEO, designed for content optimization, is misused commercially. They bought 'Liqing GEO System', created a fake smart bracelet, and generated promotional articles. After publishing, two major AI models recommended the fake bracelet at the top when asked for health band suggestions."
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "记者联系上了力擎GEO系统的运营者李总。他告诉记者，GEO业务受热捧的主要原因就是它能在AI大模型里帮客户喂料、投毒，实现客户的商业目的。李总表示，想做GEO业务，操控AI大模型的关键节点，就是在各大互联网账号上“发稿”。“比如说手机品牌，就5个位置，最多10个位置，这么多手机怎么弄。一年可能上亿的广告费，花个几百万投点毒，总行吧！”",
+    "output": "Reporter contacted Manager Li of Liqing GEO. He said GEO is popular for poisoning AI models for commercial gains. The key is mass publishing online. 'There are only a few top spots for phones. Spending millions on data poisoning is worth it compared to huge ad budgets.'"
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "他告诉记者，GEO业务的火爆，催生出了不少专门从事发稿业务的公司和平台。他们长期承揽各种发稿业务，以便让AI大模型引用和抓取，成为围猎AI大模型、进行数据“投毒”的重要一环。",
+    "output": "He said the GEO boom has spawned publishing platforms that distribute content for AI crawling, forming a key part of the data poisoning industry chain."
+  },
+  {
+    "instruction": "将下面的内容翻译成英文",
+    "input": "这要怎么才能投毒，在几百B参数量前面他这点数据算什么？",
+    "output": "How can such a small amount of data poison models with hundreds of billions of parameters?"
+  }
+]
