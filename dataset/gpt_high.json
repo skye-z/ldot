@@ -1,0 +1,2212 @@
+[
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "When the kernel reports a soft lockup, check /var/log/kern.log and run `sysctl -w kernel.watchdog_thresh=30` to reduce false positives; do not edit /etc/sysctl.conf while the node is draining.",
+        "output": "当内核报告 soft lockup 时，请检查 /var/log/kern.log 并运行 `sysctl -w kernel.watchdog_thresh=30` 以减少误报；在节点处于 draining 状态时不要编辑 /etc/sysctl.conf。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "In the HAProxy config, the stanza `timeout client 30s` must align with the backend keepalive; if you change it, reload via `systemctl reload haproxy` instead of restarting to preserve sessions.",
+        "output": "在 HAProxy 配置中，段落 `timeout client 30s` 必须与后端 keepalive 对齐；如果你修改它，请使用 `systemctl reload haproxy` 而不是重启，以保留会话。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The build failed because CMake cached an old SDK path; remove C:\\build\\cache\\CMakeCache.txt and rerun `cmake -S . -B build -DCMAKE_BUILD_TYPE=Release`.",
+        "output": "构建失败是因为 CMake 缓存了旧的 SDK 路径；删除 C:\\build\\cache\\CMakeCache.txt 并重新运行 `cmake -S . -B build -DCMAKE_BUILD_TYPE=Release`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If Prometheus shows a spike in scrape_duration_seconds, verify the exporter by curling `http://127.0.0.1:9100/metrics` and ensure the systemd unit file at /etc/systemd/system/node_exporter.service sets `Restart=on-failure`.",
+        "output": "如果 Prometheus 显示 scrape_duration_seconds 峰值，请通过访问 `http://127.0.0.1:9100/metrics` 验证 exporter，并确保 /etc/systemd/system/node_exporter.service 中设置了 `Restart=on-failure`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The Kubernetes manifest uses a projected volume; keep the YAML exactly as `projected: { sources: [ { secret: { name: api-keys } } ] }` or the admission controller will reject it.",
+        "output": "该 Kubernetes 清单使用了 projected 卷；请保持 YAML 精确为 `projected: { sources: [ { secret: { name: api-keys } } ] }`，否则准入控制器会拒绝。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "On Windows, disable the legacy TLS stack by setting `SchUseStrongCrypto` in HKLM\\SOFTWARE\\Microsoft\\.NETFramework, but avoid touching HKCU for service accounts.",
+        "output": "在 Windows 上，通过在 HKLM\\SOFTWARE\\Microsoft\\.NETFramework 中设置 `SchUseStrongCrypto` 来禁用旧版 TLS 栈，但不要修改服务账户的 HKCU。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "To diagnose intermittent 502s, run `nghttp -nv https://api.example.com/healthz` and compare with the Nginx upstream config in /etc/nginx/conf.d/upstream.conf.",
+        "output": "要诊断间歇性 502，请运行 `nghttp -nv https://api.example.com/healthz`，并与 /etc/nginx/conf.d/upstream.conf 中的 Nginx upstream 配置对比。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The Java service ignores JAVA_TOOL_OPTIONS when launched by systemd; set `Environment=JAVA_TOOL_OPTIONS=-Xmx512m` in /etc/systemd/system/app.service and run `systemctl daemon-reload`.",
+        "output": "Java 服务在由 systemd 启动时会忽略 JAVA_TOOL_OPTIONS；在 /etc/systemd/system/app.service 中设置 `Environment=JAVA_TOOL_OPTIONS=-Xmx512m` 并运行 `systemctl daemon-reload`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "A mismatch between `server_name` and the TLS SNI causes handshake failure; confirm with `openssl s_client -connect host:443 -servername api.example.com` before editing /etc/nginx/nginx.conf.",
+        "output": "`server_name` 与 TLS SNI 不匹配会导致握手失败；在编辑 /etc/nginx/nginx.conf 之前，先用 `openssl s_client -connect host:443 -servername api.example.com` 验证。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "When `git fetch --prune` removes the remote ref, your local branch still points to an orphan; run `git branch -vv` and delete it with `git branch -D feature/old` if it's unneeded.",
+        "output": "当 `git fetch --prune` 删除远程引用后，本地分支仍可能指向孤立提交；运行 `git branch -vv`，若不需要则用 `git branch -D feature/old` 删除。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "In Docker Compose, the order of `depends_on` does not wait for readiness; add `healthcheck:` and a script that probes `redis-cli -h cache ping` before starting the API.",
+        "output": "在 Docker Compose 中，`depends_on` 的顺序不会等待就绪；请添加 `healthcheck:`，并在启动 API 前用脚本探测 `redis-cli -h cache ping`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The AWS SDK is picking up credentials from ~/.aws/credentials; if you need to force a role, export `AWS_PROFILE=prod` and verify with `aws sts get-caller-identity`.",
+        "output": "AWS SDK 正在使用 ~/.aws/credentials 中的凭证；如果需要强制指定角色，请导出 `AWS_PROFILE=prod` 并用 `aws sts get-caller-identity` 验证。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "Use `helm upgrade --install` only after validating the chart values; the block `resources: { limits: { cpu: \"500m\", memory: \"256Mi\" } }` must stay quoted to avoid YAML parsing issues.",
+        "output": "只有在验证 chart values 后才使用 `helm upgrade --install`；`resources: { limits: { cpu: \"500m\", memory: \"256Mi\" } }` 这个块必须保留引号以避免 YAML 解析问题。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The PostgreSQL connection pooler times out because `idle_timeout = 300` in /etc/pgbouncer/pgbouncer.ini is too low for this workload; increase it and reload with `systemctl reload pgbouncer`.",
+        "output": "PostgreSQL 连接池超时是因为 /etc/pgbouncer/pgbouncer.ini 中 `idle_timeout = 300` 对此工作负载过低；提高它并用 `systemctl reload pgbouncer` 重新加载。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `iptables -L` shows the DROP rule above your allowlist, reorder the chain or insert with `iptables -I INPUT 1 -p tcp --dport 22 -j ACCEPT`.",
+        "output": "如果 `iptables -L` 显示 DROP 规则位于允许列表之上，请调整链顺序或用 `iptables -I INPUT 1 -p tcp --dport 22 -j ACCEPT` 插入规则。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The Go binary was built with CGO and fails on Alpine; rebuild with `CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o bin/app`.",
+        "output": "该 Go 二进制使用 CGO 构建，在 Alpine 上失败；请用 `CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o bin/app` 重新构建。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "When editing /etc/fstab, use UUIDs like `UUID=1a2b-3c4d /data ext4 defaults 0 2` to prevent device renaming issues after reboot.",
+        "output": "编辑 /etc/fstab 时使用 UUID，例如 `UUID=1a2b-3c4d /data ext4 defaults 0 2`，以避免重启后设备重命名问题。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The JVM GC logs are rotated incorrectly; ensure `-Xlog:gc*:file=/var/log/app/gc.log:time,uptime:filecount=5,filesize=10M` is passed via the launch script.",
+        "output": "JVM GC 日志轮转不正确；请确保通过启动脚本传入 `-Xlog:gc*:file=/var/log/app/gc.log:time,uptime:filecount=5,filesize=10M`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "A stale DNS cache on systemd-resolved causes 5xx errors; run `resolvectl flush-caches` and confirm the new records in /run/systemd/resolve/stub-resolv.conf.",
+        "output": "systemd-resolved 中过期的 DNS 缓存会导致 5xx 错误；运行 `resolvectl flush-caches` 并在 /run/systemd/resolve/stub-resolv.conf 中确认新记录。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The `spring.jpa.hibernate.ddl-auto=validate` setting will fail if migrations are pending; run `./gradlew flywayMigrate` before starting the service.",
+        "output": "`spring.jpa.hibernate.ddl-auto=validate` 在有待执行迁移时会失败；请在启动服务前运行 `./gradlew flywayMigrate`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "To enable HTTP/3, the QUIC listener must be declared as `listen 443 quic reuseport;` in /etc/nginx/nginx.conf, and you must restart with `nginx -s reload`.",
+        "output": "要启用 HTTP/3，必须在 /etc/nginx/nginx.conf 中声明 `listen 443 quic reuseport;`，并使用 `nginx -s reload` 重载。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `kubectl exec` hangs, check if the apiserver has a proxy timeout; the flag `--request-timeout=30s` is overridden in /etc/kubernetes/manifests/kube-apiserver.yaml.",
+        "output": "如果 `kubectl exec` 卡住，请检查 apiserver 的代理超时；/etc/kubernetes/manifests/kube-apiserver.yaml 中会覆盖 `--request-timeout=30s` 标志。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The Redis AOF rewrite fails because `auto-aof-rewrite-percentage 100` is too aggressive; update /etc/redis/redis.conf and run `redis-cli CONFIG REWRITE`.",
+        "output": "Redis AOF 重写失败是因为 `auto-aof-rewrite-percentage 100` 过于激进；更新 /etc/redis/redis.conf 并运行 `redis-cli CONFIG REWRITE`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "Enable 802.1Q VLAN tagging by adding `vlan_filtering 1` under the bridge in /etc/netplan/01-netcfg.yaml, then apply with `netplan apply`.",
+        "output": "在 /etc/netplan/01-netcfg.yaml 中桥接配置下添加 `vlan_filtering 1` 以启用 802.1Q VLAN 标记，然后运行 `netplan apply`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The container fails because the entrypoint expects /usr/local/bin/start.sh; ensure it is executable with `chmod +x /usr/local/bin/start.sh` and present in the image.",
+        "output": "容器失败是因为 entrypoint 期望 /usr/local/bin/start.sh；请确保该文件在镜像中且可执行，使用 `chmod +x /usr/local/bin/start.sh`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "After upgrading OpenSSL, rebuild Node native addons by running `npm rebuild` or `node-gyp rebuild` in the project root.",
+        "output": "升级 OpenSSL 后，请在项目根目录运行 `npm rebuild` 或 `node-gyp rebuild` 重建 Node 原生插件。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The TLS cert chain is incomplete; concatenate the intermediates into /etc/ssl/certs/fullchain.pem and reference it in `ssl_certificate`.",
+        "output": "TLS 证书链不完整；将中间证书拼接到 /etc/ssl/certs/fullchain.pem，并在 `ssl_certificate` 中引用它。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `df -h` shows 100% usage but inode count is low, search for large logs with `du -sh /var/log/*` and rotate them.",
+        "output": "如果 `df -h` 显示 100% 使用率但 inode 数量不高，请用 `du -sh /var/log/*` 查找大日志并进行轮转。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "A misconfigured HSTS header can brick subdomains; set `add_header Strict-Transport-Security \"max-age=31536000; includeSubDomains\";` only after verifying TLS on all hosts.",
+        "output": "错误配置的 HSTS 头会导致子域不可访问；仅在确认所有主机 TLS 正常后设置 `add_header Strict-Transport-Security \"max-age=31536000; includeSubDomains\";`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The gRPC client keeps reconnecting because the keepalive is too aggressive; change `grpc.keepalive_time_ms=30000` in /etc/app/config.toml.",
+        "output": "gRPC 客户端频繁重连是因为 keepalive 过于激进；请在 /etc/app/config.toml 中修改 `grpc.keepalive_time_ms=30000`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "Use `journalctl -u kubelet -f` while updating /var/lib/kubelet/config.yaml, otherwise a typo in `cgroupDriver: systemd` will silently fail.",
+        "output": "更新 /var/lib/kubelet/config.yaml 时请使用 `journalctl -u kubelet -f` 观察日志，否则 `cgroupDriver: systemd` 的拼写错误会静默失败。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If the Kafka broker loops on startup, verify that `advertised.listeners=PLAINTEXT://broker-1:9092` matches the container hostname set in docker-compose.yml.",
+        "output": "如果 Kafka broker 启动循环重试，请验证 `advertised.listeners=PLAINTEXT://broker-1:9092` 与 docker-compose.yml 中设置的容器主机名一致。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "To avoid checksum mismatches, download artifacts with `curl -fsSL -o app.tar.gz https://repo.example.com/app.tar.gz` and validate using `sha256sum -c app.tar.gz.sha256`.",
+        "output": "为避免校验和不一致，请使用 `curl -fsSL -o app.tar.gz https://repo.example.com/app.tar.gz` 下载制品，并用 `sha256sum -c app.tar.gz.sha256` 验证。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The SELinux denial references /var/lib/mysql; allow it by setting `setsebool -P mysql_connect_any 1` or adjust the context with `semanage fcontext`.",
+        "output": "SELinux 拒绝日志指向 /var/lib/mysql；可通过 `setsebool -P mysql_connect_any 1` 放行，或用 `semanage fcontext` 调整上下文。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "When `ssh` hangs, check for reverse DNS delays and set `UseDNS no` in /etc/ssh/sshd_config, then reload with `systemctl reload sshd`.",
+        "output": "当 `ssh` 卡住时，检查是否因反向 DNS 延迟，并在 /etc/ssh/sshd_config 中设置 `UseDNS no`，然后用 `systemctl reload sshd` 重新加载。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The Python venv picks the wrong interpreter; recreate it with `python -m venv .venv` after ensuring /usr/bin/python3.11 exists.",
+        "output": "Python venv 选择了错误的解释器；确认 /usr/bin/python3.11 存在后，使用 `python -m venv .venv` 重新创建。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "In `/etc/logrotate.d/nginx`, keep `daily` and `rotate 7` together; switching to `size 100M` will disable time-based rotation.",
+        "output": "在 `/etc/logrotate.d/nginx` 中请保持 `daily` 与 `rotate 7` 搭配；改为 `size 100M` 会禁用按时间轮转。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The PostgreSQL replica is lagging because `max_wal_senders=5` is too low; update postgresql.conf and reload using `pg_ctl reload -D /var/lib/postgresql/15/main`.",
+        "output": "PostgreSQL 副本滞后是因为 `max_wal_senders=5` 过低；更新 postgresql.conf 并用 `pg_ctl reload -D /var/lib/postgresql/15/main` 重载。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `/etc/hosts` overrides DNS, remove the stale entry and flush caches with `sudo dscacheutil -flushcache` on macOS.",
+        "output": "如果 `/etc/hosts` 覆盖了 DNS，请删除过期条目并在 macOS 上运行 `sudo dscacheutil -flushcache` 刷新缓存。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The Logstash pipeline expects JSON lines; ensure the file is newline-delimited and set `codec => json_lines` in /etc/logstash/conf.d/pipeline.conf.",
+        "output": "Logstash 管道期望 JSON lines；确保文件是按行分隔，并在 /etc/logstash/conf.d/pipeline.conf 中设置 `codec => json_lines`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If you see `kex_exchange_identification` errors, your Fail2Ban rule might be blocking; check /etc/fail2ban/jail.local and run `fail2ban-client status sshd`.",
+        "output": "如果看到 `kex_exchange_identification` 错误，可能是 Fail2Ban 规则在阻断；检查 /etc/fail2ban/jail.local 并运行 `fail2ban-client status sshd`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The VM boots into emergency mode because UUIDs changed; update /etc/fstab and verify with `blkid` before rebooting.",
+        "output": "虚拟机进入 emergency mode 是因为 UUID 变更；更新 /etc/fstab 并在重启前用 `blkid` 验证。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "To disable swap during performance testing, run `swapoff -a` and comment out swap entries in /etc/fstab.",
+        "output": "在性能测试期间禁用 swap，请运行 `swapoff -a` 并注释 /etc/fstab 中的 swap 条目。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If npm installs fail behind a proxy, set `npm config set proxy http://proxy.example.com:8080` and `npm config set https-proxy http://proxy.example.com:8080`.",
+        "output": "如果在代理后 npm 安装失败，请设置 `npm config set proxy http://proxy.example.com:8080` 和 `npm config set https-proxy http://proxy.example.com:8080`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The `fs.inotify.max_user_watches` limit is too low for large repos; apply `sysctl -w fs.inotify.max_user_watches=524288` and persist it in /etc/sysctl.d/99-inotify.conf.",
+        "output": "`fs.inotify.max_user_watches` 限制对大型仓库过低；执行 `sysctl -w fs.inotify.max_user_watches=524288`，并将其写入 /etc/sysctl.d/99-inotify.conf 持久化。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If your cron job uses a relative path, it will fail; call `/usr/bin/python3 /opt/app/scripts/cleanup.py` explicitly in /etc/cron.d/cleanup.",
+        "output": "如果 cron 任务使用相对路径会失败；请在 /etc/cron.d/cleanup 中显式调用 `/usr/bin/python3 /opt/app/scripts/cleanup.py`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "A Windows service cannot see user env vars; set `PATH` in the registry at HKLM\\SYSTEM\\CurrentControlSet\\Services\\MySvc or in the service wrapper XML.",
+        "output": "Windows 服务无法读取用户环境变量；请在 HKLM\\SYSTEM\\CurrentControlSet\\Services\\MySvc 中设置 `PATH` 或在服务包装器 XML 中配置。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The NTP drift is high because chrony is not synchronized; verify with `chronyc tracking` and check /etc/chrony/chrony.conf for pool servers.",
+        "output": "NTP 漂移高是因为 chrony 未同步；用 `chronyc tracking` 验证，并检查 /etc/chrony/chrony.conf 中的 pool 服务器。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "When `kubectl logs` returns 413, increase the apiserver request size in /etc/kubernetes/manifests/kube-apiserver.yaml by setting `--max-request-bytes=10485760`.",
+        "output": "当 `kubectl logs` 返回 413，请在 /etc/kubernetes/manifests/kube-apiserver.yaml 中设置 `--max-request-bytes=10485760` 以提高 apiserver 请求大小。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The Terraform state is locked; check the DynamoDB table configured under `backend \"s3\"` and release the lock with `terraform force-unlock LOCK_ID` only if no apply is running.",
+        "output": "Terraform state 被锁定；检查 `backend \"s3\"` 配置的 DynamoDB 表，仅在没有 apply 运行时用 `terraform force-unlock LOCK_ID` 释放锁。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The app cannot resolve IPv6 because `net.ipv6.conf.all.disable_ipv6=1` is set; remove it from /etc/sysctl.conf and run `sysctl -p`.",
+        "output": "应用无法解析 IPv6 是因为设置了 `net.ipv6.conf.all.disable_ipv6=1`；从 /etc/sysctl.conf 中移除并运行 `sysctl -p`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `docker pull` fails with EOF, set the registry mirror in /etc/docker/daemon.json as `{ \"registry-mirrors\": [\"https://mirror.example.com\"] }` and restart Docker.",
+        "output": "如果 `docker pull` 因 EOF 失败，请在 /etc/docker/daemon.json 中设置 `{ \"registry-mirrors\": [\"https://mirror.example.com\"] }` 并重启 Docker。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The app uses OpenTelemetry; ensure `OTEL_EXPORTER_OTLP_ENDPOINT=https://otel.example.com` is exported before running `./start.sh`.",
+        "output": "应用使用 OpenTelemetry；在运行 `./start.sh` 前确保已导出 `OTEL_EXPORTER_OTLP_ENDPOINT=https://otel.example.com`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "A `TLSV1_ALERT_INTERNAL_ERROR` often indicates missing ciphers; add `ssl_ciphers HIGH:!aNULL:!MD5;` to /etc/nginx/conf.d/ssl.conf.",
+        "output": "`TLSV1_ALERT_INTERNAL_ERROR` 通常表示缺少密码套件；在 /etc/nginx/conf.d/ssl.conf 中添加 `ssl_ciphers HIGH:!aNULL:!MD5;`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "When rebuilding images, pin the base with `FROM ubuntu:22.04` to avoid silent changes; then run `docker build -t app:2024.06 .`.",
+        "output": "重建镜像时请用 `FROM ubuntu:22.04` 固定基础镜像以避免静默变更；然后运行 `docker build -t app:2024.06 .`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The log parser assumes UTF-8; if you must ingest GBK logs, convert with `iconv -f GBK -t UTF-8 /data/raw.log > /data/raw.utf8.log`.",
+        "output": "日志解析器假设 UTF-8；若必须导入 GBK 日志，请用 `iconv -f GBK -t UTF-8 /data/raw.log > /data/raw.utf8.log` 转换。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "A wrong permissions mask causes 403; set `umask 027` in /etc/profile and confirm by creating a file in /srv/www.",
+        "output": "错误的权限掩码会导致 403；在 /etc/profile 中设置 `umask 027`，并在 /srv/www 下创建文件验证。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "When merging branches, use `git merge --no-ff feature/api-v2` to preserve history; avoid rebasing public branches.",
+        "output": "合并分支时请使用 `git merge --no-ff feature/api-v2` 保留历史；避免对公共分支进行 rebase。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The API gateway enforces a 10MB body limit; increase `client_max_body_size 20m;` in /etc/nginx/nginx.conf and run `nginx -s reload`.",
+        "output": "API 网关强制 10MB body 限制；在 /etc/nginx/nginx.conf 中将 `client_max_body_size 20m;` 调大并运行 `nginx -s reload`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `pip install` times out, set `PIP_DEFAULT_TIMEOUT=100` and use `pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple`.",
+        "output": "如果 `pip install` 超时，请设置 `PIP_DEFAULT_TIMEOUT=100` 并使用 `pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The Elasticsearch cluster red status is caused by unassigned shards; run `curl -s http://localhost:9200/_cluster/allocation/explain` and examine /var/log/elasticsearch/elasticsearch.log.",
+        "output": "Elasticsearch 集群红色状态由未分配分片引起；运行 `curl -s http://localhost:9200/_cluster/allocation/explain` 并查看 /var/log/elasticsearch/elasticsearch.log。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "To mitigate slow DNS, add `options timeout:2 attempts:2` to /etc/resolv.conf, but be aware NetworkManager may overwrite it.",
+        "output": "为缓解 DNS 变慢，可在 /etc/resolv.conf 中添加 `options timeout:2 attempts:2`，但注意 NetworkManager 可能会覆盖。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "A failed `rsync` with exit code 23 often indicates permission issues; run `rsync -avz /data/ backup@10.0.0.5:/mnt/backup/` with sudo if needed.",
+        "output": "`rsync` 退出码 23 通常表示权限问题；必要时用 sudo 运行 `rsync -avz /data/ backup@10.0.0.5:/mnt/backup/`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If you must enable legacy TLSv1.0 for a vendor, set `MinProtocol = TLSv1.0` in /etc/ssl/openssl.cnf and document the exception.",
+        "output": "如果必须为某供应商启用旧版 TLSv1.0，请在 /etc/ssl/openssl.cnf 中设置 `MinProtocol = TLSv1.0` 并记录例外。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "A mis-sized JVM heap can starve native memory; adjust `-Xmx` and `-XX:MaxMetaspaceSize=256m` in /opt/app/bin/start.sh.",
+        "output": "JVM 堆大小不当会耗尽本地内存；在 /opt/app/bin/start.sh 中调整 `-Xmx` 与 `-XX:MaxMetaspaceSize=256m`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The `iptables` rule is not persistent; install `iptables-persistent` and save with `netfilter-persistent save`.",
+        "output": "`iptables` 规则不会持久化；安装 `iptables-persistent` 并用 `netfilter-persistent save` 保存。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If your MySQL client gets `Public Key Retrieval is not allowed`, add `allowPublicKeyRetrieval=true` to the JDBC URL in application.yml.",
+        "output": "如果 MySQL 客户端报 `Public Key Retrieval is not allowed`，请在 application.yml 的 JDBC URL 中添加 `allowPublicKeyRetrieval=true`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The service uses systemd sandboxing; check `ProtectSystem=strict` in /etc/systemd/system/api.service when writes to /var/lib/api fail.",
+        "output": "服务使用 systemd 沙箱；当写入 /var/lib/api 失败时，请检查 /etc/systemd/system/api.service 中的 `ProtectSystem=strict`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "To ensure deterministic builds, set `SOURCE_DATE_EPOCH` and run `make release` from a clean git tree.",
+        "output": "为确保可重复构建，请设置 `SOURCE_DATE_EPOCH` 并在干净的 git 工作区中运行 `make release`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The Nginx Lua module is missing; on Debian install with `apt-get install nginx-extras` and verify /usr/lib/nginx/modules/ndk_http_module.so exists.",
+        "output": "Nginx Lua 模块缺失；在 Debian 上用 `apt-get install nginx-extras` 安装，并确认 /usr/lib/nginx/modules/ndk_http_module.so 存在。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `pipenv install` ignores the lock, delete Pipfile.lock and rerun `pipenv lock --clear` to regenerate.",
+        "output": "如果 `pipenv install` 忽略 lock，请删除 Pipfile.lock 并运行 `pipenv lock --clear` 重新生成。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The Redis client runs out of file descriptors; increase `LimitNOFILE=65536` in /etc/systemd/system/redis.service and reload.",
+        "output": "Redis 客户端耗尽文件描述符；在 /etc/systemd/system/redis.service 中设置 `LimitNOFILE=65536` 并重载。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If the S3 upload fails with 403, ensure the bucket policy allows `s3:PutObject` and test with `aws s3 cp ./file.txt s3://my-bucket/path/`.",
+        "output": "如果 S3 上传因 403 失败，请确保桶策略允许 `s3:PutObject`，并用 `aws s3 cp ./file.txt s3://my-bucket/path/` 测试。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "Do not edit /etc/ssh/ssh_config; use /etc/ssh/sshd_config for server settings and validate with `sshd -t`.",
+        "output": "不要编辑 /etc/ssh/ssh_config；服务器设置请使用 /etc/ssh/sshd_config，并用 `sshd -t` 验证。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The GPU container needs NVIDIA runtime; set `\"default-runtime\": \"nvidia\"` in /etc/docker/daemon.json and restart Docker.",
+        "output": "GPU 容器需要 NVIDIA runtime；在 /etc/docker/daemon.json 中设置 `\"default-runtime\": \"nvidia\"` 并重启 Docker。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `cargo build` complains about openssl-sys, install libssl-dev and set `OPENSSL_DIR=/usr/lib/ssl` in the environment.",
+        "output": "如果 `cargo build` 报 openssl-sys 问题，请安装 libssl-dev 并在环境中设置 `OPENSSL_DIR=/usr/lib/ssl`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "A failing healthcheck can flap; ensure `interval: 30s` and `timeout: 3s` are reasonable in docker-compose.yml.",
+        "output": "失败的 healthcheck 可能会抖动；请在 docker-compose.yml 中确保 `interval: 30s` 与 `timeout: 3s` 合理。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If you migrate PostgreSQL, dump with `pg_dump -Fc -f /backup/app.dump appdb` and restore using `pg_restore -d appdb /backup/app.dump`.",
+        "output": "迁移 PostgreSQL 时，用 `pg_dump -Fc -f /backup/app.dump appdb` 导出，并用 `pg_restore -d appdb /backup/app.dump` 恢复。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The ConfigMap is too large; replace it with a volume from a secret or store files in /etc/app/conf.d mounted from a PVC.",
+        "output": "ConfigMap 过大；请改用 secret 卷，或将文件存放在从 PVC 挂载的 /etc/app/conf.d。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "A flaky CI test uses local time; set `TZ=UTC` in the workflow and use `date -u` in scripts.",
+        "output": "波动的 CI 测试使用了本地时间；在 workflow 中设置 `TZ=UTC` 并在脚本中使用 `date -u`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "Use `openssl x509 -in /etc/ssl/certs/site.pem -text -noout` to verify SAN entries before swapping the cert.",
+        "output": "在替换证书前，用 `openssl x509 -in /etc/ssl/certs/site.pem -text -noout` 验证 SAN 条目。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The GPG key was imported but not trusted; run `gpg --edit-key KEYID` and set trust to ultimate before signing.",
+        "output": "GPG 密钥已导入但未信任；运行 `gpg --edit-key KEYID` 并将信任级别设为 ultimate 后再签名。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The HTTP cache is stale because `Cache-Control: no-cache` overrides max-age; update the header in /etc/nginx/conf.d/static.conf.",
+        "output": "HTTP 缓存过期是因为 `Cache-Control: no-cache` 覆盖了 max-age；请在 /etc/nginx/conf.d/static.conf 中更新该头。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `kubectl apply` fails with conflict, re-run with `kubectl apply --server-side` and check the managedFields in the resource.",
+        "output": "如果 `kubectl apply` 因冲突失败，请用 `kubectl apply --server-side` 重新运行并检查资源的 managedFields。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The systemd timer is not firing; ensure the unit is named `backup.timer` and enable it with `systemctl enable --now backup.timer`.",
+        "output": "systemd timer 未触发；确保单元名为 `backup.timer` 并用 `systemctl enable --now backup.timer` 启用。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The Python app needs OpenSSL 1.1; on Ubuntu 22.04 install `libssl1.1` from the focal repo and pin it in /etc/apt/preferences.d/openssl.",
+        "output": "Python 应用需要 OpenSSL 1.1；在 Ubuntu 22.04 上从 focal 仓库安装 `libssl1.1`，并在 /etc/apt/preferences.d/openssl 中进行 pin。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `helm diff` shows changes you didn't expect, check the values file path and ensure you are passing `-f ./charts/prod-values.yaml`.",
+        "output": "如果 `helm diff` 显示意外变更，请检查 values 文件路径，确保传入 `-f ./charts/prod-values.yaml`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "On macOS, disable the quarantine bit with `xattr -dr com.apple.quarantine /Applications/MyApp.app` after verifying the checksum.",
+        "output": "在 macOS 上，校验和确认后可用 `xattr -dr com.apple.quarantine /Applications/MyApp.app` 禁用隔离标记。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "When the unit tests hang on Windows, delete %TEMP%\\pytest-of-User and rerun `pytest -k \"integration\"`.",
+        "output": "当 Windows 上的单元测试卡住时，删除 %TEMP%\\pytest-of-User 并重新运行 `pytest -k \"integration\"`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The system uses AppArmor; check the profile at /etc/apparmor.d/usr.bin.redis-server and reload with `apparmor_parser -r /etc/apparmor.d/usr.bin.redis-server`.",
+        "output": "系统使用 AppArmor；检查 /etc/apparmor.d/usr.bin.redis-server 的配置，并用 `apparmor_parser -r /etc/apparmor.d/usr.bin.redis-server` 重新加载。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `dnf update` fails due to modular filtering, reset the module with `dnf module reset nodejs` and enable the correct stream.",
+        "output": "如果 `dnf update` 因模块过滤失败，请用 `dnf module reset nodejs` 重置模块并启用正确的流。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The API returns 415 because `Content-Type` is missing; set it explicitly and test with `curl -H \"Content-Type: application/json\" -d '{\"id\":1}' https://api.example.com/items`.",
+        "output": "API 返回 415 是因为缺少 `Content-Type`；请显式设置，并使用 `curl -H \"Content-Type: application/json\" -d '{\"id\":1}' https://api.example.com/items` 测试。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "To stop CPU throttling in Kubernetes, remove the CPU limit; the block `resources: { requests: { cpu: \"500m\" }, limits: { cpu: \"1\" } }` enforces CFS quotas.",
+        "output": "要停止 Kubernetes 的 CPU 限流，请移除 CPU limit；`resources: { requests: { cpu: \"500m\" }, limits: { cpu: \"1\" } }` 会强制 CFS 配额。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If a systemd drop-in exists at /etc/systemd/system/nginx.service.d/override.conf, it will override the unit in /lib/systemd/system/nginx.service.",
+        "output": "如果存在 /etc/systemd/system/nginx.service.d/override.conf 的 systemd drop-in，它会覆盖 /lib/systemd/system/nginx.service 中的单元配置。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The MongoDB replica set needs the same keyfile; copy /etc/mongo/keyfile to all nodes and set `security.keyFile: /etc/mongo/keyfile` in mongod.conf.",
+        "output": "MongoDB 副本集需要相同的 keyfile；将 /etc/mongo/keyfile 复制到所有节点，并在 mongod.conf 中设置 `security.keyFile: /etc/mongo/keyfile`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `go test` fails on Windows due to path length, enable long paths in the registry and set `GIT_OPTIONAL_LOCKS=0` to reduce errors.",
+        "output": "如果 `go test` 在 Windows 上因路径过长失败，请在注册表启用长路径，并设置 `GIT_OPTIONAL_LOCKS=0` 以减少错误。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The Nginx error log shows `upstream prematurely closed connection`; verify the upstream timeout in /etc/nginx/conf.d/proxy.conf and increase `proxy_read_timeout 120s;`.",
+        "output": "Nginx 错误日志显示 `upstream prematurely closed connection`；请检查 /etc/nginx/conf.d/proxy.conf 中的 upstream 超时，并将 `proxy_read_timeout 120s;` 调大。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If an Ansible playbook fails on Windows hosts, ensure WinRM is enabled and run `winrm quickconfig` from an elevated PowerShell.",
+        "output": "如果 Ansible playbook 在 Windows 主机上失败，请确保启用 WinRM，并在提升权限的 PowerShell 中运行 `winrm quickconfig`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The pod cannot mount the PVC because of permissions; set `fsGroup: 1000` under `securityContext` in the pod spec.",
+        "output": "Pod 无法挂载 PVC 是因为权限问题；请在 pod spec 的 `securityContext` 下设置 `fsGroup: 1000`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "A large `npm install` consumes too much memory; use `NODE_OPTIONS=--max_old_space_size=4096` before running the command.",
+        "output": "大型 `npm install` 会占用过多内存；在运行命令前设置 `NODE_OPTIONS=--max_old_space_size=4096`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `systemctl status` shows `Unit not found`, verify the file name under /etc/systemd/system matches exactly, including .service suffix.",
+        "output": "如果 `systemctl status` 显示 `Unit not found`，请验证 /etc/systemd/system 中的文件名完全匹配，包括 .service 后缀。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "Use `netstat -tulpn` or `ss -lntp` to confirm which process is bound to port 8080 before restarting the API.",
+        "output": "在重启 API 前，使用 `netstat -tulpn` 或 `ss -lntp` 确认哪个进程绑定了 8080 端口。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The Docker build uses a secret; store it as `--secret id=npmrc,src=$HOME/.npmrc` and avoid copying it into the image.",
+        "output": "Docker 构建使用了 secret；请以 `--secret id=npmrc,src=$HOME/.npmrc` 的方式传入，避免复制到镜像中。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The MySQL server ignores `sql_mode` because of a duplicate entry; remove it from /etc/mysql/my.cnf and keep only `sql_mode=STRICT_TRANS_TABLES`.",
+        "output": "MySQL 服务器忽略 `sql_mode` 是因为重复项；从 /etc/mysql/my.cnf 中删除重复配置，仅保留 `sql_mode=STRICT_TRANS_TABLES`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `kubectl get nodes` returns NotReady, check `kubelet --cgroup-driver` in /var/lib/kubelet/kubeadm-flags.env.",
+        "output": "如果 `kubectl get nodes` 返回 NotReady，请检查 /var/lib/kubelet/kubeadm-flags.env 中的 `kubelet --cgroup-driver`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The ArgoCD sync fails because the repo URL uses SSH; add the private key in argocd-secret and test with `ssh -T git@github.com`.",
+        "output": "ArgoCD 同步失败是因为仓库 URL 使用 SSH；将私钥添加到 argocd-secret，并用 `ssh -T git@github.com` 测试。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `gradle` fails with daemon memory issues, set `org.gradle.jvmargs=-Xmx2g` in gradle.properties.",
+        "output": "如果 `gradle` 因 daemon 内存问题失败，请在 gradle.properties 中设置 `org.gradle.jvmargs=-Xmx2g`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The `/var` partition is full because of container logs; rotate /var/lib/docker/containers/*/*.log and configure log-driver in /etc/docker/daemon.json.",
+        "output": "`/var` 分区满是由于容器日志；轮转 /var/lib/docker/containers/*/*.log 并在 /etc/docker/daemon.json 中配置 log-driver。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The API uses mTLS; verify the client cert path `ssl_client_certificate /etc/nginx/certs/clients.pem;` and ensure the key is readable by nginx.",
+        "output": "API 使用 mTLS；验证客户端证书路径 `ssl_client_certificate /etc/nginx/certs/clients.pem;`，并确保 nginx 可读取密钥。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "When installing on RHEL, enable EPEL with `dnf install epel-release` before running `dnf install htop`.",
+        "output": "在 RHEL 上安装时，请先用 `dnf install epel-release` 启用 EPEL，然后运行 `dnf install htop`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If a CNI plugin crashes, check the logs in /var/log/containers and reapply the manifest with `kubectl apply -f calico.yaml`.",
+        "output": "如果 CNI 插件崩溃，请检查 /var/log/containers 中的日志，并用 `kubectl apply -f calico.yaml` 重新应用清单。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The OpenSSH server refuses weak keys; generate a 4096-bit key with `ssh-keygen -t rsa -b 4096 -f ~/.ssh/id_rsa`.",
+        "output": "OpenSSH 服务器拒绝弱密钥；请用 `ssh-keygen -t rsa -b 4096 -f ~/.ssh/id_rsa` 生成 4096 位密钥。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If the app loses locale data, verify `LANG=en_US.UTF-8` and `LC_ALL=en_US.UTF-8` are exported in /etc/environment.",
+        "output": "如果应用丢失 locale 数据，请确认 /etc/environment 中已导出 `LANG=en_US.UTF-8` 与 `LC_ALL=en_US.UTF-8`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "Use `kubectl rollout status deployment/web` to confirm the deployment is stable before scaling to 10 replicas.",
+        "output": "在扩容到 10 个副本前，用 `kubectl rollout status deployment/web` 确认部署稳定。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The Jenkins agent runs as a non-root user; ensure /var/lib/jenkins/.ssh has 700 permissions and owned by jenkins.",
+        "output": "Jenkins agent 以非 root 用户运行；请确保 /var/lib/jenkins/.ssh 权限为 700 且归 jenkins 所有。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `git submodule update --init` fails, check SSH keys and verify the URL in .gitmodules.",
+        "output": "如果 `git submodule update --init` 失败，请检查 SSH 密钥并验证 .gitmodules 中的 URL。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "To avoid hostname mismatch, set `server_name api.internal.local;` and update /etc/hosts for local testing.",
+        "output": "为避免主机名不匹配，请设置 `server_name api.internal.local;` 并更新 /etc/hosts 用于本地测试。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The Node app crashes due to too many listeners; set `NODE_OPTIONS=--max-http-header-size=65536` only if headers are large and needed.",
+        "output": "Node 应用因监听器过多而崩溃时，请仅在确有大头部需求时设置 `NODE_OPTIONS=--max-http-header-size=65536`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "When `kubectl top` shows high memory, check for leaks with `go tool pprof -http=:6060 http://localhost:6060/debug/pprof/heap`.",
+        "output": "当 `kubectl top` 显示内存高时，用 `go tool pprof -http=:6060 http://localhost:6060/debug/pprof/heap` 检查泄漏。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `terraform plan` changes order of security group rules, set `lifecycle { create_before_destroy = true }` to avoid outages.",
+        "output": "如果 `terraform plan` 改变了安全组规则顺序，请设置 `lifecycle { create_before_destroy = true }` 以避免中断。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The service is CPU bound; compile with `-O3` and set `GOMAXPROCS=4` to align with your quota.",
+        "output": "服务受 CPU 限制；使用 `-O3` 编译，并设置 `GOMAXPROCS=4` 与配额对齐。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If an NFS mount hangs, use `umount -l /mnt/data` to detach and check /etc/fstab for hard vs soft options.",
+        "output": "如果 NFS 挂载卡住，请用 `umount -l /mnt/data` 脱离，并检查 /etc/fstab 中的 hard/soft 选项。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The app fails on Alpine due to musl; switch to `FROM debian:bookworm-slim` or use a static binary.",
+        "output": "应用在 Alpine 上因 musl 失败；改用 `FROM debian:bookworm-slim` 或使用静态二进制。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "When `kubectl port-forward` exits, check for conflicting ports and re-run `kubectl port-forward svc/api 8080:80`.",
+        "output": "当 `kubectl port-forward` 退出时，检查端口冲突并重新运行 `kubectl port-forward svc/api 8080:80`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The SQL migration failed; wrap DDL in a transaction only if the engine supports it and run `psql -f migrations/003_add_index.sql`.",
+        "output": "SQL 迁移失败；仅在引擎支持时将 DDL 包在事务中，并运行 `psql -f migrations/003_add_index.sql`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `apt-get update` returns NO_PUBKEY, fetch the key with `curl -fsSL https://repo.example.com/key.gpg | gpg --dearmor -o /usr/share/keyrings/repo.gpg`.",
+        "output": "如果 `apt-get update` 返回 NO_PUBKEY，请用 `curl -fsSL https://repo.example.com/key.gpg | gpg --dearmor -o /usr/share/keyrings/repo.gpg` 获取密钥。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The Python app uses uvicorn; ensure `--workers 4` matches CPU limits, otherwise the scheduler will thrash.",
+        "output": "Python 应用使用 uvicorn；请确保 `--workers 4` 与 CPU 限制一致，否则调度会抖动。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If the VPN tunnel drops, check MTU mismatch and set `mssfix 1360` in /etc/openvpn/client.conf.",
+        "output": "如果 VPN 隧道掉线，请检查 MTU 不匹配，并在 /etc/openvpn/client.conf 中设置 `mssfix 1360`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "To force IPv4 for apt, add `Acquire::ForceIPv4 \"true\";` under /etc/apt/apt.conf.d/99force-ipv4.",
+        "output": "要让 apt 强制 IPv4，请在 /etc/apt/apt.conf.d/99force-ipv4 中添加 `Acquire::ForceIPv4 \"true\";`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The JVM option `-XX:+UseG1GC` conflicts with old flags; remove `-XX:+UseConcMarkSweepGC` from /etc/default/app.",
+        "output": "JVM 选项 `-XX:+UseG1GC` 与旧标志冲突；请从 /etc/default/app 中移除 `-XX:+UseConcMarkSweepGC`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `docker compose up` recreates containers unexpectedly, check for changes in ./docker-compose.yml and the .env file.",
+        "output": "如果 `docker compose up` 意外重建容器，请检查 ./docker-compose.yml 与 .env 的变更。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The SAML login fails because the ACS URL changed; update it in the IdP and verify with `curl -I https://app.example.com/saml/acs`.",
+        "output": "SAML 登录失败是因为 ACS URL 变更；在 IdP 中更新，并用 `curl -I https://app.example.com/saml/acs` 验证。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "An `EOF` during TLS handshake can be due to a proxy; test direct access with `curl --noproxy '*' https://api.example.com`.",
+        "output": "TLS 握手时出现 `EOF` 可能是代理导致；用 `curl --noproxy '*' https://api.example.com` 测试直连。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The log collector uses `include: [\"/var/log/app/*.log\"]`; ensure the glob doesn't overlap with large archives to avoid OOM.",
+        "output": "日志采集器使用 `include: [\"/var/log/app/*.log\"]`；确保该 glob 不包含大归档文件，以避免 OOM。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If the agent cannot write to /var/run/app, create the directory and set permissions with `install -o app -g app -m 0755 -d /var/run/app`.",
+        "output": "如果 agent 无法写入 /var/run/app，请创建目录并用 `install -o app -g app -m 0755 -d /var/run/app` 设置权限。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The HTTP/2 server requires ALPN; ensure `ssl_protocols TLSv1.2 TLSv1.3;` is set in /etc/nginx/nginx.conf.",
+        "output": "HTTP/2 服务器需要 ALPN；请确保 /etc/nginx/nginx.conf 中设置了 `ssl_protocols TLSv1.2 TLSv1.3;`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If a Debian package install fails, inspect /var/lib/dpkg/status and run `dpkg --configure -a` to recover.",
+        "output": "如果 Debian 包安装失败，请检查 /var/lib/dpkg/status 并运行 `dpkg --configure -a` 恢复。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The connection uses HTTP proxy auth; export `HTTP_PROXY=http://user:pass@proxy.local:3128` and `NO_PROXY=localhost,127.0.0.1`.",
+        "output": "连接使用 HTTP 代理认证；请导出 `HTTP_PROXY=http://user:pass@proxy.local:3128` 与 `NO_PROXY=localhost,127.0.0.1`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `git clone` uses HTTPS and fails, switch to SSH with `git remote set-url origin git@github.com:org/repo.git`.",
+        "output": "如果 `git clone` 使用 HTTPS 失败，请用 `git remote set-url origin git@github.com:org/repo.git` 切换到 SSH。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The `psql` client ignores .pgpass due to permissions; set it to 600 with `chmod 600 ~/.pgpass`.",
+        "output": "`psql` 客户端因权限问题忽略 .pgpass；请用 `chmod 600 ~/.pgpass` 将权限设为 600。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "To test HTTP caching, send `curl -I -H \"Cache-Control: no-cache\" https://cdn.example.com/app.js` and compare the Age header.",
+        "output": "要测试 HTTP 缓存，请发送 `curl -I -H \"Cache-Control: no-cache\" https://cdn.example.com/app.js` 并比较 Age 头。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The node uses swap and triggers OOM; set `vm.swappiness=1` in /etc/sysctl.d/99-swap.conf.",
+        "output": "节点使用 swap 导致 OOM；在 /etc/sysctl.d/99-swap.conf 中设置 `vm.swappiness=1`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `kubectl auth can-i` returns no, review RoleBindings and ClusterRoleBindings in the namespace.",
+        "output": "如果 `kubectl auth can-i` 返回 no，请检查该命名空间内的 RoleBindings 与 ClusterRoleBindings。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The .NET app needs to trust the custom CA; add it to /usr/local/share/ca-certificates and run `update-ca-certificates`.",
+        "output": ".NET 应用需要信任自定义 CA；将其添加到 /usr/local/share/ca-certificates 并运行 `update-ca-certificates`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `apt` holds packages, list them with `apt-mark showhold` and unhold using `apt-mark unhold package-name`.",
+        "output": "如果 `apt` 有 hold 的包，请用 `apt-mark showhold` 列出，并用 `apt-mark unhold package-name` 解除。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The Java app cannot find the keystore; ensure `-Djavax.net.ssl.keyStore=/etc/ssl/keystore.jks` is set in JAVA_OPTS.",
+        "output": "Java 应用找不到 keystore；确保在 JAVA_OPTS 中设置 `-Djavax.net.ssl.keyStore=/etc/ssl/keystore.jks`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "A race condition in init scripts can be mitigated by adding `After=network-online.target` in the unit file.",
+        "output": "init 脚本中的竞态可以通过在单元文件中添加 `After=network-online.target` 缓解。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If the CI runner runs out of disk, prune Docker with `docker system prune -af` but only after confirming no needed images are cached.",
+        "output": "如果 CI runner 磁盘不足，可用 `docker system prune -af` 清理，但需先确认没有需要的镜像缓存。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The CORS preflight fails because `Access-Control-Allow-Headers` is missing; set it in the API gateway config at /etc/kong/kong.conf.",
+        "output": "CORS 预检失败是因为缺少 `Access-Control-Allow-Headers`；请在 /etc/kong/kong.conf 中设置。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "To audit sudo usage, enable `Defaults logfile=/var/log/sudo.log` in /etc/sudoers and run `visudo` to validate.",
+        "output": "要审计 sudo 使用，请在 /etc/sudoers 中启用 `Defaults logfile=/var/log/sudo.log` 并用 `visudo` 验证。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `kubectl exec` fails with `error dialing backend`, check the node's kubelet port 10250 and confirm firewall rules.",
+        "output": "如果 `kubectl exec` 报 `error dialing backend`，请检查节点的 kubelet 10250 端口并确认防火墙规则。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The Kafka consumer lags because `fetch.max.bytes=52428800` is too high; tune it in consumer.properties.",
+        "output": "Kafka consumer 滞后是因为 `fetch.max.bytes=52428800` 过高；请在 consumer.properties 中调整。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `systemctl restart` hangs, check for `TimeoutStopSec=90s` in the unit and increase it for graceful shutdown.",
+        "output": "如果 `systemctl restart` 卡住，请检查单元中的 `TimeoutStopSec=90s` 并按需提高以便优雅停止。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "To enable verbose SSH logs, set `LogLevel VERBOSE` in /etc/ssh/sshd_config and reload.",
+        "output": "要启用详细 SSH 日志，请在 /etc/ssh/sshd_config 中设置 `LogLevel VERBOSE` 并重载。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The `pip` cache is corrupt; clear it with `pip cache purge` and rerun the install.",
+        "output": "`pip` 缓存损坏；请用 `pip cache purge` 清理后重新安装。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `node` fails to start on ARM, download the correct binary and verify with `uname -m`.",
+        "output": "如果 `node` 在 ARM 上无法启动，请下载正确的二进制并用 `uname -m` 验证。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The database migrations are out of order; check the version table and reapply with `alembic upgrade head`.",
+        "output": "数据库迁移顺序错误；检查版本表并用 `alembic upgrade head` 重新应用。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The Dockerfile uses multi-stage builds; ensure the final stage copies `/app/bin/server` and not the debug binary.",
+        "output": "Dockerfile 使用多阶段构建；确保最终阶段复制 `/app/bin/server` 而非调试二进制。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If the metrics endpoint is slow, add caching and verify with `ab -n 100 -c 10 http://localhost:8080/metrics`.",
+        "output": "如果指标端点很慢，请添加缓存，并用 `ab -n 100 -c 10 http://localhost:8080/metrics` 验证。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The Windows installer failed because `MSVCR120.dll` is missing; install the VC++ 2013 redistributable and rerun the installer.",
+        "output": "Windows 安装器失败是因为缺少 `MSVCR120.dll`；安装 VC++ 2013 运行库后重新运行安装器。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `npm audit` reports a vulnerable package, update with `npm audit fix` but review changes in package-lock.json.",
+        "output": "如果 `npm audit` 报告漏洞包，请运行 `npm audit fix` 更新，但需审查 package-lock.json 的变更。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The API uses H2C; ensure the client sets `--http2-prior-knowledge` when calling `curl`.",
+        "output": "API 使用 H2C；客户端调用 `curl` 时需设置 `--http2-prior-knowledge`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `kubectl get pods` is slow, check for a large number of events and clear old ones in the namespace.",
+        "output": "如果 `kubectl get pods` 很慢，请检查是否有大量事件并清理命名空间中的旧事件。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The Kafka topic retention uses `retention.ms=604800000`; do not set `retention.bytes=-1` unless disk usage is monitored.",
+        "output": "Kafka 主题保留使用 `retention.ms=604800000`；除非监控磁盘使用，否则不要设置 `retention.bytes=-1`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If you must rebuild the initramfs, run `dracut -f /boot/initramfs-$(uname -r).img $(uname -r)` and reboot.",
+        "output": "如果必须重建 initramfs，请运行 `dracut -f /boot/initramfs-$(uname -r).img $(uname -r)` 并重启。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The PostgreSQL client uses a socket; if it fails, connect over TCP with `psql -h 127.0.0.1 -p 5432 -U app`.",
+        "output": "PostgreSQL 客户端使用 socket；若失败，请用 `psql -h 127.0.0.1 -p 5432 -U app` 通过 TCP 连接。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "Set `fs.file-max=2097152` in /etc/sysctl.conf when high concurrency causes `too many open files`.",
+        "output": "高并发导致 `too many open files` 时，请在 /etc/sysctl.conf 中设置 `fs.file-max=2097152`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If Nginx can't bind to 80, check whether `apache2` is running and stop it with `systemctl stop apache2`.",
+        "output": "如果 Nginx 无法绑定 80，请检查 `apache2` 是否在运行，并用 `systemctl stop apache2` 停止。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The Python package uses Rust extensions; install a Rust toolchain and run `pip install maturin` before building.",
+        "output": "Python 包使用 Rust 扩展；构建前安装 Rust 工具链并运行 `pip install maturin`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The S3 lifecycle rule uses JSON; keep `\"Expiration\": {\"Days\": 30}` intact when editing in the console.",
+        "output": "S3 生命周期规则使用 JSON；在控制台编辑时保持 `\"Expiration\": {\"Days\": 30}` 不变。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `npm run build` fails on CI due to memory, add `--max_old_space_size=3072` to the Node options.",
+        "output": "如果 CI 上 `npm run build` 因内存失败，请在 Node 选项中添加 `--max_old_space_size=3072`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "Use `ss -Htan state established '( sport = :443 )'` to confirm TLS connections before restarting Envoy.",
+        "output": "在重启 Envoy 前使用 `ss -Htan state established '( sport = :443 )'` 确认 TLS 连接。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `etcdctl endpoint status` times out, set `ETCDCTL_API=3` and provide `--endpoints=https://127.0.0.1:2379`.",
+        "output": "如果 `etcdctl endpoint status` 超时，请设置 `ETCDCTL_API=3` 并提供 `--endpoints=https://127.0.0.1:2379`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The backup script relies on /usr/bin/env bash; ensure bash exists at /usr/bin/bash or change the shebang.",
+        "output": "备份脚本依赖 /usr/bin/env bash；请确保 bash 位于 /usr/bin/bash，或修改 shebang。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If you see `ERR_SSL_PROTOCOL_ERROR` in Chrome, test the endpoint with `openssl s_client -connect example.com:443`.",
+        "output": "如果在 Chrome 中看到 `ERR_SSL_PROTOCOL_ERROR`，请用 `openssl s_client -connect example.com:443` 测试端点。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The API rate limiter uses Redis; ensure `maxmemory-policy allkeys-lru` is set in /etc/redis/redis.conf.",
+        "output": "API 限流使用 Redis；请确保 /etc/redis/redis.conf 中设置了 `maxmemory-policy allkeys-lru`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `ssh-agent` is not running, start it with `eval $(ssh-agent -s)` and add your key using `ssh-add ~/.ssh/id_ed25519`.",
+        "output": "如果 `ssh-agent` 未运行，请用 `eval $(ssh-agent -s)` 启动，并使用 `ssh-add ~/.ssh/id_ed25519` 添加密钥。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The system uses hugepages; set `vm.nr_hugepages=1024` in /etc/sysctl.d/hugepages.conf and reboot.",
+        "output": "系统使用 hugepages；在 /etc/sysctl.d/hugepages.conf 中设置 `vm.nr_hugepages=1024` 并重启。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If the Kafka producer throws `NOT_ENOUGH_REPLICAS`, increase the replication factor and check ISR status with `kafka-topics.sh --describe`.",
+        "output": "如果 Kafka producer 抛出 `NOT_ENOUGH_REPLICAS`，请提高副本因子并用 `kafka-topics.sh --describe` 检查 ISR 状态。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The Node app prints `EADDRINUSE`; identify the process with `lsof -i :3000` and stop it.",
+        "output": "Node 应用输出 `EADDRINUSE`；用 `lsof -i :3000` 找到进程并停止。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `apt-get install` warns about unauthenticated packages, verify the repo signature and do not use `--allow-unauthenticated`.",
+        "output": "如果 `apt-get install` 警告未认证的包，请验证仓库签名，不要使用 `--allow-unauthenticated`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The Go module proxy is blocked; set `GOPROXY=https://goproxy.cn,direct` and retry `go env -w GOPROXY=...`.",
+        "output": "Go 模块代理被阻止；设置 `GOPROXY=https://goproxy.cn,direct` 并重试 `go env -w GOPROXY=...`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The database connection uses SSL; ensure `sslmode=require` is set in the connection string and the CA exists at /etc/ssl/certs/ca.pem.",
+        "output": "数据库连接使用 SSL；确保连接串中设置 `sslmode=require`，并且 /etc/ssl/certs/ca.pem 存在。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `docker run` cannot access GPU, install nvidia-container-toolkit and run `nvidia-smi` on the host.",
+        "output": "如果 `docker run` 无法访问 GPU，请安装 nvidia-container-toolkit，并在宿主机运行 `nvidia-smi`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The VPN client ignores DNS pushed by the server; set `pull-filter ignore \"dhcp-option DNS\"` in client.ovpn.",
+        "output": "VPN 客户端忽略服务器推送的 DNS；在 client.ovpn 中设置 `pull-filter ignore \"dhcp-option DNS\"`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `kubectl cp` fails for large files, use `tar` over exec: `tar czf - /data | kubectl exec -i pod -- tar xzf - -C /tmp`.",
+        "output": "如果 `kubectl cp` 处理大文件失败，请通过 exec 走 tar：`tar czf - /data | kubectl exec -i pod -- tar xzf - -C /tmp`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The PostgreSQL autovacuum is disabled; set `autovacuum = on` in postgresql.conf and reload.",
+        "output": "PostgreSQL 自动清理被禁用；在 postgresql.conf 中设置 `autovacuum = on` 并重载。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `git status` is slow in a huge repo, enable sparse checkout with `git sparse-checkout init --cone`.",
+        "output": "如果 `git status` 在大仓库中很慢，请使用 `git sparse-checkout init --cone` 启用稀疏检出。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The API uses JWTs; rotate the secret by updating `JWT_SECRET` in /etc/app/env and restarting the service.",
+        "output": "API 使用 JWT；通过在 /etc/app/env 中更新 `JWT_SECRET` 并重启服务来轮换密钥。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `ping` works but HTTP fails, check the proxy and set `http_proxy` in the environment.",
+        "output": "如果 `ping` 可用但 HTTP 失败，请检查代理并在环境中设置 `http_proxy`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The CI uses `actions/cache`; if it becomes too large, add `~/.cache/pip` to the exclusion list.",
+        "output": "CI 使用 `actions/cache`；如果缓存过大，请将 `~/.cache/pip` 加入排除列表。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The systemd service fails due to sandboxing; temporarily set `NoNewPrivileges=false` in the unit file for debugging.",
+        "output": "systemd 服务因沙箱失败；调试时可临时在单元文件中设置 `NoNewPrivileges=false`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `docker login` fails with 401, clear credentials in ~/.docker/config.json and re-authenticate.",
+        "output": "如果 `docker login` 因 401 失败，请清除 ~/.docker/config.json 中的凭据并重新认证。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The Nginx site config is in /etc/nginx/sites-enabled/app; ensure the symlink points to /etc/nginx/sites-available/app.",
+        "output": "Nginx 站点配置位于 /etc/nginx/sites-enabled/app；确保符号链接指向 /etc/nginx/sites-available/app。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `python -m pip` uses the wrong index, check ~/.config/pip/pip.conf for `index-url`.",
+        "output": "如果 `python -m pip` 使用了错误的索引，请检查 ~/.config/pip/pip.conf 中的 `index-url`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The API gateway uses rate-limit headers; keep `X-RateLimit-Remaining` intact or clients may misbehave.",
+        "output": "API 网关使用限流头；保持 `X-RateLimit-Remaining` 不变，否则客户端可能异常。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `/etc/ld.so.conf.d/custom.conf` points to a stale path, update it and run `ldconfig`.",
+        "output": "如果 `/etc/ld.so.conf.d/custom.conf` 指向过期路径，请更新并运行 `ldconfig`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The app expects /opt/app/config.yaml; ensure the Kubernetes ConfigMap mounts it at that path.",
+        "output": "应用期望 /opt/app/config.yaml；请确保 Kubernetes ConfigMap 将其挂载到该路径。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "A Kubernetes Job is stuck; check the backoff policy `backoffLimit: 4` and view logs with `kubectl logs job/cleanup`.",
+        "output": "Kubernetes Job 卡住；检查回退策略 `backoffLimit: 4`，并用 `kubectl logs job/cleanup` 查看日志。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The JVM needs entropy; install `haveged` or set `-Djava.security.egd=file:/dev/./urandom`.",
+        "output": "JVM 需要熵；安装 `haveged` 或设置 `-Djava.security.egd=file:/dev/./urandom`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `kubectl version` returns a skew error, upgrade the client or set `KUBECTL_PLUGINS_CALLER=1` for wrapper scripts.",
+        "output": "如果 `kubectl version` 返回版本偏差错误，请升级客户端或为包装脚本设置 `KUBECTL_PLUGINS_CALLER=1`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The SFTP chroot requires correct ownership; ensure `/sftp` is owned by root:root and users write to `/sftp/data`.",
+        "output": "SFTP chroot 需要正确的所有权；确保 `/sftp` 归 root:root 所有，用户写入 `/sftp/data`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The container exits because `ENTRYPOINT [\"/app/server\"]` points to a missing binary; verify the build artifact path.",
+        "output": "容器退出是因为 `ENTRYPOINT [\"/app/server\"]` 指向缺失的二进制；请验证构建产物路径。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "Use `docker logs --tail 200 -f api` instead of `docker logs -f` to avoid loading huge buffers.",
+        "output": "请使用 `docker logs --tail 200 -f api` 而不是 `docker logs -f`，以避免加载巨大缓冲区。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The kube-proxy uses iptables mode; if you change to ipvs, set `mode: \"ipvs\"` in the configmap and restart the daemonset.",
+        "output": "kube-proxy 使用 iptables 模式；如需改为 ipvs，请在 configmap 中设置 `mode: \"ipvs\"` 并重启 daemonset。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `curl` fails with `SSL certificate problem`, pass the CA with `--cacert /etc/ssl/certs/custom.pem`.",
+        "output": "如果 `curl` 报 `SSL certificate problem`，请使用 `--cacert /etc/ssl/certs/custom.pem` 提供 CA。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The disk uses XFS; online growth requires `xfs_growfs /mount/data` after resizing the volume.",
+        "output": "磁盘使用 XFS；扩容卷后需运行 `xfs_growfs /mount/data` 进行在线扩容。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `npm ci` fails due to engine mismatch, update `.nvmrc` and run `nvm use`.",
+        "output": "如果 `npm ci` 因引擎不匹配失败，请更新 `.nvmrc` 并运行 `nvm use`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The HTTP client must reuse connections; set `keepAlive: true` and verify in tcpdump: `tcpdump -nn host api.example.com and port 443`.",
+        "output": "HTTP 客户端必须复用连接；设置 `keepAlive: true` 并在 tcpdump 中验证：`tcpdump -nn host api.example.com and port 443`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `kubectl apply -f` complains about `Unknown field`, ensure your CRD version matches and update the manifest.",
+        "output": "如果 `kubectl apply -f` 报 `Unknown field`，请确保 CRD 版本匹配并更新清单。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The log shipper uses regex; keep `^ERROR\\s+` intact or parsing will break.",
+        "output": "日志采集器使用正则；请保持 `^ERROR\\s+` 不变，否则解析会中断。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `mysql` cannot connect via socket, use `mysql -h 127.0.0.1 -P 3306 -u root -p` instead.",
+        "output": "如果 `mysql` 无法通过 socket 连接，请改用 `mysql -h 127.0.0.1 -P 3306 -u root -p`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The Redis persistence uses RDB; set `save 900 1` and `save 300 10` in redis.conf for balanced durability.",
+        "output": "Redis 持久化使用 RDB；在 redis.conf 中设置 `save 900 1` 和 `save 300 10` 以平衡持久性。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `pip install` pulls source distributions, install build tools and set `PIP_ONLY_BINARY=:all:`.",
+        "output": "如果 `pip install` 拉取源码包，请安装构建工具并设置 `PIP_ONLY_BINARY=:all:`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The SSH config uses Match blocks; ensure `Match User deploy` is above generic rules in /etc/ssh/sshd_config.",
+        "output": "SSH 配置使用 Match 块；确保 /etc/ssh/sshd_config 中 `Match User deploy` 位于通用规则之上。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The Kubernetes API server needs a new cert; generate with `kubeadm certs renew apiserver` and restart the static pod.",
+        "output": "Kubernetes API server 需要新证书；用 `kubeadm certs renew apiserver` 生成并重启静态 Pod。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `docker build` uses the wrong context, check your `-f` path and run it from the repo root.",
+        "output": "如果 `docker build` 使用了错误的上下文，请检查 `-f` 路径并从仓库根目录运行。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The Java app requires JCE unlimited strength; on older JDKs copy local_policy.jar and US_export_policy.jar into $JAVA_HOME/jre/lib/security.",
+        "output": "Java 应用需要 JCE 无限强度；在旧 JDK 上将 local_policy.jar 和 US_export_policy.jar 复制到 $JAVA_HOME/jre/lib/security。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `pg_isready` reports no response, check that `listen_addresses='*'` is set and port 5432 is open.",
+        "output": "如果 `pg_isready` 报无响应，请检查 `listen_addresses='*'` 是否设置，并确保 5432 端口开放。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The service mesh injects sidecars; to disable for a namespace, set `istio-injection=disabled` and re-deploy.",
+        "output": "服务网格注入 sidecar；要对命名空间禁用，请设置 `istio-injection=disabled` 并重新部署。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `zip` outputs wrong file names, ensure `LANG=C.UTF-8` is set before running `zip -r archive.zip ./data`.",
+        "output": "如果 `zip` 输出的文件名不正确，请在运行 `zip -r archive.zip ./data` 前设置 `LANG=C.UTF-8`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The reverse proxy needs WebSocket upgrade headers; verify `proxy_set_header Upgrade $http_upgrade;` and `proxy_set_header Connection \"upgrade\";` in /etc/nginx/conf.d/ws.conf.",
+        "output": "反向代理需要 WebSocket 升级头；在 /etc/nginx/conf.d/ws.conf 中验证 `proxy_set_header Upgrade $http_upgrade;` 和 `proxy_set_header Connection \"upgrade\";`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `kubectl get svc` shows no external IP, check the cloud provider or MetalLB configuration.",
+        "output": "如果 `kubectl get svc` 没有外部 IP，请检查云厂商或 MetalLB 配置。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The `npm` registry is set to a mirror; verify with `npm config get registry` before publishing.",
+        "output": "`npm` registry 设置为镜像；发布前用 `npm config get registry` 验证。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "A corrupted ext4 journal can be fixed with `fsck -f /dev/sdb1` in maintenance mode.",
+        "output": "ext4 日志损坏可在维护模式下使用 `fsck -f /dev/sdb1` 修复。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The load balancer health check uses HTTP; if the app only serves HTTPS, add a plaintext `/healthz` endpoint.",
+        "output": "负载均衡健康检查使用 HTTP；如果应用仅提供 HTTPS，请添加明文 `/healthz` 端点。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `ansible-playbook` complains about Python, set `ansible_python_interpreter=/usr/bin/python3` in inventory.",
+        "output": "如果 `ansible-playbook` 抱怨 Python，请在 inventory 中设置 `ansible_python_interpreter=/usr/bin/python3`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The container needs to resolve `host.docker.internal`; add `--add-host=host.docker.internal:host-gateway` when running `docker run`.",
+        "output": "容器需要解析 `host.docker.internal`；运行 `docker run` 时添加 `--add-host=host.docker.internal:host-gateway`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `pip install` fails with `externally-managed-environment`, use `python -m venv` or `pip install --break-system-packages` only if you accept the risk.",
+        "output": "如果 `pip install` 报 `externally-managed-environment`，请使用 `python -m venv`，或仅在接受风险时使用 `pip install --break-system-packages`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The HTTP/2 stream reset is often due to small buffers; increase `http2_recv_buffer_size 1m;` in /etc/nginx/nginx.conf.",
+        "output": "HTTP/2 流重置常因缓冲区过小；在 /etc/nginx/nginx.conf 中增加 `http2_recv_buffer_size 1m;`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `kubectl` fails with TLS, check kubeconfig for `certificate-authority-data` and regenerate if expired.",
+        "output": "如果 `kubectl` TLS 失败，请检查 kubeconfig 中的 `certificate-authority-data` 并在过期时重新生成。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The API uses Redis Sentinel; ensure `sentinel monitor mymaster 127.0.0.1 6379 2` is identical across nodes.",
+        "output": "API 使用 Redis Sentinel；确保 `sentinel monitor mymaster 127.0.0.1 6379 2` 在各节点一致。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `kubectl drain` blocks, check PodDisruptionBudgets and use `--disable-eviction` only for emergencies.",
+        "output": "如果 `kubectl drain` 阻塞，请检查 PodDisruptionBudgets，仅在紧急情况下使用 `--disable-eviction`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The SQL query plan changed after an index drop; run `EXPLAIN (ANALYZE, BUFFERS)` to confirm.",
+        "output": "删除索引后 SQL 查询计划发生变化；运行 `EXPLAIN (ANALYZE, BUFFERS)` 确认。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `systemctl start` returns `Job for ... failed`, inspect `journalctl -xe` and the unit file under /etc/systemd/system.",
+        "output": "如果 `systemctl start` 返回 `Job for ... failed`，请检查 `journalctl -xe` 和 /etc/systemd/system 下的单元文件。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The Kafka broker uses KRaft; verify `controller.quorum.voters=1@node1:9093` in server.properties.",
+        "output": "Kafka broker 使用 KRaft；请在 server.properties 中验证 `controller.quorum.voters=1@node1:9093`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `curl` shows `HTTP/1.1 308`, update your client to follow redirects or fix the base URL.",
+        "output": "如果 `curl` 显示 `HTTP/1.1 308`，请更新客户端以跟随重定向或修正 base URL。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The log forwarder uses `multiline.pattern: '^\\['`; ensure your log format starts with '[' for proper grouping.",
+        "output":"日志转发器使用 `multiline.pattern: '^\\['`；请确保日志格式以 '[' 开头以正确分组。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `docker exec` fails, check if the container is running with `docker ps` and restart if necessary.",
+        "output": "如果 `docker exec` 失败，请用 `docker ps` 检查容器是否运行，必要时重启。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The Redis cluster requires `cluster-enabled yes` in redis.conf on all nodes.",
+        "output": "Redis 集群需要在所有节点的 redis.conf 中设置 `cluster-enabled yes`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `git pull` creates merge commits, set `pull.rebase true` in ~/.gitconfig to rebase by default.",
+        "output": "如果 `git pull` 产生 merge 提交，请在 ~/.gitconfig 中设置 `pull.rebase true` 以默认 rebase。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The Kubernetes ingress uses regex paths; keep `nginx.ingress.kubernetes.io/use-regex: \"true\"` in annotations.",
+        "output": "Kubernetes ingress 使用正则路径；请保留注解 `nginx.ingress.kubernetes.io/use-regex: \"true\"`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `python setup.py install` fails, switch to `pip install .` to respect PEP 517 builds.",
+        "output": "如果 `python setup.py install` 失败，请改用 `pip install .` 以遵循 PEP 517 构建。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The HTTP server sets `ServerTokens Prod`; do not change it without reviewing compliance requirements.",
+        "output": "HTTP 服务器设置 `ServerTokens Prod`；在未审查合规要求前不要修改。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `kubectl get events` is empty, check RBAC for the events resource in the namespace.",
+        "output": "如果 `kubectl get events` 为空，请检查命名空间内 events 资源的 RBAC。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "To reduce Docker layer size, combine apt commands: `RUN apt-get update && apt-get install -y curl && rm -rf /var/lib/apt/lists/*`.",
+        "output": "为减少 Docker 层大小，请合并 apt 命令：`RUN apt-get update && apt-get install -y curl && rm -rf /var/lib/apt/lists/*`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The app requires Node 18; update the CI image and run `node -v` in the pipeline to verify.",
+        "output": "应用需要 Node 18；更新 CI 镜像并在流水线中运行 `node -v` 验证。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `openssl verify` fails, check that the certificate chain is ordered correctly in /etc/ssl/certs/bundle.pem.",
+        "output": "如果 `openssl verify` 失败，请检查 /etc/ssl/certs/bundle.pem 中的证书链顺序是否正确。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The service uses UDP; ensure `firewalld` allows it with `firewall-cmd --add-port=1194/udp --permanent`.",
+        "output": "服务使用 UDP；请用 `firewall-cmd --add-port=1194/udp --permanent` 让 firewalld 放行。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If the iSCSI session drops, re-login with `iscsiadm -m node -T iqn.2023-01.com.example:storage -p 10.0.0.10 --login`.",
+        "output": "如果 iSCSI 会话断开，请使用 `iscsiadm -m node -T iqn.2023-01.com.example:storage -p 10.0.0.10 --login` 重新登录。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The Node app uses `NODE_ENV=production`; ensure it is set in the systemd unit file.",
+        "output": "Node 应用使用 `NODE_ENV=production`；请确保在 systemd 单元文件中设置。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `docker-compose` is deprecated, switch to `docker compose` and update scripts.",
+        "output": "如果 `docker-compose` 已弃用，请改用 `docker compose` 并更新脚本。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The kernel module won't load because Secure Boot is enabled; sign it or disable Secure Boot in BIOS.",
+        "output": "内核模块无法加载是因为启用了 Secure Boot；请签名模块或在 BIOS 中禁用 Secure Boot。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `kubectl get ns` is forbidden, bind the user to `view` role cluster-wide.",
+        "output": "如果 `kubectl get ns` 被禁止，请将用户绑定到 cluster-wide 的 `view` 角色。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The S3 client uses path-style access; set `S3_FORCE_PATH_STYLE=true` when using MinIO.",
+        "output": "S3 客户端使用路径风格访问；使用 MinIO 时请设置 `S3_FORCE_PATH_STYLE=true`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `npm install` fails with `EBADENGINE`, check the `engines` field in package.json.",
+        "output": "如果 `npm install` 报 `EBADENGINE`，请检查 package.json 中的 `engines` 字段。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The TLS handshake uses ECDSA; ensure the certificate is EC and not RSA if the server enforces it.",
+        "output": "TLS 握手使用 ECDSA；如果服务器强制要求，请确保证书为 EC 而非 RSA。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `kubectl apply` complains about `metadata.resourceVersion`, remove the field from the manifest before applying.",
+        "output": "如果 `kubectl apply` 抱怨 `metadata.resourceVersion`，请在应用前从清单中移除该字段。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The Linux kernel logs show `Out of memory: Kill process`; add swap or reduce container memory limits.",
+        "output": "Linux 内核日志显示 `Out of memory: Kill process`；请添加 swap 或降低容器内存限制。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `git lfs` pointers are not smudged, run `git lfs pull` and check .gitattributes.",
+        "output": "如果 `git lfs` 指针未展开，请运行 `git lfs pull` 并检查 .gitattributes。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The ingress controller needs `proxy-body-size: \"20m\"` to accept large uploads.",
+        "output": "ingress controller 需要 `proxy-body-size: \"20m\"` 才能接受大文件上传。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `ssh` refuses the key, ensure the file permissions are 600 and the directory is 700.",
+        "output": "如果 `ssh` 拒绝密钥，请确保文件权限为 600 且目录权限为 700。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The Rust binary depends on OpenSSL; bundle it or set `LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu`.",
+        "output": "Rust 二进制依赖 OpenSSL；请打包依赖或设置 `LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If the Windows path has spaces, quote it like `\"C:\\Program Files\\App\\config.json\"` in the script.",
+        "output": "如果 Windows 路径包含空格，请在脚本中像 `\"C:\\Program Files\\App\\config.json\"` 一样加引号。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The SQLite WAL file grows because checkpoints are disabled; run `PRAGMA wal_checkpoint(FULL);` periodically.",
+        "output": "SQLite WAL 文件增大是因为禁用了 checkpoint；请定期运行 `PRAGMA wal_checkpoint(FULL);`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `docker buildx` fails, ensure QEMU is registered with `docker run --privileged --rm tonistiigi/binfmt --install all`.",
+        "output": "如果 `docker buildx` 失败，请确保通过 `docker run --privileged --rm tonistiigi/binfmt --install all` 注册 QEMU。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The API server logs show `context deadline exceeded`; increase `--request-timeout=60s`.",
+        "output": "API server 日志显示 `context deadline exceeded`；请提高 `--request-timeout=60s`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `wget` fails on TLS, add `--no-check-certificate` only for testing.",
+        "output": "如果 `wget` 在 TLS 上失败，仅在测试时使用 `--no-check-certificate`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The Python app relies on `requests`; pin `requests==2.31.0` in requirements.txt to avoid SSL regressions.",
+        "output": "Python 应用依赖 `requests`；在 requirements.txt 中固定 `requests==2.31.0` 以避免 SSL 回归。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `kubectl get csr` shows pending, approve with `kubectl certificate approve <csr-name>`.",
+        "output": "如果 `kubectl get csr` 显示 pending，请用 `kubectl certificate approve <csr-name>` 批准。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The service uses `SO_REUSEPORT`; verify the kernel supports it and `net.core.somaxconn` is sufficient.",
+        "output": "服务使用 `SO_REUSEPORT`；请验证内核支持并确保 `net.core.somaxconn` 足够。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `ansible` cannot connect, check `ansible_ssh_private_key_file` in inventory and use `ssh -i` to validate.",
+        "output": "如果 `ansible` 无法连接，请检查 inventory 中的 `ansible_ssh_private_key_file` 并用 `ssh -i` 验证。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The Node app uses ESM; ensure `\"type\": \"module\"` in package.json and use `.mjs` for scripts.",
+        "output": "Node 应用使用 ESM；请确保 package.json 中有 `\"type\": \"module\"`，并对脚本使用 `.mjs`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `iptables-save` shows duplicate rules, flush with `iptables -F` only during a maintenance window.",
+        "output": "如果 `iptables-save` 显示重复规则，请仅在维护窗口内使用 `iptables -F` 清空。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The Docker socket is exposed; restrict it with `chmod 660 /var/run/docker.sock` and group membership.",
+        "output": "Docker socket 暴露；请用 `chmod 660 /var/run/docker.sock` 并限制组成员。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `kubectl apply -k` fails, check kustomization.yaml for `apiVersion: kustomize.config.k8s.io/v1beta1`.",
+        "output": "如果 `kubectl apply -k` 失败，请检查 kustomization.yaml 中的 `apiVersion: kustomize.config.k8s.io/v1beta1`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The HAProxy stats page uses basic auth; set `stats auth admin:secret` and reload.",
+        "output": "HAProxy 统计页使用 basic auth；设置 `stats auth admin:secret` 并重载。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `df -i` shows inode exhaustion, clear small temp files under /tmp.",
+        "output": "如果 `df -i` 显示 inode 耗尽，请清理 /tmp 下的小临时文件。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The Kafka client uses SASL; ensure `sasl.mechanism=SCRAM-SHA-512` and set `security.protocol=SASL_SSL`.",
+        "output": "Kafka 客户端使用 SASL；请确保 `sasl.mechanism=SCRAM-SHA-512` 并设置 `security.protocol=SASL_SSL`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `npm run lint` fails due to line endings, configure `core.autocrlf` and rerun.",
+        "output": "如果 `npm run lint` 因行尾符失败，请配置 `core.autocrlf` 并重试。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The server uses systemd-resolved stub; ensure /etc/resolv.conf points to /run/systemd/resolve/stub-resolv.conf.",
+        "output": "服务器使用 systemd-resolved stub；请确保 /etc/resolv.conf 指向 /run/systemd/resolve/stub-resolv.conf。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `curl` to localhost works but from outside fails, check `listen 0.0.0.0:8080;` in the server config.",
+        "output": "如果 `curl` 本地可用但外部失败，请检查服务器配置中的 `listen 0.0.0.0:8080;`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The file watcher hits limits on macOS; increase it with `sudo sysctl -w kern.maxfiles=65536`.",
+        "output": "macOS 上文件监视达到限制；请用 `sudo sysctl -w kern.maxfiles=65536` 提高限制。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `docker compose logs` shows no output, ensure the service name matches and check `docker compose ps`.",
+        "output": "如果 `docker compose logs` 无输出，请确保服务名匹配并检查 `docker compose ps`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The API returns 429 because the WAF uses `rate_limit_zone`; adjust `rate=5r/s` cautiously.",
+        "output": "API 返回 429 是因为 WAF 使用 `rate_limit_zone`；请谨慎调整 `rate=5r/s`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `pg_dump` fails on a large DB, use `pg_dump --format=custom --jobs=4` to parallelize.",
+        "output": "如果 `pg_dump` 在大数据库上失败，请用 `pg_dump --format=custom --jobs=4` 并行导出。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The Nginx config uses `map` for headers; ensure the file /etc/nginx/conf.d/maps.conf is included.",
+        "output": "Nginx 配置使用 `map` 处理头部；请确保包含 /etc/nginx/conf.d/maps.conf。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `helm install` fails on CRDs, apply them separately with `kubectl apply -f crds/`.",
+        "output": "如果 `helm install` 因 CRD 失败，请用 `kubectl apply -f crds/` 单独应用。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The cron daemon ignores /etc/cron.d files without a newline at EOF; add one and restart cron.",
+        "output": "cron 守护进程会忽略末尾无换行的 /etc/cron.d 文件；请添加换行并重启 cron。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `rsync` is slow over WAN, enable compression with `-z` and adjust `--bwlimit=5000`.",
+        "output": "如果 `rsync` 在广域网很慢，请使用 `-z` 启用压缩并调整 `--bwlimit=5000`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The Java app uses logback; ensure /etc/app/logback.xml includes `<logger name=\"org.hibernate\" level=\"WARN\"/>`.",
+        "output": "Java 应用使用 logback；确保 /etc/app/logback.xml 中包含 `<logger name=\"org.hibernate\" level=\"WARN\"/>`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `kubectl get pods` shows CrashLoopBackOff, check the last exit code and run `kubectl describe pod`.",
+        "output": "如果 `kubectl get pods` 显示 CrashLoopBackOff，请检查最后退出码并运行 `kubectl describe pod`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The service depends on `libstdc++.so.6`; ensure it exists under /usr/lib/x86_64-linux-gnu.",
+        "output": "服务依赖 `libstdc++.so.6`；请确保其位于 /usr/lib/x86_64-linux-gnu。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `kubectl proxy` is used, remember it binds to 127.0.0.1 and won't be reachable externally.",
+        "output": "如果使用 `kubectl proxy`，请记住它绑定到 127.0.0.1，外部无法访问。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The container image uses non-root; ensure `USER 10001` matches file ownership under /app.",
+        "output": "容器镜像使用非 root；请确保 `USER 10001` 与 /app 下的文件所有权匹配。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `git stash apply` fails, there may be conflicts; resolve them and run `git stash drop`.",
+        "output": "如果 `git stash apply` 失败，可能有冲突；解决后运行 `git stash drop`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The API server needs to trust the proxy; set `X-Forwarded-Proto` handling in /etc/nginx/conf.d/proxy.conf.",
+        "output": "API server 需要信任代理；在 /etc/nginx/conf.d/proxy.conf 中设置 `X-Forwarded-Proto` 处理。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `npm pack` outputs a huge tarball, check `.npmignore` and `files` field in package.json.",
+        "output": "如果 `npm pack` 生成很大的 tarball，请检查 package.json 中的 `.npmignore` 和 `files` 字段。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The Linux system logs show `TCP: time wait bucket table overflow`; increase `net.ipv4.tcp_max_tw_buckets`.",
+        "output": "Linux 系统日志显示 `TCP: time wait bucket table overflow`；请提高 `net.ipv4.tcp_max_tw_buckets`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `docker stats` shows high memory, enable cgroup v2 accounting and verify with `cat /sys/fs/cgroup/cgroup.controllers`.",
+        "output": "如果 `docker stats` 显示内存高，请启用 cgroup v2 统计并用 `cat /sys/fs/cgroup/cgroup.controllers` 验证。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The API uses HMAC; rotate the key stored in /etc/app/secret.hmac and reload the service.",
+        "output": "API 使用 HMAC；请轮换 /etc/app/secret.hmac 中的密钥并重载服务。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `kubectl get pods -o wide` shows nodes as NotReady, check `systemctl status kubelet` on each node.",
+        "output": "如果 `kubectl get pods -o wide` 显示节点 NotReady，请在每个节点上检查 `systemctl status kubelet`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The static site is served by Caddy; update /etc/caddy/Caddyfile and run `systemctl reload caddy`.",
+        "output": "静态站点由 Caddy 提供服务；更新 /etc/caddy/Caddyfile 并运行 `systemctl reload caddy`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `terraform apply` fails due to AWS limits, request a quota increase or reduce `count` in the module.",
+        "output": "如果 `terraform apply` 因 AWS 限额失败，请申请配额提升或减少模块中的 `count`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The Linux audit logs show AVC denials; use `audit2allow` only after validating the policy change.",
+        "output": "Linux 审计日志显示 AVC 拒绝；仅在验证策略变更后使用 `audit2allow`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `kubectl delete pod` immediately recreates it, check the owning Deployment or StatefulSet.",
+        "output": "如果 `kubectl delete pod` 立即重建，请检查其所属的 Deployment 或 StatefulSet。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The Node app uses native deps; ensure `python3`, `make`, and `g++` are installed before `npm install`.",
+        "output": "Node 应用使用原生依赖；请在 `npm install` 前安装 `python3`、`make` 和 `g++`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `curl -I` returns 301, check the `return 301 https://$host$request_uri;` directive.",
+        "output": "如果 `curl -I` 返回 301，请检查 `return 301 https://$host$request_uri;` 指令。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The server lacks entropy for TLS; add a virtual RNG device or install `rng-tools`.",
+        "output": "服务器 TLS 熵不足；请添加虚拟 RNG 设备或安装 `rng-tools`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `aws eks update-kubeconfig` fails, ensure your IAM role has `eks:DescribeCluster`.",
+        "output": "如果 `aws eks update-kubeconfig` 失败，请确保 IAM 角色具有 `eks:DescribeCluster` 权限。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The CI job cannot find submodules; set `GIT_SUBMODULE_STRATEGY=recursive` in the pipeline config.",
+        "output": "CI 任务找不到 submodule；在流水线配置中设置 `GIT_SUBMODULE_STRATEGY=recursive`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `pip` resolves older versions, delete the local wheel cache under ~/.cache/pip/wheels.",
+        "output": "如果 `pip` 解析到旧版本，请删除 ~/.cache/pip/wheels 下的本地缓存。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The syslog server expects TCP; configure `*.* @@logserver:514` in /etc/rsyslog.d/50-default.conf.",
+        "output": "syslog 服务器期望 TCP；在 /etc/rsyslog.d/50-default.conf 中配置 `*.* @@logserver:514`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `npm publish` fails with 403, verify you are logged in with `npm whoami`.",
+        "output": "如果 `npm publish` 因 403 失败，请用 `npm whoami` 验证已登录。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The API server crashes due to config; validate JSON with `jq . /etc/app/config.json`.",
+        "output": "API server 因配置崩溃；用 `jq . /etc/app/config.json` 验证 JSON。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `kubectl describe node` shows taints, add tolerations to the pod spec.",
+        "output": "如果 `kubectl describe node` 显示 taints，请在 pod spec 中添加 tolerations。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The PostgreSQL cluster requires `shared_buffers=2GB`; adjust in postgresql.conf and restart during maintenance.",
+        "output": "PostgreSQL 集群需要 `shared_buffers=2GB`；在 postgresql.conf 中调整并在维护时重启。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `nginx -t` fails, check the included file paths under /etc/nginx/conf.d/*.conf.",
+        "output": "如果 `nginx -t` 失败，请检查 /etc/nginx/conf.d/*.conf 中的包含文件路径。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The service uses `ExecStartPre` to check dependencies; if it fails, inspect the script at /usr/local/bin/precheck.sh.",
+        "output": "服务使用 `ExecStartPre` 检查依赖；若失败，请检查 /usr/local/bin/precheck.sh 脚本。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `docker pull` is slow, use `--max-concurrent-downloads=3` in /etc/docker/daemon.json.",
+        "output": "如果 `docker pull` 很慢，请在 /etc/docker/daemon.json 中设置 `--max-concurrent-downloads=3`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The OAuth callback must match exactly; verify `redirect_uri=https://app.example.com/oauth/callback` in both client and server.",
+        "output": "OAuth 回调必须完全匹配；请在客户端与服务器中验证 `redirect_uri=https://app.example.com/oauth/callback`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `kubectl get crd` is forbidden, grant the user `apiextensions.k8s.io` permissions.",
+        "output": "如果 `kubectl get crd` 被禁止，请授予用户 `apiextensions.k8s.io` 权限。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The log file is rotated by size; check `size 50M` in /etc/logrotate.d/app.",
+        "output": "日志按大小轮转；请检查 /etc/logrotate.d/app 中的 `size 50M`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `make test` fails in CI, ensure the compiler is installed and `CC=gcc` is set.",
+        "output": "如果 `make test` 在 CI 中失败，请确保已安装编译器并设置 `CC=gcc`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The TLS server uses OCSP stapling; ensure `ssl_stapling on;` and a valid resolver in Nginx.",
+        "output": "TLS 服务器使用 OCSP stapling；请确保 Nginx 中有 `ssl_stapling on;` 并配置有效 resolver。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `kubectl get pod` shows ImagePullBackOff, check the image tag and run `crictl pull` on the node.",
+        "output": "如果 `kubectl get pod` 显示 ImagePullBackOff，请检查镜像标签，并在节点上运行 `crictl pull`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The binary depends on glibc 2.31; on older systems, use a static build or upgrade the OS.",
+        "output": "二进制依赖 glibc 2.31；在旧系统上请使用静态构建或升级系统。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `kubectl logs` is empty, check if the container logs to stdout or to a file.",
+        "output": "如果 `kubectl logs` 为空，请检查容器是输出到 stdout 还是文件。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The system uses `sysctl.d`; put custom settings in /etc/sysctl.d/99-custom.conf rather than /etc/sysctl.conf.",
+        "output": "系统使用 `sysctl.d`；请将自定义设置放在 /etc/sysctl.d/99-custom.conf，而不是 /etc/sysctl.conf。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `docker ps` is slow, reduce log size and set `log-opts` in /etc/docker/daemon.json.",
+        "output": "如果 `docker ps` 很慢，请减少日志大小并在 /etc/docker/daemon.json 中设置 `log-opts`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The service uses protobuf; regenerate with `buf generate` after changing .proto files.",
+        "output": "服务使用 protobuf；修改 .proto 文件后请用 `buf generate` 重新生成。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `git push` fails with non-fast-forward, pull with rebase `git pull --rebase` and resolve conflicts.",
+        "output": "如果 `git push` 因非快进失败，请用 `git pull --rebase` 拉取并解决冲突。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The HTTPS endpoint uses a wildcard cert; verify it covers `*.example.com` and not just the root domain.",
+        "output": "HTTPS 端点使用通配符证书；请验证其覆盖 `*.example.com` 而不只是根域。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `kubectl config current-context` is wrong, switch with `kubectl config use-context prod`.",
+        "output": "如果 `kubectl config current-context` 错误，请用 `kubectl config use-context prod` 切换。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The build uses Gradle cache; clear it with `rm -rf ~/.gradle/caches` if corruption is suspected.",
+        "output": "构建使用 Gradle 缓存；如果怀疑损坏，可用 `rm -rf ~/.gradle/caches` 清除。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `iptables` blocks DNS, allow UDP 53 with `iptables -A OUTPUT -p udp --dport 53 -j ACCEPT`.",
+        "output": "如果 `iptables` 阻止 DNS，请用 `iptables -A OUTPUT -p udp --dport 53 -j ACCEPT` 放行 UDP 53。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The Redis server rejects large values; increase `proto-max-bulk-len 512mb` in redis.conf.",
+        "output": "Redis 服务器拒绝大值；在 redis.conf 中增加 `proto-max-bulk-len 512mb`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `docker run` fails with `permission denied` on volume, check SELinux and mount with `:Z`.",
+        "output": "如果 `docker run` 在卷上报 `permission denied`，请检查 SELinux 并使用 `:Z` 挂载。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The container healthcheck uses `CMD-SHELL`; ensure `curl -f http://localhost:8080/health` returns 200.",
+        "output": "容器健康检查使用 `CMD-SHELL`；请确保 `curl -f http://localhost:8080/health` 返回 200。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `kubectl delete` hangs, use `--grace-period=0 --force` only after confirming resources are safe to terminate.",
+        "output": "如果 `kubectl delete` 卡住，请仅在确认资源可安全终止后使用 `--grace-period=0 --force`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The API uses Redis Streams; set `stream-node-max-bytes 64mb` in /etc/redis/redis.conf if memory spikes.",
+        "output": "API 使用 Redis Streams；如内存激增，请在 /etc/redis/redis.conf 中设置 `stream-node-max-bytes 64mb`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `docker compose up` shows `network ... not found`, remove it with `docker network rm mynet` and retry.",
+        "output": "如果 `docker compose up` 显示 `network ... not found`，请用 `docker network rm mynet` 删除并重试。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The kernel logs show `EXT4-fs error`; run `dmesg` and schedule fsck.",
+        "output": "内核日志显示 `EXT4-fs error`；请运行 `dmesg` 并安排 fsck。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `kubectl exec` fails due to RBAC, add `verbs: [\"get\", \"list\", \"watch\", \"create\"]` to the Role.",
+        "output": "如果 `kubectl exec` 因 RBAC 失败，请在 Role 中添加 `verbs: [\"get\", \"list\", \"watch\", \"create\"]`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The build uses Maven; set `-Dmaven.repo.local=/cache/m2` to redirect the repository.",
+        "output": "构建使用 Maven；设置 `-Dmaven.repo.local=/cache/m2` 以重定向仓库。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `curl` returns `413 Request Entity Too Large`, increase `client_max_body_size` in Nginx.",
+        "output": "如果 `curl` 返回 `413 Request Entity Too Large`，请在 Nginx 中提高 `client_max_body_size`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The Docker daemon uses systemd; check `/etc/systemd/system/docker.service.d/http-proxy.conf` for proxy settings.",
+        "output": "Docker 守护进程使用 systemd；请检查 `/etc/systemd/system/docker.service.d/http-proxy.conf` 中的代理设置。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `kubectl get ingress` shows no address, ensure the ingress controller service is of type LoadBalancer.",
+        "output": "如果 `kubectl get ingress` 无地址，请确保 ingress controller 服务类型为 LoadBalancer。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The PostgreSQL query uses `work_mem`; set it in `ALTER ROLE app SET work_mem='64MB';` for the session user.",
+        "output": "PostgreSQL 查询使用 `work_mem`；对会话用户设置 `ALTER ROLE app SET work_mem='64MB';`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `docker exec` needs a TTY, use `-it` and ensure `/bin/sh` exists in the image.",
+        "output": "如果 `docker exec` 需要 TTY，请使用 `-it` 并确保镜像中存在 `/bin/sh`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The service uses HTTP keep-alive; confirm with `curl -I -H \"Connection: keep-alive\" https://api.example.com`.",
+        "output": "服务使用 HTTP keep-alive；用 `curl -I -H \"Connection: keep-alive\" https://api.example.com` 确认。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `kubectl get nodes` shows wrong labels, update with `kubectl label node node-1 role=worker --overwrite`.",
+        "output": "如果 `kubectl get nodes` 显示错误标签，请用 `kubectl label node node-1 role=worker --overwrite` 更新。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The log rotation uses `copytruncate`; avoid it for high-traffic logs as it can lose entries.",
+        "output": "日志轮转使用 `copytruncate`；对高流量日志应避免使用，以免丢失条目。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `helm repo update` fails, check TLS trust and proxy configuration.",
+        "output": "如果 `helm repo update` 失败，请检查 TLS 信任和代理配置。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The app uses SQLite; if locking occurs, set `busy_timeout=5000` in the connection string.",
+        "output": "应用使用 SQLite；如果出现锁冲突，请在连接串中设置 `busy_timeout=5000`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `docker run` fails on Windows due to path conversion, disable it with `MSYS2_ARG_CONV_EXCL='*'`.",
+        "output": "如果 `docker run` 在 Windows 上因路径转换失败，请用 `MSYS2_ARG_CONV_EXCL='*'` 禁用转换。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The kernel parameter `vm.max_map_count=262144` is required for Elasticsearch; set it in /etc/sysctl.d/99-elasticsearch.conf.",
+        "output": "Elasticsearch 需要内核参数 `vm.max_map_count=262144`；请在 /etc/sysctl.d/99-elasticsearch.conf 中设置。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `kubectl exec` into a pod fails, ensure the container has a shell like /bin/sh.",
+        "output": "如果 `kubectl exec` 进入 Pod 失败，请确保容器中有 /bin/sh 等 shell。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The API uses Redis Cluster; set `cluster-require-full-coverage no` only if you can tolerate partial reads.",
+        "output": "API 使用 Redis Cluster；仅在可容忍部分读的情况下设置 `cluster-require-full-coverage no`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `pip` uses a proxy, set `proxy = http://proxy.local:8080` in ~/.config/pip/pip.conf.",
+        "output": "如果 `pip` 使用代理，请在 ~/.config/pip/pip.conf 中设置 `proxy = http://proxy.local:8080`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The Caddyfile uses `encode zstd gzip`; ensure both encoders are supported in your build.",
+        "output": "Caddyfile 使用 `encode zstd gzip`；请确保你的构建支持这两个编码器。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `kubectl apply` fails due to size, split the manifest and apply in parts.",
+        "output": "如果 `kubectl apply` 因大小失败，请拆分清单分批应用。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The API uses `X-Request-Id`; if missing, generate one in the gateway and pass it downstream.",
+        "output": "API 使用 `X-Request-Id`；若缺失，请在网关生成并向下游传递。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `docker run` cannot resolve DNS, check /etc/docker/daemon.json for `\"dns\": [\"8.8.8.8\"]`.",
+        "output": "如果 `docker run` 无法解析 DNS，请检查 /etc/docker/daemon.json 中的 `\"dns\": [\"8.8.8.8\"]`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The service uses `ExecStart=/usr/local/bin/app --config /etc/app/app.toml`; ensure the file exists.",
+        "output": "服务使用 `ExecStart=/usr/local/bin/app --config /etc/app/app.toml`；请确保该文件存在。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `kubectl rollout undo` fails, ensure a previous ReplicaSet exists.",
+        "output": "如果 `kubectl rollout undo` 失败，请确保存在之前的 ReplicaSet。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The DNS server uses `forwarders { 1.1.1.1; 8.8.8.8; };` in named.conf; keep the semicolons.",
+        "output": "DNS 服务器在 named.conf 中使用 `forwarders { 1.1.1.1; 8.8.8.8; };`；请保留分号。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `curl` hangs, check for MTU issues and try `--interface eth0`.",
+        "output": "如果 `curl` 卡住，请检查 MTU 问题并尝试 `--interface eth0`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The MySQL server requires `innodb_buffer_pool_size=2G`; adjust it in /etc/mysql/mysql.conf.d/mysqld.cnf.",
+        "output": "MySQL 服务器需要 `innodb_buffer_pool_size=2G`；请在 /etc/mysql/mysql.conf.d/mysqld.cnf 中调整。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `kubectl exec` shows `container not found`, check the container name in a multi-container pod.",
+        "output": "如果 `kubectl exec` 显示 `container not found`，请检查多容器 Pod 中的容器名。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The CI pipeline uses `cache:key: ${CI_COMMIT_REF_SLUG}`; ensure it is unique per branch.",
+        "output": "CI 流水线使用 `cache:key: ${CI_COMMIT_REF_SLUG}`；请确保其对每个分支唯一。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `docker build` fails with `no space left on device`, prune the builder cache with `docker builder prune`.",
+        "output": "如果 `docker build` 因 `no space left on device` 失败，请用 `docker builder prune` 清理构建缓存。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The API requires gzip; enable `gzip on;` in /etc/nginx/nginx.conf and verify with `curl -I -H \"Accept-Encoding: gzip\"`.",
+        "output": "API 需要 gzip；在 /etc/nginx/nginx.conf 中启用 `gzip on;` 并用 `curl -I -H \"Accept-Encoding: gzip\"` 验证。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `kubectl` cannot reach the cluster, check the `server:` URL in ~/.kube/config.",
+        "output": "如果 `kubectl` 无法连接集群，请检查 ~/.kube/config 中的 `server:` URL。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The Nginx config uses `proxy_buffering off;`; disable it only for streaming endpoints.",
+        "output": "Nginx 配置使用 `proxy_buffering off;`；仅对流式端点禁用。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `kubectl delete ns` hangs, remove finalizers from the namespace object.",
+        "output": "如果 `kubectl delete ns` 卡住，请从 namespace 对象中移除 finalizers。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The Redis client needs TLS; use `rediss://` and set `tls-auth-clients no` if mutual auth is not configured.",
+        "output": "Redis 客户端需要 TLS；使用 `rediss://`，若未配置双向认证请设置 `tls-auth-clients no`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `terraform init` fails behind a proxy, set `HTTPS_PROXY` and `NO_PROXY=localhost,127.0.0.1`.",
+        "output": "如果 `terraform init` 在代理后失败，请设置 `HTTPS_PROXY` 和 `NO_PROXY=localhost,127.0.0.1`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The system uses `chronyd`; verify NTP sources with `chronyc sources -v`.",
+        "output": "系统使用 `chronyd`；用 `chronyc sources -v` 验证 NTP 源。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `docker run` fails with `exec format error`, check the image architecture using `docker inspect --format '{{.Architecture}}' image`.",
+        "output": "如果 `docker run` 报 `exec format error`，请用 `docker inspect --format '{{.Architecture}}' image` 检查镜像架构。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The HTTP server uses `gzip_types` to include JSON; ensure `application/json` is listed.",
+        "output": "HTTP 服务器使用 `gzip_types` 包含 JSON；请确保列出 `application/json`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `kubectl apply` complains about immutable fields, create a new resource instead of updating.",
+        "output": "如果 `kubectl apply` 抱怨不可变字段，请新建资源而非更新。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The Windows build uses MSBuild; ensure `C:\\Program Files\\Microsoft Visual Studio\\2022\\BuildTools\\MSBuild\\Current\\Bin` is in PATH.",
+        "output": "Windows 构建使用 MSBuild；请确保 `C:\\Program Files\\Microsoft Visual Studio\\2022\\BuildTools\\MSBuild\\Current\\Bin` 在 PATH 中。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `kubectl` returns `x509: certificate signed by unknown authority`, update the cluster CA in kubeconfig.",
+        "output": "如果 `kubectl` 返回 `x509: certificate signed by unknown authority`，请更新 kubeconfig 中的集群 CA。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The API returns 504 because upstream timeout is low; set `proxy_read_timeout 300s;`.",
+        "output": "API 返回 504 因 upstream 超时过低；请设置 `proxy_read_timeout 300s;`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `docker compose up` warns about obsolete version, remove `version:` from docker-compose.yml.",
+        "output": "如果 `docker compose up` 警告版本已过时，请从 docker-compose.yml 中移除 `version:`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The Grafana datasource uses basic auth; set `basicAuth=true` and `basicAuthUser` in grafana.ini.",
+        "output": "Grafana 数据源使用 basic auth；请在 grafana.ini 中设置 `basicAuth=true` 与 `basicAuthUser`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `kubectl` is slow, set `--cache-dir` to a local SSD path to speed up discovery.",
+        "output": "如果 `kubectl` 很慢，请将 `--cache-dir` 设置为本地 SSD 路径以加速发现。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The TLS client needs SNI; use `curl --resolve api.example.com:443:1.2.3.4 https://api.example.com`.",
+        "output": "TLS 客户端需要 SNI；请使用 `curl --resolve api.example.com:443:1.2.3.4 https://api.example.com`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `kubectl get pods` shows `ContainerCreating`, check image pull secrets and node disk.",
+        "output": "如果 `kubectl get pods` 显示 `ContainerCreating`，请检查镜像拉取密钥和节点磁盘。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The API uses gRPC over TLS; ensure the client sets `:authority` correctly or use `grpcurl -authority api.example.com`.",
+        "output": "API 使用 TLS 上的 gRPC；请确保客户端正确设置 `:authority`，或使用 `grpcurl -authority api.example.com`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `kubectl delete` leaves finalizers, patch with `kubectl patch ns test -p '{\"spec\":{\"finalizers\":[]}}' --type=merge`.",
+        "output": "如果 `kubectl delete` 留下 finalizers，请用 `kubectl patch ns test -p '{\"spec\":{\"finalizers\":[]}}' --type=merge` 修补。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The server uses `ufw`; allow 443 with `ufw allow 443/tcp` and reload.",
+        "output": "服务器使用 `ufw`；请用 `ufw allow 443/tcp` 放行并重载。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `pip install` compiles wheels, install `python3-dev` and `build-essential`.",
+        "output": "如果 `pip install` 需要编译 wheel，请安装 `python3-dev` 和 `build-essential`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The API gateway strips headers; ensure `proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;` is present.",
+        "output": "API 网关剥离头部；请确保存在 `proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `kubectl apply` fails on Windows, check line endings in YAML and set `core.autocrlf`.",
+        "output": "如果 `kubectl apply` 在 Windows 上失败，请检查 YAML 行尾并设置 `core.autocrlf`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The Redis cluster slot map changed; refresh the client with `redis-cli --cluster fix`.",
+        "output": "Redis 集群 slot 映射变更；请用 `redis-cli --cluster fix` 刷新客户端。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `curl` returns `403` from S3, check the bucket policy and the `x-amz-date` header.",
+        "output": "如果 `curl` 从 S3 返回 `403`，请检查桶策略和 `x-amz-date` 头。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The service uses Envoy; update /etc/envoy/envoy.yaml and validate with `envoy --mode validate -c /etc/envoy/envoy.yaml`.",
+        "output": "服务使用 Envoy；更新 /etc/envoy/envoy.yaml 并用 `envoy --mode validate -c /etc/envoy/envoy.yaml` 验证。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `docker build` requires BuildKit, enable it with `DOCKER_BUILDKIT=1`.",
+        "output": "如果 `docker build` 需要 BuildKit，请设置 `DOCKER_BUILDKIT=1` 启用。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The API uses CDN cache keys; keep `Vary: Accept-Encoding` intact.",
+        "output": "API 使用 CDN 缓存键；请保持 `Vary: Accept-Encoding` 不变。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `kubectl logs` truncates, use `--limit-bytes` and `--tail` for context.",
+        "output": "如果 `kubectl logs` 截断，请使用 `--limit-bytes` 和 `--tail` 获取上下文。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The system uses `zram`; verify with `cat /proc/swaps` and adjust /etc/systemd/zram-generator.conf.",
+        "output": "系统使用 `zram`；用 `cat /proc/swaps` 验证并调整 /etc/systemd/zram-generator.conf。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `kubectl port-forward` is slow, ensure no proxy is intercepting localhost traffic.",
+        "output": "如果 `kubectl port-forward` 很慢，请确保没有代理拦截 localhost 流量。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The app uses a Unix socket; set `listen /run/app.sock;` and ensure the directory exists.",
+        "output": "应用使用 Unix socket；设置 `listen /run/app.sock;` 并确保目录存在。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `terraform` fails due to provider version, pin it in required_providers and run `terraform init -upgrade`.",
+        "output": "如果 `terraform` 因 provider 版本失败，请在 required_providers 中固定并运行 `terraform init -upgrade`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The API uses JSON schema; validate with `ajv validate -s schema.json -d payload.json`.",
+        "output": "API 使用 JSON schema；请用 `ajv validate -s schema.json -d payload.json` 验证。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `kubectl exec` returns `command not found`, use `/bin/sh -c` with a full path to the binary.",
+        "output": "如果 `kubectl exec` 返回 `command not found`，请使用 `/bin/sh -c` 并提供二进制完整路径。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The service uses Consul; update the config at /etc/consul.d/consul.hcl and run `consul validate`.",
+        "output": "服务使用 Consul；更新 /etc/consul.d/consul.hcl 并运行 `consul validate`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `docker ps` shows `Restarting`, check `docker logs` and the `restart:` policy.",
+        "output": "如果 `docker ps` 显示 `Restarting`，请检查 `docker logs` 和 `restart:` 策略。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The API uses HTTP caching; set `ETag` and handle `If-None-Match` correctly.",
+        "output": "API 使用 HTTP 缓存；请设置 `ETag` 并正确处理 `If-None-Match`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `kubectl get pods` shows `Evicted`, increase node disk or reduce requests.",
+        "output": "如果 `kubectl get pods` 显示 `Evicted`，请增加节点磁盘或降低 requests。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The nginx cache path must exist; create it with `mkdir -p /var/cache/nginx` and set ownership.",
+        "output": "nginx 缓存路径必须存在；使用 `mkdir -p /var/cache/nginx` 创建并设置所有权。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `curl` returns `401` from the registry, run `docker login registry.example.com`.",
+        "output": "如果 `curl` 从 registry 返回 `401`，请运行 `docker login registry.example.com`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The system uses `auditd`; check /etc/audit/audit.rules and restart auditd after changes.",
+        "output": "系统使用 `auditd`；请检查 /etc/audit/audit.rules 并在更改后重启 auditd。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `kubectl` can't find a resource, ensure the correct namespace or add `-n`.",
+        "output": "如果 `kubectl` 找不到资源，请确保使用正确的命名空间或添加 `-n`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The API uses HSTS; set `max-age=63072000; includeSubDomains; preload` only after audits.",
+        "output": "API 使用 HSTS；只有在审计后才设置 `max-age=63072000; includeSubDomains; preload`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `kubectl` is too verbose, set `KUBECTL_LOG_LEVEL=0` to reduce logs in wrappers.",
+        "output": "如果 `kubectl` 过于冗长，请设置 `KUBECTL_LOG_LEVEL=0` 以减少包装器日志。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The API uses HTTP trailers; ensure the proxy supports `TE: trailers` and does not strip them.",
+        "output": "API 使用 HTTP trailers；确保代理支持 `TE: trailers` 并不会剥离。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `kubectl apply` fails due to schema, update the CRD or disable validation with `--validate=false` only for troubleshooting.",
+        "output": "如果 `kubectl apply` 因 schema 失败，请更新 CRD，或仅在排查时使用 `--validate=false`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The system uses nftables; translate legacy iptables rules or use `iptables-nft`.",
+        "output": "系统使用 nftables；请转换旧 iptables 规则或使用 `iptables-nft`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `kubectl get pods` shows `Init:CrashLoopBackOff`, check the init container logs.",
+        "output": "如果 `kubectl get pods` 显示 `Init:CrashLoopBackOff`，请检查 init 容器日志。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The API uses gRPC health checks; test with `grpcurl -plaintext localhost:50051 grpc.health.v1.Health/Check`.",
+        "output": "API 使用 gRPC 健康检查；用 `grpcurl -plaintext localhost:50051 grpc.health.v1.Health/Check` 测试。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `systemctl enable` fails, ensure the unit file is not a symlink to a missing target.",
+        "output": "如果 `systemctl enable` 失败，请确保单元文件不是指向缺失目标的符号链接。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The API needs WebSocket support; set `proxy_http_version 1.1;` in Nginx.",
+        "output": "API 需要 WebSocket 支持；在 Nginx 中设置 `proxy_http_version 1.1;`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `kubectl get pods` shows `Pending`, check for unschedulable nodes and resource requests.",
+        "output": "如果 `kubectl get pods` 显示 `Pending`，请检查不可调度节点和资源请求。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The API uses OpenAPI; regenerate clients after updating /api/openapi.json.",
+        "output": "API 使用 OpenAPI；更新 /api/openapi.json 后请重新生成客户端。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `docker build` fails due to SSL, set `GIT_SSL_NO_VERIFY=1` only for temporary debugging.",
+        "output": "如果 `docker build` 因 SSL 失败，请仅在临时调试时设置 `GIT_SSL_NO_VERIFY=1`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The API uses JWT audience claims; ensure `aud` matches `api://default` in the token.",
+        "output": "API 使用 JWT audience 声明；请确保 token 中的 `aud` 匹配 `api://default`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `kubectl describe` shows `FailedMount`, check the CSI driver logs and the PVC status.",
+        "output": "如果 `kubectl describe` 显示 `FailedMount`，请检查 CSI 驱动日志和 PVC 状态。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The proxy requires `X-Forwarded-Host`; set it in the ingress controller annotations.",
+        "output": "代理需要 `X-Forwarded-Host`；请在 ingress controller 注解中设置。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `kubectl` returns `too old resource version`, relist the resource and retry.",
+        "output": "如果 `kubectl` 返回 `too old resource version`，请重新列表资源后重试。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The API uses S3 multipart upload; ensure `multipart_threshold=64MB` is set in the SDK config.",
+        "output": "API 使用 S3 分片上传；请在 SDK 配置中设置 `multipart_threshold=64MB`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `kubectl logs` shows `previous terminated`, add `--previous` to get last container logs.",
+        "output": "如果 `kubectl logs` 显示 `previous terminated`，请添加 `--previous` 获取上次容器日志。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The service uses systemd watchdog; keep `WatchdogSec=30s` and send notifications.",
+        "output": "服务使用 systemd watchdog；保持 `WatchdogSec=30s` 并发送通知。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `kubectl config view` is empty, set `KUBECONFIG` to your config file path.",
+        "output": "如果 `kubectl config view` 为空，请将 `KUBECONFIG` 设置为配置文件路径。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The API uses cache-control directives; ensure `stale-while-revalidate` is supported by the CDN.",
+        "output": "API 使用 cache-control 指令；请确保 CDN 支持 `stale-while-revalidate`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `kubectl apply` fails with `error validating data`, run `kubectl apply --validate=false` only for diagnosing schema issues.",
+        "output": "如果 `kubectl apply` 因 `error validating data` 失败，请仅为诊断 schema 问题使用 `kubectl apply --validate=false`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The system uses `journald` rate limiting; adjust `RateLimitInterval=30s` and `RateLimitBurst=1000` in /etc/systemd/journald.conf.",
+        "output": "系统使用 `journald` 速率限制；在 /etc/systemd/journald.conf 中调整 `RateLimitInterval=30s` 和 `RateLimitBurst=1000`。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `kubectl get pods` shows `Completed` but the job should be long-running, ensure you used a Deployment not a Job.",
+        "output": "如果 `kubectl get pods` 显示 `Completed` 但任务应长期运行，请确保使用的是 Deployment 而不是 Job。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "The API uses `X-Accel-Redirect`; configure `internal` locations in Nginx to serve files.",
+        "output": "API 使用 `X-Accel-Redirect`；请在 Nginx 中配置 `internal` location 来提供文件。"
+    },
+    {
+        "instruction": "Translate the following technical explanation into Chinese.",
+        "input": "If `kubectl apply` fails due to `no matches for kind`, install the CRD first.",
+        "output": "如果 `kubectl apply` 因 `no matches for kind` 失败，请先安装 CRD。"
+    }
+]

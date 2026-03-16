@@ -1,0 +1,1502 @@
+[
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `tcpdump -i lo port 443` to capture packets for a specific port.",
+        "output": "使用 `tcpdump -i lo port 443` 抓取指定端口的网络包。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl port-forward svc/prometheus 8200:8200 -n security` to access a Service locally.",
+        "output": "使用 `kubectl port-forward svc/prometheus 8200:8200 -n security` 在本地访问集群内的 Service。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `sysctl -w vm.swappiness=200000` to set a kernel parameter at runtime.",
+        "output": "使用 `sysctl -w vm.swappiness=200000` 在运行时设置内核参数。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl port-forward svc/grafana 8080:9090 -n argocd` to access a Service locally.",
+        "output": "使用 `kubectl port-forward svc/grafana 8080:9090 -n argocd` 在本地访问集群内的 Service。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Expose the worker container port with `containerPort: 9090` in the Pod spec.",
+        "output": "在 Pod 配置中使用 `containerPort: 9090` 暴露 worker 容器端口。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "In Kubernetes YAML, set `image: redis:7-alpine` under the container spec for the frontend container.",
+        "output": "在 Kubernetes YAML 中，在 frontend 容器的配置下设置 `image: redis:7-alpine` 以指定容器镜像。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "`kubectl describe pod postgres-0 -n db` shows events that explain why a Pod is Pending or CrashLoopBackOff.",
+        "output": "`kubectl describe pod postgres-0 -n db` 会显示事件信息，用于解释 Pod 为何处于 Pending 或 CrashLoopBackOff。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "In Kubernetes YAML, set `image: alpine:3.19` under the container spec for the web container.",
+        "output": "在 Kubernetes YAML 中，在 web 容器的配置下设置 `image: alpine:3.19` 以指定容器镜像。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Install a Helm chart with `helm install nginx grafana/loki-stack -n monitoring --create-namespace`.",
+        "output": "使用 `helm install nginx grafana/loki-stack -n monitoring --create-namespace` 安装 Helm Chart。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl port-forward svc/prometheus 3000:443 -n security` to access a Service locally.",
+        "output": "使用 `kubectl port-forward svc/prometheus 3000:443 -n security` 在本地访问集群内的 Service。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "In Kubernetes YAML, set `image: busybox:1.36` under the container spec for the worker container.",
+        "output": "在 Kubernetes YAML 中，在 worker 容器的配置下设置 `image: busybox:1.36` 以指定容器镜像。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Set a Redis key with an expiration using `SET cache:user:42 {\"name\":\"alice\"} EX 300`.",
+        "output": "使用 `SET cache:user:42 {\"name\":\"alice\"} EX 300` 设置带过期时间的 Redis 键。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl port-forward svc/prometheus 8080:8200 -n monitoring` to access a Service locally.",
+        "output": "使用 `kubectl port-forward svc/prometheus 8080:8200 -n monitoring` 在本地访问集群内的 Service。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Set a Redis key with an expiration using `SET lock:job 10 EX 30`.",
+        "output": "使用 `SET lock:job 10 EX 30` 设置带过期时间的 Redis 键。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `journalctl -u nginx -n 200 --no-pager` to view the latest logs for a systemd unit.",
+        "output": "使用 `journalctl -u nginx -n 200 --no-pager` 查看 systemd 单元的最新日志。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl port-forward svc/grafana 8200:443 -n argocd` to access a Service locally.",
+        "output": "使用 `kubectl port-forward svc/grafana 8200:443 -n argocd` 在本地访问集群内的 Service。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Install a Helm chart with `helm install loki ingress-nginx/ingress-nginx -n logging --create-namespace`.",
+        "output": "使用 `helm install loki ingress-nginx/ingress-nginx -n logging --create-namespace` 安装 Helm Chart。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Mount an NFS share by adding a line to `/etc/fstab`, for example: `nfs.internal:/vol1 /mnt/backup nfs defaults 0 0`.",
+        "output": "通过在 `/etc/fstab` 添加一行来挂载 NFS 共享，例如：`nfs.internal:/vol1 /mnt/backup nfs defaults 0 0`。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Install a Helm chart with `helm install prom grafana/loki-stack -n cert-manager --create-namespace`.",
+        "output": "使用 `helm install prom grafana/loki-stack -n cert-manager --create-namespace` 安装 Helm Chart。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `jq -r '.metadata.name' data.json` to extract a field from JSON as raw text.",
+        "output": "使用 `jq -r '.metadata.name' data.json` 以原始文本形式从 JSON 中提取字段。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Create a B-tree index to speed up equality and range lookups: `CREATE INDEX ON sessions (email);`.",
+        "output": "创建 B-tree 索引可加速等值和范围查询：`CREATE INDEX ON sessions (email);`。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Run `chown app:postgres /var/lib/postgresql` so the service user owns the directory.",
+        "output": "运行 `chown app:postgres /var/lib/postgresql` 以便由服务用户拥有该目录。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl port-forward svc/grafana 8200:8200 -n security` to access a Service locally.",
+        "output": "使用 `kubectl port-forward svc/grafana 8200:8200 -n security` 在本地访问集群内的 Service。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Set a Redis key with an expiration using `SET token:123 abc EX 300`.",
+        "output": "使用 `SET token:123 abc EX 300` 设置带过期时间的 Redis 键。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl port-forward svc/vault 8080:443 -n security` to access a Service locally.",
+        "output": "使用 `kubectl port-forward svc/vault 8080:443 -n security` 在本地访问集群内的 Service。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Run `chown postgres:postgres /srv/app` so the service user owns the directory.",
+        "output": "运行 `chown postgres:postgres /srv/app` 以便由服务用户拥有该目录。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "In Kubernetes YAML, set `image: redis:7-alpine` under the container spec for the scheduler container.",
+        "output": "在 Kubernetes YAML 中，在 scheduler 容器的配置下设置 `image: redis:7-alpine` 以指定容器镜像。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Set a Redis key with an expiration using `SET rate:ip:1.2.3.4 10 EX 60`.",
+        "output": "使用 `SET rate:ip:1.2.3.4 10 EX 60` 设置带过期时间的 Redis 键。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl port-forward svc/prometheus 9090:9090 -n argocd` to access a Service locally.",
+        "output": "使用 `kubectl port-forward svc/prometheus 9090:9090 -n argocd` 在本地访问集群内的 Service。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "An Ingress resource routes HTTP traffic based on hostnames and paths, typically via an Ingress controller.",
+        "output": "Ingress 资源可基于主机名和路径转发 HTTP 流量，通常依赖 Ingress Controller 实现。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl logs web-7f8c9d6b7f-fghij -c nginx -n dev` to view logs from a specific container in a Pod.",
+        "output": "使用 `kubectl logs web-7f8c9d6b7f-fghij -c nginx -n dev` 查看 Pod 中指定容器的日志。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "`kubectl describe pod api-6c7b9d4f5b-abcde -n default` shows events that explain why a Pod is Pending or CrashLoopBackOff.",
+        "output": "`kubectl describe pod api-6c7b9d4f5b-abcde -n default` 会显示事件信息，用于解释 Pod 为何处于 Pending 或 CrashLoopBackOff。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "In a Dockerfile, `COPY ./dist/ /usr/local/bin/` copies files into the image filesystem.",
+        "output": "在 Dockerfile 中，`COPY ./dist/ /usr/local/bin/` 用于将文件复制到镜像文件系统中。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl logs job-runner-12345 -c runner -n default` to view logs from a specific container in a Pod.",
+        "output": "使用 `kubectl logs job-runner-12345 -c runner -n default` 查看 Pod 中指定容器的日志。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl logs api-6c7b9d4f5b-abcde -c runner -n dev` to view logs from a specific container in a Pod.",
+        "output": "使用 `kubectl logs api-6c7b9d4f5b-abcde -c runner -n dev` 查看 Pod 中指定容器的日志。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Check disk usage with `df -h` and identify large directories with `du -sh /srv/*`.",
+        "output": "用 `df -h` 查看磁盘使用情况，再用 `du -sh /srv/*` 定位占用空间较大的目录。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `git revert 7e9f0ab` to create a new commit that undoes changes without rewriting history.",
+        "output": "使用 `git revert 7e9f0ab` 创建一个新提交来撤销改动，而不改写历史记录。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "`grep -R \"timeout\" /etc/systemd` searches recursively; add `-n` to include line numbers.",
+        "output": "`grep -R \"timeout\" /etc/systemd` 进行递归搜索；加上 `-n` 可显示行号。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Set a Redis key with an expiration using `SET rate:ip:1.2.3.4 10 EX 300`.",
+        "output": "使用 `SET rate:ip:1.2.3.4 10 EX 300` 设置带过期时间的 Redis 键。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl logs job-runner-12345 -c manager -n batch` to view logs from a specific container in a Pod.",
+        "output": "使用 `kubectl logs job-runner-12345 -c manager -n batch` 查看 Pod 中指定容器的日志。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `journalctl -u docker -n 200 --no-pager` to view the latest logs for a systemd unit.",
+        "output": "使用 `journalctl -u docker -n 200 --no-pager` 查看 systemd 单元的最新日志。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Create a B-tree index to speed up equality and range lookups: `CREATE INDEX ON orders (ts);`.",
+        "output": "创建 B-tree 索引可加速等值和范围查询：`CREATE INDEX ON orders (ts);`。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Mount an NFS share by adding a line to `/etc/fstab`, for example: `10.10.0.5:/backup /mnt/data nfs defaults 0 0`.",
+        "output": "通过在 `/etc/fstab` 添加一行来挂载 NFS 共享，例如：`10.10.0.5:/backup /mnt/data nfs defaults 0 0`。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `tcpdump -i eth0 port 6443` to capture packets for a specific port.",
+        "output": "使用 `tcpdump -i eth0 port 6443` 抓取指定端口的网络包。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl logs api-6c7b9d4f5b-abcde -c manager -n batch` to view logs from a specific container in a Pod.",
+        "output": "使用 `kubectl logs api-6c7b9d4f5b-abcde -c manager -n batch` 查看 Pod 中指定容器的日志。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl logs controller-7d9f6b8f7c-klmno -c nginx -n kube-system` to view logs from a specific container in a Pod.",
+        "output": "使用 `kubectl logs controller-7d9f6b8f7c-klmno -c nginx -n kube-system` 查看 Pod 中指定容器的日志。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "`grep -R \"listen\" /var/log` searches recursively; add `-n` to include line numbers.",
+        "output": "`grep -R \"listen\" /var/log` 进行递归搜索；加上 `-n` 可显示行号。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Install a Helm chart with `helm install prom grafana/loki-stack -n monitoring --create-namespace`.",
+        "output": "使用 `helm install prom grafana/loki-stack -n monitoring --create-namespace` 安装 Helm Chart。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Mount an NFS share by adding a line to `/etc/fstab`, for example: `10.0.0.10:/exports/data /mnt/vol1 nfs defaults 0 0`.",
+        "output": "通过在 `/etc/fstab` 添加一行来挂载 NFS 共享，例如：`10.0.0.10:/exports/data /mnt/vol1 nfs defaults 0 0`。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "In Kubernetes YAML, set `image: postgres:16` under the container spec for the web container.",
+        "output": "在 Kubernetes YAML 中，在 web 容器的配置下设置 `image: postgres:16` 以指定容器镜像。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "In Kubernetes YAML, set `image: nginx:1.25-alpine` under the container spec for the ingester container.",
+        "output": "在 Kubernetes YAML 中，在 ingester 容器的配置下设置 `image: nginx:1.25-alpine` 以指定容器镜像。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Generate an SSH key pair with `ssh-keygen -t ed25519 -f /tmp/deploy_key`.",
+        "output": "使用 `ssh-keygen -t ed25519 -f /tmp/deploy_key` 生成 SSH 密钥对。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "In Kubernetes YAML, set `image: redis:7-alpine` under the container spec for the web container.",
+        "output": "在 Kubernetes YAML 中，在 web 容器的配置下设置 `image: redis:7-alpine` 以指定容器镜像。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Set a Redis key with an expiration using `SET token:123 {\"name\":\"alice\"} EX 30`.",
+        "output": "使用 `SET token:123 {\"name\":\"alice\"} EX 30` 设置带过期时间的 Redis 键。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `redis-cli -h 10.0.0.20 -p 6379 PING` to verify Redis connectivity.",
+        "output": "使用 `redis-cli -h 10.0.0.20 -p 6379 PING` 验证 Redis 连通性。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `redis-cli -h 127.0.0.1 -p 6380 PING` to verify Redis connectivity.",
+        "output": "使用 `redis-cli -h 127.0.0.1 -p 6380 PING` 验证 Redis 连通性。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Install a Helm chart with `helm install nginx prometheus-community/kube-prometheus-stack -n monitoring --create-namespace`.",
+        "output": "使用 `helm install nginx prometheus-community/kube-prometheus-stack -n monitoring --create-namespace` 安装 Helm Chart。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl port-forward svc/prometheus 3000:9090 -n security` to access a Service locally.",
+        "output": "使用 `kubectl port-forward svc/prometheus 3000:9090 -n security` 在本地访问集群内的 Service。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl port-forward svc/grafana 8080:3000 -n monitoring` to access a Service locally.",
+        "output": "使用 `kubectl port-forward svc/grafana 8080:3000 -n monitoring` 在本地访问集群内的 Service。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl logs api-6c7b9d4f5b-abcde -c api -n kube-system` to view logs from a specific container in a Pod.",
+        "output": "使用 `kubectl logs api-6c7b9d4f5b-abcde -c api -n kube-system` 查看 Pod 中指定容器的日志。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "`grep -R \"server_name\" /etc/nginx` searches recursively; add `-n` to include line numbers.",
+        "output": "`grep -R \"server_name\" /etc/nginx` 进行递归搜索；加上 `-n` 可显示行号。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `journalctl -u docker -n 50 --no-pager` to view the latest logs for a systemd unit.",
+        "output": "使用 `journalctl -u docker -n 50 --no-pager` 查看 systemd 单元的最新日志。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl logs job-runner-12345 -c nginx -n default` to view logs from a specific container in a Pod.",
+        "output": "使用 `kubectl logs job-runner-12345 -c nginx -n default` 查看 Pod 中指定容器的日志。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "In a Dockerfile, `COPY ./bin/app /usr/share/nginx/html/` copies files into the image filesystem.",
+        "output": "在 Dockerfile 中，`COPY ./bin/app /usr/share/nginx/html/` 用于将文件复制到镜像文件系统中。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `redis-cli -h 127.0.0.1 -p 6379 PING` to verify Redis connectivity.",
+        "output": "使用 `redis-cli -h 127.0.0.1 -p 6379 PING` 验证 Redis 连通性。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Build an image with `docker build -t backend:1.0.0 .`.",
+        "output": "使用 `docker build -t backend:1.0.0 .` 构建镜像。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "In a Dockerfile, `COPY ./bin/app /usr/local/bin/` copies files into the image filesystem.",
+        "output": "在 Dockerfile 中，`COPY ./bin/app /usr/local/bin/` 用于将文件复制到镜像文件系统中。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Prometheus scrapes metrics over HTTP; a target is considered `DOWN` when scrapes fail.",
+        "output": "Prometheus 通过 HTTP 抓取指标；当抓取失败时，目标会被标记为 `DOWN`。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl port-forward svc/prometheus 8200:8200 -n argocd` to access a Service locally.",
+        "output": "使用 `kubectl port-forward svc/prometheus 8200:8200 -n argocd` 在本地访问集群内的 Service。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Set a Redis key with an expiration using `SET rate:ip:1.2.3.4 1 EX 600`.",
+        "output": "使用 `SET rate:ip:1.2.3.4 1 EX 600` 设置带过期时间的 Redis 键。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "In Kubernetes YAML, set `image: grafana/grafana:10.4.1` under the container spec for the worker container.",
+        "output": "在 Kubernetes YAML 中，在 worker 容器的配置下设置 `image: grafana/grafana:10.4.1` 以指定容器镜像。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `docker logs -f web` to follow container logs in real time.",
+        "output": "使用 `docker logs -f web` 实时跟踪容器日志。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl port-forward svc/grafana 8080:8200 -n monitoring` to access a Service locally.",
+        "output": "使用 `kubectl port-forward svc/grafana 8080:8200 -n monitoring` 在本地访问集群内的 Service。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Build an image with `docker build -t app:latest .`.",
+        "output": "使用 `docker build -t app:latest .` 构建镜像。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl logs web-7f8c9d6b7f-fghij -c api -n dev` to view logs from a specific container in a Pod.",
+        "output": "使用 `kubectl logs web-7f8c9d6b7f-fghij -c api -n dev` 查看 Pod 中指定容器的日志。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "`ENTRYPOINT [\"/bin/sh\"]` defines the main process for the container.",
+        "output": "`ENTRYPOINT [\"/bin/sh\"]` 用于定义容器的主进程。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "In a Dockerfile, `COPY ./bin/app /app/` copies files into the image filesystem.",
+        "output": "在 Dockerfile 中，`COPY ./bin/app /app/` 用于将文件复制到镜像文件系统中。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Run `chown app:app /var/lib/redis` so the service user owns the directory.",
+        "output": "运行 `chown app:app /var/lib/redis` 以便由服务用户拥有该目录。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl port-forward svc/prometheus 8200:443 -n monitoring` to access a Service locally.",
+        "output": "使用 `kubectl port-forward svc/prometheus 8200:443 -n monitoring` 在本地访问集群内的 Service。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "In Kubernetes YAML, set `image: hashicorp/vault:1.15` under the container spec for the ingester container.",
+        "output": "在 Kubernetes YAML 中，在 ingester 容器的配置下设置 `image: hashicorp/vault:1.15` 以指定容器镜像。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "`kubectl describe pod web-7f8c9d6b7f-fghij -n db` shows events that explain why a Pod is Pending or CrashLoopBackOff.",
+        "output": "`kubectl describe pod web-7f8c9d6b7f-fghij -n db` 会显示事件信息，用于解释 Pod 为何处于 Pending 或 CrashLoopBackOff。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Add a static host entry by editing `/etc/hosts`, for example: `192.168.56.10 registry.local`.",
+        "output": "通过编辑 `/etc/hosts` 添加静态主机条目，例如：`192.168.56.10 registry.local`。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Mount an NFS share by adding a line to `/etc/fstab`, for example: `192.168.1.20:/srv/share /mnt/data nfs defaults 0 0`.",
+        "output": "通过在 `/etc/fstab` 添加一行来挂载 NFS 共享，例如：`192.168.1.20:/srv/share /mnt/data nfs defaults 0 0`。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "In Kubernetes YAML, set `image: hashicorp/vault:1.15` under the container spec for the worker container.",
+        "output": "在 Kubernetes YAML 中，在 worker 容器的配置下设置 `image: hashicorp/vault:1.15` 以指定容器镜像。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Run `chown www-data:redis /var/www/html` so the service user owns the directory.",
+        "output": "运行 `chown www-data:redis /var/www/html` 以便由服务用户拥有该目录。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Run a container in the background with `docker run -d --name api -p 8443:8443 my-api:1.2.3`.",
+        "output": "使用 `docker run -d --name api -p 8443:8443 my-api:1.2.3` 后台运行容器。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Build an image with `docker build -t nginx:1.0.0 .`.",
+        "output": "使用 `docker build -t nginx:1.0.0 .` 构建镜像。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl port-forward svc/argocd-server 3000:8200 -n monitoring` to access a Service locally.",
+        "output": "使用 `kubectl port-forward svc/argocd-server 3000:8200 -n monitoring` 在本地访问集群内的 Service。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `jq -r '.items|length' deploy.json` to extract a field from JSON as raw text.",
+        "output": "使用 `jq -r '.items|length' deploy.json` 以原始文本形式从 JSON 中提取字段。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Run `chown www-data:app /srv/app` so the service user owns the directory.",
+        "output": "运行 `chown www-data:app /srv/app` 以便由服务用户拥有该目录。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl port-forward svc/vault 8080:9090 -n security` to access a Service locally.",
+        "output": "使用 `kubectl port-forward svc/vault 8080:9090 -n security` 在本地访问集群内的 Service。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "`umask 027` sets the default permission mask for new files created by the process.",
+        "output": "`umask 027` 用于设置进程创建新文件时的默认权限掩码。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "`kubectl describe pod web-7f8c9d6b7f-fghij -n dev` shows events that explain why a Pod is Pending or CrashLoopBackOff.",
+        "output": "`kubectl describe pod web-7f8c9d6b7f-fghij -n dev` 会显示事件信息，用于解释 Pod 为何处于 Pending 或 CrashLoopBackOff。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `sysctl -w vm.swappiness=1024` to set a kernel parameter at runtime.",
+        "output": "使用 `sysctl -w vm.swappiness=1024` 在运行时设置内核参数。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `tcpdump -i lo port 6443` to capture packets for a specific port.",
+        "output": "使用 `tcpdump -i lo port 6443` 抓取指定端口的网络包。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `chmod 0660 /usr/local/bin/deploy.sh` to update file permissions.",
+        "output": "使用 `chmod 0660 /usr/local/bin/deploy.sh` 来更新文件权限。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `journalctl -u postgresql -n 50 --no-pager` to view the latest logs for a systemd unit.",
+        "output": "使用 `journalctl -u postgresql -n 50 --no-pager` 查看 systemd 单元的最新日志。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Apply a manifest with `kubectl apply -f deployment.yaml`.",
+        "output": "使用 `kubectl apply -f deployment.yaml` 应用清单文件。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Run `chown postgres:www-data /srv/app` so the service user owns the directory.",
+        "output": "运行 `chown postgres:www-data /srv/app` 以便由服务用户拥有该目录。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `nginx -t` to validate configuration syntax before reloading.",
+        "output": "在重载之前使用 `nginx -t` 验证配置语法是否正确。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl logs web-7f8c9d6b7f-fghij -c runner -n batch` to view logs from a specific container in a Pod.",
+        "output": "使用 `kubectl logs web-7f8c9d6b7f-fghij -c runner -n batch` 查看 Pod 中指定容器的日志。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Apply a manifest with `kubectl apply -f k8s/service.yaml`.",
+        "output": "使用 `kubectl apply -f k8s/service.yaml` 应用清单文件。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl logs job-runner-12345 -c api -n batch` to view logs from a specific container in a Pod.",
+        "output": "使用 `kubectl logs job-runner-12345 -c api -n batch` 查看 Pod 中指定容器的日志。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Run `chown app:redis /srv/app` so the service user owns the directory.",
+        "output": "运行 `chown app:redis /srv/app` 以便由服务用户拥有该目录。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Expose the scheduler container port with `containerPort: 5432` in the Pod spec.",
+        "output": "在 Pod 配置中使用 `containerPort: 5432` 暴露 scheduler 容器端口。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `tar -czf /var/tmp/app.tgz ./config` to create a gzipped archive.",
+        "output": "使用 `tar -czf /var/tmp/app.tgz ./config` 创建一个 gzip 压缩归档。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl logs job-runner-12345 -c runner -n kube-system` to view logs from a specific container in a Pod.",
+        "output": "使用 `kubectl logs job-runner-12345 -c runner -n kube-system` 查看 Pod 中指定容器的日志。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use semantic version tags like `v2.0.0-rc.1` so deployments can be reproduced.",
+        "output": "使用 `v2.0.0-rc.1` 这类语义化版本标签，便于复现部署结果。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl port-forward svc/grafana 8080:8200 -n security` to access a Service locally.",
+        "output": "使用 `kubectl port-forward svc/grafana 8080:8200 -n security` 在本地访问集群内的 Service。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "In Kubernetes YAML, set `image: nginx:1.25-alpine` under the container spec for the worker container.",
+        "output": "在 Kubernetes YAML 中，在 worker 容器的配置下设置 `image: nginx:1.25-alpine` 以指定容器镜像。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "In Kubernetes YAML, set `image: nginx:1.25-alpine` under the container spec for the web container.",
+        "output": "在 Kubernetes YAML 中，在 web 容器的配置下设置 `image: nginx:1.25-alpine` 以指定容器镜像。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "`kubectl describe pod web-7f8c9d6b7f-fghij -n default` shows events that explain why a Pod is Pending or CrashLoopBackOff.",
+        "output": "`kubectl describe pod web-7f8c9d6b7f-fghij -n default` 会显示事件信息，用于解释 Pod 为何处于 Pending 或 CrashLoopBackOff。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl logs job-runner-12345 -c runner -n dev` to view logs from a specific container in a Pod.",
+        "output": "使用 `kubectl logs job-runner-12345 -c runner -n dev` 查看 Pod 中指定容器的日志。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl logs web-7f8c9d6b7f-fghij -c nginx -n kube-system` to view logs from a specific container in a Pod.",
+        "output": "使用 `kubectl logs web-7f8c9d6b7f-fghij -c nginx -n kube-system` 查看 Pod 中指定容器的日志。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use semantic version tags like `v0.9.0` so deployments can be reproduced.",
+        "output": "使用 `v0.9.0` 这类语义化版本标签，便于复现部署结果。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl rollout status deployment/web -n staging` to wait for a Deployment to finish rolling out.",
+        "output": "使用 `kubectl rollout status deployment/web -n staging` 等待 Deployment 滚动更新完成。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Set a Redis key with an expiration using `SET lock:job abc EX 600`.",
+        "output": "使用 `SET lock:job abc EX 600` 设置带过期时间的 Redis 键。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl port-forward svc/vault 8200:3000 -n monitoring` to access a Service locally.",
+        "output": "使用 `kubectl port-forward svc/vault 8200:3000 -n monitoring` 在本地访问集群内的 Service。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl port-forward svc/argocd-server 8200:3000 -n argocd` to access a Service locally.",
+        "output": "使用 `kubectl port-forward svc/argocd-server 8200:3000 -n argocd` 在本地访问集群内的 Service。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Run `chown postgres:redis /var/lib/postgresql` so the service user owns the directory.",
+        "output": "运行 `chown postgres:redis /var/lib/postgresql` 以便由服务用户拥有该目录。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl port-forward svc/grafana 3000:8200 -n security` to access a Service locally.",
+        "output": "使用 `kubectl port-forward svc/grafana 3000:8200 -n security` 在本地访问集群内的 Service。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl port-forward svc/argocd-server 3000:3000 -n monitoring` to access a Service locally.",
+        "output": "使用 `kubectl port-forward svc/argocd-server 3000:3000 -n monitoring` 在本地访问集群内的 Service。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Check disk usage with `df -h` and identify large directories with `du -sh /var/lib/docker`.",
+        "output": "用 `df -h` 查看磁盘使用情况，再用 `du -sh /var/lib/docker` 定位占用空间较大的目录。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Add a static host entry by editing `/etc/hosts`, for example: `10.10.0.12 ci.local`.",
+        "output": "通过编辑 `/etc/hosts` 添加静态主机条目，例如：`10.10.0.12 ci.local`。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Create a B-tree index to speed up equality and range lookups: `CREATE INDEX ON users (user_id);`.",
+        "output": "创建 B-tree 索引可加速等值和范围查询：`CREATE INDEX ON users (user_id);`。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl port-forward svc/prometheus 8200:9090 -n argocd` to access a Service locally.",
+        "output": "使用 `kubectl port-forward svc/prometheus 8200:9090 -n argocd` 在本地访问集群内的 Service。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Run `chown postgres:app /var/www/html` so the service user owns the directory.",
+        "output": "运行 `chown postgres:app /var/www/html` 以便由服务用户拥有该目录。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Set a Redis key with an expiration using `SET lock:job abc EX 30`.",
+        "output": "使用 `SET lock:job abc EX 30` 设置带过期时间的 Redis 键。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "`kubectl describe pod redis-0 -n db` shows events that explain why a Pod is Pending or CrashLoopBackOff.",
+        "output": "`kubectl describe pod redis-0 -n db` 会显示事件信息，用于解释 Pod 为何处于 Pending 或 CrashLoopBackOff。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl port-forward svc/prometheus 3000:443 -n monitoring` to access a Service locally.",
+        "output": "使用 `kubectl port-forward svc/prometheus 3000:443 -n monitoring` 在本地访问集群内的 Service。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Install a Helm chart with `helm install loki grafana/loki-stack -n ingress-nginx --create-namespace`.",
+        "output": "使用 `helm install loki grafana/loki-stack -n ingress-nginx --create-namespace` 安装 Helm Chart。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl port-forward svc/prometheus 9090:8200 -n argocd` to access a Service locally.",
+        "output": "使用 `kubectl port-forward svc/prometheus 9090:8200 -n argocd` 在本地访问集群内的 Service。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Set a Redis key with an expiration using `SET rate:ip:1.2.3.4 abc EX 300`.",
+        "output": "使用 `SET rate:ip:1.2.3.4 abc EX 300` 设置带过期时间的 Redis 键。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `docker logs -f db` to follow container logs in real time.",
+        "output": "使用 `docker logs -f db` 实时跟踪容器日志。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `sysctl -w net.core.somaxconn=200000` to set a kernel parameter at runtime.",
+        "output": "使用 `sysctl -w net.core.somaxconn=200000` 在运行时设置内核参数。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `chmod 0755 ./scripts/build.sh` to update file permissions.",
+        "output": "使用 `chmod 0755 ./scripts/build.sh` 来更新文件权限。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl port-forward svc/prometheus 9090:3000 -n argocd` to access a Service locally.",
+        "output": "使用 `kubectl port-forward svc/prometheus 9090:3000 -n argocd` 在本地访问集群内的 Service。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Set a Redis key with an expiration using `SET rate:ip:1.2.3.4 abc EX 30`.",
+        "output": "使用 `SET rate:ip:1.2.3.4 abc EX 30` 设置带过期时间的 Redis 键。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl rollout status deployment/api -n default` to wait for a Deployment to finish rolling out.",
+        "output": "使用 `kubectl rollout status deployment/api -n default` 等待 Deployment 滚动更新完成。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Store Terraform state in a remote backend to enable locking and team collaboration.",
+        "output": "将 Terraform state 存储在远端 backend 中，可实现状态锁定和团队协作。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl rollout status deployment/worker -n dev` to wait for a Deployment to finish rolling out.",
+        "output": "使用 `kubectl rollout status deployment/worker -n dev` 等待 Deployment 滚动更新完成。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "In Kubernetes YAML, set `image: redis:7-alpine` under the container spec for the ingester container.",
+        "output": "在 Kubernetes YAML 中，在 ingester 容器的配置下设置 `image: redis:7-alpine` 以指定容器镜像。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Set a Redis key with an expiration using `SET cache:user:42 1 EX 60`.",
+        "output": "使用 `SET cache:user:42 1 EX 60` 设置带过期时间的 Redis 键。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Install a Helm chart with `helm install cert-manager grafana/loki-stack -n ingress-nginx --create-namespace`.",
+        "output": "使用 `helm install cert-manager grafana/loki-stack -n ingress-nginx --create-namespace` 安装 Helm Chart。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Run `chown postgres:www-data /var/lib/postgresql` so the service user owns the directory.",
+        "output": "运行 `chown postgres:www-data /var/lib/postgresql` 以便由服务用户拥有该目录。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl port-forward svc/prometheus 8200:3000 -n argocd` to access a Service locally.",
+        "output": "使用 `kubectl port-forward svc/prometheus 8200:3000 -n argocd` 在本地访问集群内的 Service。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl port-forward svc/argocd-server 8200:443 -n security` to access a Service locally.",
+        "output": "使用 `kubectl port-forward svc/argocd-server 8200:443 -n security` 在本地访问集群内的 Service。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Build an image with `docker build -t nginx:2026.03 .`.",
+        "output": "使用 `docker build -t nginx:2026.03 .` 构建镜像。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl port-forward svc/grafana 8080:443 -n security` to access a Service locally.",
+        "output": "使用 `kubectl port-forward svc/grafana 8080:443 -n security` 在本地访问集群内的 Service。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl port-forward svc/argocd-server 9090:8200 -n monitoring` to access a Service locally.",
+        "output": "使用 `kubectl port-forward svc/argocd-server 9090:8200 -n monitoring` 在本地访问集群内的 Service。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Set a Redis key with an expiration using `SET rate:ip:1.2.3.4 abc EX 60`.",
+        "output": "使用 `SET rate:ip:1.2.3.4 abc EX 60` 设置带过期时间的 Redis 键。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl rollout status deployment/ingress-nginx-controller -n default` to wait for a Deployment to finish rolling out.",
+        "output": "使用 `kubectl rollout status deployment/ingress-nginx-controller -n default` 等待 Deployment 滚动更新完成。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Expose the frontend container port with `containerPort: 8080` in the Pod spec.",
+        "output": "在 Pod 配置中使用 `containerPort: 8080` 暴露 frontend 容器端口。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl port-forward svc/grafana 8080:9090 -n monitoring` to access a Service locally.",
+        "output": "使用 `kubectl port-forward svc/grafana 8080:9090 -n monitoring` 在本地访问集群内的 Service。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "In Kubernetes YAML, set `image: prom/prometheus:v2.51.2` under the container spec for the web container.",
+        "output": "在 Kubernetes YAML 中，在 web 容器的配置下设置 `image: prom/prometheus:v2.51.2` 以指定容器镜像。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Add a static host entry by editing `/etc/hosts`, for example: `10.10.0.12 registry.local`.",
+        "output": "通过编辑 `/etc/hosts` 添加静态主机条目，例如：`10.10.0.12 registry.local`。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `jq -r '.status' pod.json` to extract a field from JSON as raw text.",
+        "output": "使用 `jq -r '.status' pod.json` 以原始文本形式从 JSON 中提取字段。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `jq -r '.spec.replicas' deploy.json` to extract a field from JSON as raw text.",
+        "output": "使用 `jq -r '.spec.replicas' deploy.json` 以原始文本形式从 JSON 中提取字段。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `tcpdump -i eth0 port 443` to capture packets for a specific port.",
+        "output": "使用 `tcpdump -i eth0 port 443` 抓取指定端口的网络包。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Build an image with `docker build -t worker:1.0.0 .`.",
+        "output": "使用 `docker build -t worker:1.0.0 .` 构建镜像。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "A Service of type `ClusterIP` exposes an internal virtual IP that is reachable only inside the cluster.",
+        "output": "`ClusterIP` 类型的 Service 会暴露一个仅集群内部可访问的虚拟 IP。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "In a Dockerfile, `COPY ./dist/ /usr/share/nginx/html/` copies files into the image filesystem.",
+        "output": "在 Dockerfile 中，`COPY ./dist/ /usr/share/nginx/html/` 用于将文件复制到镜像文件系统中。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Mount an NFS share by adding a line to `/etc/fstab`, for example: `10.0.0.10:/exports/data /mnt/backup nfs defaults 0 0`.",
+        "output": "通过在 `/etc/fstab` 添加一行来挂载 NFS 共享，例如：`10.0.0.10:/exports/data /mnt/backup nfs defaults 0 0`。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `jq -r '.status' deploy.json` to extract a field from JSON as raw text.",
+        "output": "使用 `jq -r '.status' deploy.json` 以原始文本形式从 JSON 中提取字段。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "In `docker-compose.yml`, map a host port to a container port with `ports: - \"5432:5432\"`.",
+        "output": "在 `docker-compose.yml` 中，可用 `ports: - \"5432:5432\"` 将宿主机端口映射到容器端口。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Run `chown redis:www-data /srv/app` so the service user owns the directory.",
+        "output": "运行 `chown redis:www-data /srv/app` 以便由服务用户拥有该目录。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Set a Redis key with an expiration using `SET rate:ip:1.2.3.4 10 EX 30`.",
+        "output": "使用 `SET rate:ip:1.2.3.4 10 EX 30` 设置带过期时间的 Redis 键。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Run `chown www-data:app /var/lib/redis` so the service user owns the directory.",
+        "output": "运行 `chown www-data:app /var/lib/redis` 以便由服务用户拥有该目录。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Expose the scheduler container port with `containerPort: 8080` in the Pod spec.",
+        "output": "在 Pod 配置中使用 `containerPort: 8080` 暴露 scheduler 容器端口。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "In `docker-compose.yml`, map a host port to a container port with `ports: - \"6379:80\"`.",
+        "output": "在 `docker-compose.yml` 中，可用 `ports: - \"6379:80\"` 将宿主机端口映射到容器端口。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Create a B-tree index to speed up equality and range lookups: `CREATE INDEX ON events (created_at);`.",
+        "output": "创建 B-tree 索引可加速等值和范围查询：`CREATE INDEX ON events (created_at);`。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `depends_on` in Compose to express startup ordering, but still add health checks for readiness.",
+        "output": "在 Compose 中使用 `depends_on` 表达启动顺序，但仍应通过健康检查判断就绪状态。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Set a Redis key with an expiration using `SET rate:ip:1.2.3.4 {\"name\":\"alice\"} EX 60`.",
+        "output": "使用 `SET rate:ip:1.2.3.4 {\"name\":\"alice\"} EX 60` 设置带过期时间的 Redis 键。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl port-forward svc/vault 8200:8200 -n argocd` to access a Service locally.",
+        "output": "使用 `kubectl port-forward svc/vault 8200:8200 -n argocd` 在本地访问集群内的 Service。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "`kubectl describe pod postgres-0 -n dev` shows events that explain why a Pod is Pending or CrashLoopBackOff.",
+        "output": "`kubectl describe pod postgres-0 -n dev` 会显示事件信息，用于解释 Pod 为何处于 Pending 或 CrashLoopBackOff。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Add a static host entry by editing `/etc/hosts`, for example: `10.10.0.12 db.internal`.",
+        "output": "通过编辑 `/etc/hosts` 添加静态主机条目，例如：`10.10.0.12 db.internal`。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "In Kubernetes YAML, set `image: prom/prometheus:v2.51.2` under the container spec for the worker container.",
+        "output": "在 Kubernetes YAML 中，在 worker 容器的配置下设置 `image: prom/prometheus:v2.51.2` 以指定容器镜像。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "In Kubernetes YAML, set `image: alpine:3.19` under the container spec for the api container.",
+        "output": "在 Kubernetes YAML 中，在 api 容器的配置下设置 `image: alpine:3.19` 以指定容器镜像。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `git revert 4d3c2b1` to create a new commit that undoes changes without rewriting history.",
+        "output": "使用 `git revert 4d3c2b1` 创建一个新提交来撤销改动，而不改写历史记录。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Cache dependency directories (for example, `$GOMODCACHE`) to speed up CI builds.",
+        "output": "缓存依赖目录（例如 `$GOMODCACHE`）可以加速 CI 构建。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "`kubectl describe pod postgres-0 -n default` shows events that explain why a Pod is Pending or CrashLoopBackOff.",
+        "output": "`kubectl describe pod postgres-0 -n default` 会显示事件信息，用于解释 Pod 为何处于 Pending 或 CrashLoopBackOff。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `chmod 0660 /var/lib/app/config.yaml` to update file permissions.",
+        "output": "使用 `chmod 0660 /var/lib/app/config.yaml` 来更新文件权限。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl port-forward svc/vault 3000:9090 -n monitoring` to access a Service locally.",
+        "output": "使用 `kubectl port-forward svc/vault 3000:9090 -n monitoring` 在本地访问集群内的 Service。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `chmod 0644 /var/lib/app/config.yaml` to update file permissions.",
+        "output": "使用 `chmod 0644 /var/lib/app/config.yaml` 来更新文件权限。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "`ENTRYPOINT [\"/usr/local/bin/app\"]` defines the main process for the container.",
+        "output": "`ENTRYPOINT [\"/usr/local/bin/app\"]` 用于定义容器的主进程。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "In `docker-compose.yml`, map a host port to a container port with `ports: - \"9000:9000\"`.",
+        "output": "在 `docker-compose.yml` 中，可用 `ports: - \"9000:9000\"` 将宿主机端口映射到容器端口。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl logs controller-7d9f6b8f7c-klmno -c runner -n batch` to view logs from a specific container in a Pod.",
+        "output": "使用 `kubectl logs controller-7d9f6b8f7c-klmno -c runner -n batch` 查看 Pod 中指定容器的日志。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Run `chown app:app /var/lib/postgresql` so the service user owns the directory.",
+        "output": "运行 `chown app:app /var/lib/postgresql` 以便由服务用户拥有该目录。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl logs api-6c7b9d4f5b-abcde -c runner -n batch` to view logs from a specific container in a Pod.",
+        "output": "使用 `kubectl logs api-6c7b9d4f5b-abcde -c runner -n batch` 查看 Pod 中指定容器的日志。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `tcpdump -i docker0 port 6379` to capture packets for a specific port.",
+        "output": "使用 `tcpdump -i docker0 port 6379` 抓取指定端口的网络包。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Run `chown app:www-data /var/lib/postgresql` so the service user owns the directory.",
+        "output": "运行 `chown app:www-data /var/lib/postgresql` 以便由服务用户拥有该目录。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Set a Redis key with an expiration using `SET rate:ip:1.2.3.4 {\"name\":\"alice\"} EX 30`.",
+        "output": "使用 `SET rate:ip:1.2.3.4 {\"name\":\"alice\"} EX 30` 设置带过期时间的 Redis 键。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl port-forward svc/grafana 9090:3000 -n monitoring` to access a Service locally.",
+        "output": "使用 `kubectl port-forward svc/grafana 9090:3000 -n monitoring` 在本地访问集群内的 Service。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "In `docker-compose.yml`, map a host port to a container port with `ports: - \"6379:5432\"`.",
+        "output": "在 `docker-compose.yml` 中，可用 `ports: - \"6379:5432\"` 将宿主机端口映射到容器端口。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl port-forward svc/vault 8200:443 -n monitoring` to access a Service locally.",
+        "output": "使用 `kubectl port-forward svc/vault 8200:443 -n monitoring` 在本地访问集群内的 Service。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "In Kubernetes YAML, set `image: alpine:3.19` under the container spec for the scheduler container.",
+        "output": "在 Kubernetes YAML 中，在 scheduler 容器的配置下设置 `image: alpine:3.19` 以指定容器镜像。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `curl -v https://grafana.example.com/healthz` to verify TLS negotiation and HTTP status.",
+        "output": "使用 `curl -v https://grafana.example.com/healthz` 验证 TLS 握手过程和 HTTP 状态码。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Install a Helm chart with `helm install loki prometheus-community/kube-prometheus-stack -n ingress-nginx --create-namespace`.",
+        "output": "使用 `helm install loki prometheus-community/kube-prometheus-stack -n ingress-nginx --create-namespace` 安装 Helm Chart。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Expose the frontend container port with `containerPort: 5432` in the Pod spec.",
+        "output": "在 Pod 配置中使用 `containerPort: 5432` 暴露 frontend 容器端口。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl port-forward svc/prometheus 3000:9090 -n monitoring` to access a Service locally.",
+        "output": "使用 `kubectl port-forward svc/prometheus 3000:9090 -n monitoring` 在本地访问集群内的 Service。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Install a Helm chart with `helm install prom ingress-nginx/ingress-nginx -n cert-manager --create-namespace`.",
+        "output": "使用 `helm install prom ingress-nginx/ingress-nginx -n cert-manager --create-namespace` 安装 Helm Chart。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Create a namespace with `kubectl create namespace prod`.",
+        "output": "使用 `kubectl create namespace prod` 创建命名空间。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl logs api-6c7b9d4f5b-abcde -c manager -n kube-system` to view logs from a specific container in a Pod.",
+        "output": "使用 `kubectl logs api-6c7b9d4f5b-abcde -c manager -n kube-system` 查看 Pod 中指定容器的日志。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "In Terraform, run `terraform init` before `terraform plan` to download providers and modules.",
+        "output": "在 Terraform 中，先运行 `terraform init` 下载 provider 和 module，然后再执行 `terraform plan`。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl port-forward svc/grafana 9090:3000 -n security` to access a Service locally.",
+        "output": "使用 `kubectl port-forward svc/grafana 9090:3000 -n security` 在本地访问集群内的 Service。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Create a B-tree index to speed up equality and range lookups: `CREATE INDEX ON sessions (user_id);`.",
+        "output": "创建 B-tree 索引可加速等值和范围查询：`CREATE INDEX ON sessions (user_id);`。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl port-forward svc/vault 8200:3000 -n argocd` to access a Service locally.",
+        "output": "使用 `kubectl port-forward svc/vault 8200:3000 -n argocd` 在本地访问集群内的 Service。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use a multi-stage Docker build to keep the final image small by copying only build artifacts.",
+        "output": "使用多阶段 Docker 构建，可以只复制构建产物到最终镜像，从而减小镜像体积。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "With Kustomize, run `kubectl apply -k ./clusters/prod` to apply an overlay directory.",
+        "output": "使用 Kustomize 时，可运行 `kubectl apply -k ./clusters/prod` 应用 overlay 目录。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Add a static host entry by editing `/etc/hosts`, for example: `172.16.1.20 ci.local`.",
+        "output": "通过编辑 `/etc/hosts` 添加静态主机条目，例如：`172.16.1.20 ci.local`。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Expose the ingester container port with `containerPort: 8080` in the Pod spec.",
+        "output": "在 Pod 配置中使用 `containerPort: 8080` 暴露 ingester 容器端口。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Run `chown redis:postgres /var/www/html` so the service user owns the directory.",
+        "output": "运行 `chown redis:postgres /var/www/html` 以便由服务用户拥有该目录。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Add a static host entry by editing `/etc/hosts`, for example: `10.0.2.15 ci.local`.",
+        "output": "通过编辑 `/etc/hosts` 添加静态主机条目，例如：`10.0.2.15 ci.local`。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "In Kubernetes YAML, set `image: alpine:3.19` under the container spec for the ingester container.",
+        "output": "在 Kubernetes YAML 中，在 ingester 容器的配置下设置 `image: alpine:3.19` 以指定容器镜像。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Mount an NFS share by adding a line to `/etc/fstab`, for example: `192.168.1.20:/srv/share /mnt/share nfs defaults 0 0`.",
+        "output": "通过在 `/etc/fstab` 添加一行来挂载 NFS 共享，例如：`192.168.1.20:/srv/share /mnt/share nfs defaults 0 0`。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Expose the api container port with `containerPort: 9090` in the Pod spec.",
+        "output": "在 Pod 配置中使用 `containerPort: 9090` 暴露 api 容器端口。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Install a Helm chart with `helm install loki jetstack/cert-manager -n monitoring --create-namespace`.",
+        "output": "使用 `helm install loki jetstack/cert-manager -n monitoring --create-namespace` 安装 Helm Chart。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl port-forward svc/argocd-server 9090:3000 -n security` to access a Service locally.",
+        "output": "使用 `kubectl port-forward svc/argocd-server 9090:3000 -n security` 在本地访问集群内的 Service。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl port-forward svc/grafana 3000:443 -n monitoring` to access a Service locally.",
+        "output": "使用 `kubectl port-forward svc/grafana 3000:443 -n monitoring` 在本地访问集群内的 Service。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl port-forward svc/vault 8080:3000 -n argocd` to access a Service locally.",
+        "output": "使用 `kubectl port-forward svc/vault 8080:3000 -n argocd` 在本地访问集群内的 Service。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `tar -czf backup.tgz /srv/app` to create a gzipped archive.",
+        "output": "使用 `tar -czf backup.tgz /srv/app` 创建一个 gzip 压缩归档。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Add a static host entry by editing `/etc/hosts`, for example: `172.16.1.20 cache.internal`.",
+        "output": "通过编辑 `/etc/hosts` 添加静态主机条目，例如：`172.16.1.20 cache.internal`。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Add a static host entry by editing `/etc/hosts`, for example: `10.0.2.15 db.internal`.",
+        "output": "通过编辑 `/etc/hosts` 添加静态主机条目，例如：`10.0.2.15 db.internal`。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Run `chown www-data:www-data /var/www/html` so the service user owns the directory.",
+        "output": "运行 `chown www-data:www-data /var/www/html` 以便由服务用户拥有该目录。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "`kubectl describe pod api-6c7b9d4f5b-abcde -n db` shows events that explain why a Pod is Pending or CrashLoopBackOff.",
+        "output": "`kubectl describe pod api-6c7b9d4f5b-abcde -n db` 会显示事件信息，用于解释 Pod 为何处于 Pending 或 CrashLoopBackOff。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "`kubectl describe pod api-6c7b9d4f5b-abcde -n dev` shows events that explain why a Pod is Pending or CrashLoopBackOff.",
+        "output": "`kubectl describe pod api-6c7b9d4f5b-abcde -n dev` 会显示事件信息，用于解释 Pod 为何处于 Pending 或 CrashLoopBackOff。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `jq -r '.status' data.json` to extract a field from JSON as raw text.",
+        "output": "使用 `jq -r '.status' data.json` 以原始文本形式从 JSON 中提取字段。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "`kubectl describe pod web-7f8c9d6b7f-fghij -n cache` shows events that explain why a Pod is Pending or CrashLoopBackOff.",
+        "output": "`kubectl describe pod web-7f8c9d6b7f-fghij -n cache` 会显示事件信息，用于解释 Pod 为何处于 Pending 或 CrashLoopBackOff。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Create a B-tree index to speed up equality and range lookups: `CREATE INDEX ON users (email);`.",
+        "output": "创建 B-tree 索引可加速等值和范围查询：`CREATE INDEX ON users (email);`。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Add a static host entry by editing `/etc/hosts`, for example: `10.0.2.15 registry.local`.",
+        "output": "通过编辑 `/etc/hosts` 添加静态主机条目，例如：`10.0.2.15 registry.local`。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Rotate certificates before expiration and reload the proxy to pick up the new files.",
+        "output": "在证书过期前完成轮换，并重载代理服务以加载新证书文件。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Install a Helm chart with `helm install nginx grafana/loki-stack -n ingress-nginx --create-namespace`.",
+        "output": "使用 `helm install nginx grafana/loki-stack -n ingress-nginx --create-namespace` 安装 Helm Chart。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "On RHEL-based systems, `rpm -qf /usr/bin/git` shows which RPM provides the file.",
+        "output": "在 RHEL 系系统上，`rpm -qf /usr/bin/git` 用于查看哪个 RPM 提供了该文件。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl rollout status deployment/worker -n default` to wait for a Deployment to finish rolling out.",
+        "output": "使用 `kubectl rollout status deployment/worker -n default` 等待 Deployment 滚动更新完成。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Run `chown app:www-data /srv/app` so the service user owns the directory.",
+        "output": "运行 `chown app:www-data /srv/app` 以便由服务用户拥有该目录。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl rollout status deployment/ingress-nginx-controller -n staging` to wait for a Deployment to finish rolling out.",
+        "output": "使用 `kubectl rollout status deployment/ingress-nginx-controller -n staging` 等待 Deployment 滚动更新完成。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Create a B-tree index to speed up equality and range lookups: `CREATE INDEX ON orders (created_at);`.",
+        "output": "创建 B-tree 索引可加速等值和范围查询：`CREATE INDEX ON orders (created_at);`。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Install a Helm chart with `helm install nginx ingress-nginx/ingress-nginx -n cert-manager --create-namespace`.",
+        "output": "使用 `helm install nginx ingress-nginx/ingress-nginx -n cert-manager --create-namespace` 安装 Helm Chart。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "In Kubernetes YAML, set `image: nginx:1.25-alpine` under the container spec for the scheduler container.",
+        "output": "在 Kubernetes YAML 中，在 scheduler 容器的配置下设置 `image: nginx:1.25-alpine` 以指定容器镜像。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "In a Dockerfile, `COPY ./dist/ /opt/app/` copies files into the image filesystem.",
+        "output": "在 Dockerfile 中，`COPY ./dist/ /opt/app/` 用于将文件复制到镜像文件系统中。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl port-forward svc/argocd-server 3000:8200 -n argocd` to access a Service locally.",
+        "output": "使用 `kubectl port-forward svc/argocd-server 3000:8200 -n argocd` 在本地访问集群内的 Service。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Test DNS resolution with `dig api.internal.local +short`.",
+        "output": "用 `dig api.internal.local +short` 测试 DNS 解析结果。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Set a Redis key with an expiration using `SET cache:user:42 10 EX 600`.",
+        "output": "使用 `SET cache:user:42 10 EX 600` 设置带过期时间的 Redis 键。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "In Nginx, `proxy_pass http://backend;` forwards requests to an upstream server.",
+        "output": "在 Nginx 中，`proxy_pass http://backend;` 用于将请求转发到上游服务。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "On RHEL-based systems, `rpm -qf /usr/sbin/nginx` shows which RPM provides the file.",
+        "output": "在 RHEL 系系统上，`rpm -qf /usr/sbin/nginx` 用于查看哪个 RPM 提供了该文件。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Set resource requests and limits so the scheduler can make accurate placement decisions.",
+        "output": "设置资源 request 和 limit，便于调度器做出更准确的调度决策。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Expose the ingester container port with `containerPort: 5432` in the Pod spec.",
+        "output": "在 Pod 配置中使用 `containerPort: 5432` 暴露 ingester 容器端口。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `redis-cli -h 10.0.0.20 -p 6380 PING` to verify Redis connectivity.",
+        "output": "使用 `redis-cli -h 10.0.0.20 -p 6380 PING` 验证 Redis 连通性。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Install a Helm chart with `helm install loki jetstack/cert-manager -n logging --create-namespace`.",
+        "output": "使用 `helm install loki jetstack/cert-manager -n logging --create-namespace` 安装 Helm Chart。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl logs controller-7d9f6b8f7c-klmno -c nginx -n default` to view logs from a specific container in a Pod.",
+        "output": "使用 `kubectl logs controller-7d9f6b8f7c-klmno -c nginx -n default` 查看 Pod 中指定容器的日志。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl port-forward svc/prometheus 9090:3000 -n monitoring` to access a Service locally.",
+        "output": "使用 `kubectl port-forward svc/prometheus 9090:3000 -n monitoring` 在本地访问集群内的 Service。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl port-forward svc/grafana 3000:9090 -n monitoring` to access a Service locally.",
+        "output": "使用 `kubectl port-forward svc/grafana 3000:9090 -n monitoring` 在本地访问集群内的 Service。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `chmod 0600 ./scripts/build.sh` to update file permissions.",
+        "output": "使用 `chmod 0600 ./scripts/build.sh` 来更新文件权限。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl logs api-6c7b9d4f5b-abcde -c nginx -n kube-system` to view logs from a specific container in a Pod.",
+        "output": "使用 `kubectl logs api-6c7b9d4f5b-abcde -c nginx -n kube-system` 查看 Pod 中指定容器的日志。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Generate an SSH key pair with `ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519`.",
+        "output": "使用 `ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519` 生成 SSH 密钥对。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl port-forward svc/prometheus 8080:9090 -n monitoring` to access a Service locally.",
+        "output": "使用 `kubectl port-forward svc/prometheus 8080:9090 -n monitoring` 在本地访问集群内的 Service。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl port-forward svc/grafana 3000:443 -n security` to access a Service locally.",
+        "output": "使用 `kubectl port-forward svc/grafana 3000:443 -n security` 在本地访问集群内的 Service。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Set a Redis key with an expiration using `SET cache:user:42 abc EX 300`.",
+        "output": "使用 `SET cache:user:42 abc EX 300` 设置带过期时间的 Redis 键。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl port-forward svc/vault 3000:3000 -n argocd` to access a Service locally.",
+        "output": "使用 `kubectl port-forward svc/vault 3000:3000 -n argocd` 在本地访问集群内的 Service。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `jq -r '.items|length' response.json` to extract a field from JSON as raw text.",
+        "output": "使用 `jq -r '.items|length' response.json` 以原始文本形式从 JSON 中提取字段。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use an idempotency key header like `Idempotency-Key: a3f1c9` to prevent duplicate writes on retries.",
+        "output": "使用诸如 `Idempotency-Key: a3f1c9` 的幂等键请求头，可在重试时避免重复写入。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "`grep -R \"listen\" /etc/systemd` searches recursively; add `-n` to include line numbers.",
+        "output": "`grep -R \"listen\" /etc/systemd` 进行递归搜索；加上 `-n` 可显示行号。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "In Kubernetes YAML, set `image: grafana/grafana:10.4.1` under the container spec for the scheduler container.",
+        "output": "在 Kubernetes YAML 中，在 scheduler 容器的配置下设置 `image: grafana/grafana:10.4.1` 以指定容器镜像。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl logs web-7f8c9d6b7f-fghij -c nginx -n batch` to view logs from a specific container in a Pod.",
+        "output": "使用 `kubectl logs web-7f8c9d6b7f-fghij -c nginx -n batch` 查看 Pod 中指定容器的日志。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Set a Redis key with an expiration using `SET token:123 {\"name\":\"alice\"} EX 600`.",
+        "output": "使用 `SET token:123 {\"name\":\"alice\"} EX 600` 设置带过期时间的 Redis 键。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl port-forward svc/argocd-server 8200:443 -n monitoring` to access a Service locally.",
+        "output": "使用 `kubectl port-forward svc/argocd-server 8200:443 -n monitoring` 在本地访问集群内的 Service。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl port-forward svc/prometheus 8080:9090 -n argocd` to access a Service locally.",
+        "output": "使用 `kubectl port-forward svc/prometheus 8080:9090 -n argocd` 在本地访问集群内的 Service。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl logs api-6c7b9d4f5b-abcde -c api -n dev` to view logs from a specific container in a Pod.",
+        "output": "使用 `kubectl logs api-6c7b9d4f5b-abcde -c api -n dev` 查看 Pod 中指定容器的日志。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `git revert a1b2c3d` to create a new commit that undoes changes without rewriting history.",
+        "output": "使用 `git revert a1b2c3d` 创建一个新提交来撤销改动，而不改写历史记录。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl port-forward svc/vault 9090:8200 -n argocd` to access a Service locally.",
+        "output": "使用 `kubectl port-forward svc/vault 9090:8200 -n argocd` 在本地访问集群内的 Service。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl port-forward svc/argocd-server 3000:8200 -n security` to access a Service locally.",
+        "output": "使用 `kubectl port-forward svc/argocd-server 3000:8200 -n security` 在本地访问集群内的 Service。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `chmod 0600 /var/lib/app/config.yaml` to update file permissions.",
+        "output": "使用 `chmod 0600 /var/lib/app/config.yaml` 来更新文件权限。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl port-forward svc/argocd-server 9090:9090 -n security` to access a Service locally.",
+        "output": "使用 `kubectl port-forward svc/argocd-server 9090:9090 -n security` 在本地访问集群内的 Service。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Expose the api container port with `containerPort: 3000` in the Pod spec.",
+        "output": "在 Pod 配置中使用 `containerPort: 3000` 暴露 api 容器端口。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl port-forward svc/vault 8200:443 -n argocd` to access a Service locally.",
+        "output": "使用 `kubectl port-forward svc/vault 8200:443 -n argocd` 在本地访问集群内的 Service。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl port-forward svc/prometheus 8080:3000 -n monitoring` to access a Service locally.",
+        "output": "使用 `kubectl port-forward svc/prometheus 8080:3000 -n monitoring` 在本地访问集群内的 Service。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Set a Redis key with an expiration using `SET rate:ip:1.2.3.4 1 EX 30`.",
+        "output": "使用 `SET rate:ip:1.2.3.4 1 EX 30` 设置带过期时间的 Redis 键。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl port-forward svc/grafana 3000:3000 -n argocd` to access a Service locally.",
+        "output": "使用 `kubectl port-forward svc/grafana 3000:3000 -n argocd` 在本地访问集群内的 Service。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Run `chown postgres:app /var/lib/redis` so the service user owns the directory.",
+        "output": "运行 `chown postgres:app /var/lib/redis` 以便由服务用户拥有该目录。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `chmod 0644 ./scripts/build.sh` to update file permissions.",
+        "output": "使用 `chmod 0644 ./scripts/build.sh` 来更新文件权限。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl port-forward svc/grafana 8200:9090 -n security` to access a Service locally.",
+        "output": "使用 `kubectl port-forward svc/grafana 8200:9090 -n security` 在本地访问集群内的 Service。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `tar -czf logs.tgz ./config` to create a gzipped archive.",
+        "output": "使用 `tar -czf logs.tgz ./config` 创建一个 gzip 压缩归档。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Start the service and enable it at boot with `systemctl enable --now sshd`.",
+        "output": "使用 `systemctl enable --now sshd` 启动服务并设置为开机自启。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl port-forward svc/argocd-server 8200:8200 -n monitoring` to access a Service locally.",
+        "output": "使用 `kubectl port-forward svc/argocd-server 8200:8200 -n monitoring` 在本地访问集群内的 Service。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl port-forward svc/grafana 8200:443 -n security` to access a Service locally.",
+        "output": "使用 `kubectl port-forward svc/grafana 8200:443 -n security` 在本地访问集群内的 Service。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Set a Redis key with an expiration using `SET lock:job {\"name\":\"alice\"} EX 60`.",
+        "output": "使用 `SET lock:job {\"name\":\"alice\"} EX 60` 设置带过期时间的 Redis 键。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl port-forward svc/grafana 3000:8200 -n monitoring` to access a Service locally.",
+        "output": "使用 `kubectl port-forward svc/grafana 3000:8200 -n monitoring` 在本地访问集群内的 Service。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl logs api-6c7b9d4f5b-abcde -c api -n default` to view logs from a specific container in a Pod.",
+        "output": "使用 `kubectl logs api-6c7b9d4f5b-abcde -c api -n default` 查看 Pod 中指定容器的日志。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `redis-cli -h redis -p 6379 PING` to verify Redis connectivity.",
+        "output": "使用 `redis-cli -h redis -p 6379 PING` 验证 Redis 连通性。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Set a Redis key with an expiration using `SET token:123 1 EX 60`.",
+        "output": "使用 `SET token:123 1 EX 60` 设置带过期时间的 Redis 键。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use semantic version tags like `v1.4.2` so deployments can be reproduced.",
+        "output": "使用 `v1.4.2` 这类语义化版本标签，便于复现部署结果。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `kubectl port-forward svc/prometheus 9090:3000 -n security` to access a Service locally.",
+        "output": "使用 `kubectl port-forward svc/prometheus 9090:3000 -n security` 在本地访问集群内的 Service。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "To find which package owns a file on Debian/Ubuntu, run `dpkg -S /lib/systemd/system/nginx.service`.",
+        "output": "在 Debian/Ubuntu 上要查询文件属于哪个包，可运行 `dpkg -S /lib/systemd/system/nginx.service`。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Test DNS resolution with `dig kubernetes.io +short`.",
+        "output": "用 `dig kubernetes.io +short` 测试 DNS 解析结果。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Run `chown www-data:www-data /var/lib/postgresql` so the service user owns the directory.",
+        "output": "运行 `chown www-data:www-data /var/lib/postgresql` 以便由服务用户拥有该目录。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use semantic version tags like `v3.1.7` so deployments can be reproduced.",
+        "output": "使用 `v3.1.7` 这类语义化版本标签，便于复现部署结果。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Use `EXPLAIN (ANALYZE, BUFFERS) SELECT count(*) FROM events WHERE ts > now() - interval '1 day';` to inspect query execution time and buffer usage.",
+        "output": "使用 `EXPLAIN (ANALYZE, BUFFERS) SELECT count(*) FROM events WHERE ts > now() - interval '1 day';` 查看查询执行耗时以及缓冲区使用情况。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Apply a manifest with `kubectl apply -f ./kustomize/overlays/dev`.",
+        "output": "使用 `kubectl apply -f ./kustomize/overlays/dev` 应用清单文件。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "In Kubernetes YAML, set `image: postgres:16` under the container spec for the api container.",
+        "output": "在 Kubernetes YAML 中，在 api 容器的配置下设置 `image: postgres:16` 以指定容器镜像。"
+    },
+    {
+        "instruction": "Translate the following technical text into Chinese.",
+        "input": "Set a Redis key with an expiration using `SET cache:user:42 {\"name\":\"alice\"} EX 30`.",
+        "output": "使用 `SET cache:user:42 {\"name\":\"alice\"} EX 30` 设置带过期时间的 Redis 键。"
+    }
+]

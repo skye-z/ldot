@@ -1,0 +1,1252 @@
+[
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Check the running pods in the namespace, then inspect the output for CrashLoopBackOff.\n\nkubectl get pods -n ns1\n",
+    "output": "检查命名空间中的运行中 Pod，然后查看输出以寻找 CrashLoopBackOff。\n\nkubectl get pods -n ns1\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
+    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-3\ndata:\n  LOG_LEVEL: info\n```\n",
+    "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-3\ndata:\n  LOG_LEVEL: info\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
+    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Run the container with production settings and check the startup logs.\n\ndocker run --rm -e ENV=prod app:5\n",
+    "output": "使用生产设置运行容器并检查启动日志。\n\ndocker run --rm -e ENV=prod app:5\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Check the running pods in the namespace, then inspect the output for CrashLoopBackOff.\n\nkubectl get pods -n ns6\n",
+    "output": "检查命名空间中的运行中 Pod，然后查看输出以寻找 CrashLoopBackOff。\n\nkubectl get pods -n ns6\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
+    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-8\ndata:\n  LOG_LEVEL: info\n```\n",
+    "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-8\ndata:\n  LOG_LEVEL: info\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
+    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Run the container with production settings and check the startup logs.\n\ndocker run --rm -e ENV=prod app:10\n",
+    "output": "使用生产设置运行容器并检查启动日志。\n\ndocker run --rm -e ENV=prod app:10\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Check the running pods in the namespace, then inspect the output for CrashLoopBackOff.\n\nkubectl get pods -n ns11\n",
+    "output": "检查命名空间中的运行中 Pod，然后查看输出以寻找 CrashLoopBackOff。\n\nkubectl get pods -n ns11\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
+    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-13\ndata:\n  LOG_LEVEL: info\n```\n",
+    "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-13\ndata:\n  LOG_LEVEL: info\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
+    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Run the container with production settings and check the startup logs.\n\ndocker run --rm -e ENV=prod app:15\n",
+    "output": "使用生产设置运行容器并检查启动日志。\n\ndocker run --rm -e ENV=prod app:15\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Check the running pods in the namespace, then inspect the output for CrashLoopBackOff.\n\nkubectl get pods -n ns16\n",
+    "output": "检查命名空间中的运行中 Pod，然后查看输出以寻找 CrashLoopBackOff。\n\nkubectl get pods -n ns16\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
+    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-18\ndata:\n  LOG_LEVEL: info\n```\n",
+    "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-18\ndata:\n  LOG_LEVEL: info\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
+    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Run the container with production settings and check the startup logs.\n\ndocker run --rm -e ENV=prod app:20\n",
+    "output": "使用生产设置运行容器并检查启动日志。\n\ndocker run --rm -e ENV=prod app:20\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Check the running pods in the namespace, then inspect the output for CrashLoopBackOff.\n\nkubectl get pods -n ns21\n",
+    "output": "检查命名空间中的运行中 Pod，然后查看输出以寻找 CrashLoopBackOff。\n\nkubectl get pods -n ns21\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
+    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-23\ndata:\n  LOG_LEVEL: info\n```\n",
+    "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-23\ndata:\n  LOG_LEVEL: info\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
+    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Run the container with production settings and check the startup logs.\n\ndocker run --rm -e ENV=prod app:25\n",
+    "output": "使用生产设置运行容器并检查启动日志。\n\ndocker run --rm -e ENV=prod app:25\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Check the running pods in the namespace, then inspect the output for CrashLoopBackOff.\n\nkubectl get pods -n ns26\n",
+    "output": "检查命名空间中的运行中 Pod，然后查看输出以寻找 CrashLoopBackOff。\n\nkubectl get pods -n ns26\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
+    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-28\ndata:\n  LOG_LEVEL: info\n```\n",
+    "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-28\ndata:\n  LOG_LEVEL: info\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
+    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Run the container with production settings and check the startup logs.\n\ndocker run --rm -e ENV=prod app:30\n",
+    "output": "使用生产设置运行容器并检查启动日志。\n\ndocker run --rm -e ENV=prod app:30\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Check the running pods in the namespace, then inspect the output for CrashLoopBackOff.\n\nkubectl get pods -n ns31\n",
+    "output": "检查命名空间中的运行中 Pod，然后查看输出以寻找 CrashLoopBackOff。\n\nkubectl get pods -n ns31\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
+    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-33\ndata:\n  LOG_LEVEL: info\n```\n",
+    "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-33\ndata:\n  LOG_LEVEL: info\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
+    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Run the container with production settings and check the startup logs.\n\ndocker run --rm -e ENV=prod app:35\n",
+    "output": "使用生产设置运行容器并检查启动日志。\n\ndocker run --rm -e ENV=prod app:35\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Check the running pods in the namespace, then inspect the output for CrashLoopBackOff.\n\nkubectl get pods -n ns36\n",
+    "output": "检查命名空间中的运行中 Pod，然后查看输出以寻找 CrashLoopBackOff。\n\nkubectl get pods -n ns36\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
+    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-38\ndata:\n  LOG_LEVEL: info\n```\n",
+    "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-38\ndata:\n  LOG_LEVEL: info\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
+    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Run the container with production settings and check the startup logs.\n\ndocker run --rm -e ENV=prod app:40\n",
+    "output": "使用生产设置运行容器并检查启动日志。\n\ndocker run --rm -e ENV=prod app:40\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Check the running pods in the namespace, then inspect the output for CrashLoopBackOff.\n\nkubectl get pods -n ns41\n",
+    "output": "检查命名空间中的运行中 Pod，然后查看输出以寻找 CrashLoopBackOff。\n\nkubectl get pods -n ns41\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
+    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-43\ndata:\n  LOG_LEVEL: info\n```\n",
+    "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-43\ndata:\n  LOG_LEVEL: info\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
+    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Run the container with production settings and check the startup logs.\n\ndocker run --rm -e ENV=prod app:45\n",
+    "output": "使用生产设置运行容器并检查启动日志。\n\ndocker run --rm -e ENV=prod app:45\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Check the running pods in the namespace, then inspect the output for CrashLoopBackOff.\n\nkubectl get pods -n ns46\n",
+    "output": "检查命名空间中的运行中 Pod，然后查看输出以寻找 CrashLoopBackOff。\n\nkubectl get pods -n ns46\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
+    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-48\ndata:\n  LOG_LEVEL: info\n```\n",
+    "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-48\ndata:\n  LOG_LEVEL: info\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
+    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Run the container with production settings and check the startup logs.\n\ndocker run --rm -e ENV=prod app:50\n",
+    "output": "使用生产设置运行容器并检查启动日志。\n\ndocker run --rm -e ENV=prod app:50\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Check the running pods in the namespace, then inspect the output for CrashLoopBackOff.\n\nkubectl get pods -n ns51\n",
+    "output": "检查命名空间中的运行中 Pod，然后查看输出以寻找 CrashLoopBackOff。\n\nkubectl get pods -n ns51\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
+    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-53\ndata:\n  LOG_LEVEL: info\n```\n",
+    "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-53\ndata:\n  LOG_LEVEL: info\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
+    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Run the container with production settings and check the startup logs.\n\ndocker run --rm -e ENV=prod app:55\n",
+    "output": "使用生产设置运行容器并检查启动日志。\n\ndocker run --rm -e ENV=prod app:55\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Check the running pods in the namespace, then inspect the output for CrashLoopBackOff.\n\nkubectl get pods -n ns56\n",
+    "output": "检查命名空间中的运行中 Pod，然后查看输出以寻找 CrashLoopBackOff。\n\nkubectl get pods -n ns56\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
+    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-58\ndata:\n  LOG_LEVEL: info\n```\n",
+    "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-58\ndata:\n  LOG_LEVEL: info\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
+    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Run the container with production settings and check the startup logs.\n\ndocker run --rm -e ENV=prod app:60\n",
+    "output": "使用生产设置运行容器并检查启动日志。\n\ndocker run --rm -e ENV=prod app:60\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Check the running pods in the namespace, then inspect the output for CrashLoopBackOff.\n\nkubectl get pods -n ns61\n",
+    "output": "检查命名空间中的运行中 Pod，然后查看输出以寻找 CrashLoopBackOff。\n\nkubectl get pods -n ns61\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
+    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-63\ndata:\n  LOG_LEVEL: info\n```\n",
+    "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-63\ndata:\n  LOG_LEVEL: info\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
+    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Run the container with production settings and check the startup logs.\n\ndocker run --rm -e ENV=prod app:65\n",
+    "output": "使用生产设置运行容器并检查启动日志。\n\ndocker run --rm -e ENV=prod app:65\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Check the running pods in the namespace, then inspect the output for CrashLoopBackOff.\n\nkubectl get pods -n ns66\n",
+    "output": "检查命名空间中的运行中 Pod，然后查看输出以寻找 CrashLoopBackOff。\n\nkubectl get pods -n ns66\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
+    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-68\ndata:\n  LOG_LEVEL: info\n```\n",
+    "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-68\ndata:\n  LOG_LEVEL: info\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
+    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Run the container with production settings and check the startup logs.\n\ndocker run --rm -e ENV=prod app:70\n",
+    "output": "使用生产设置运行容器并检查启动日志。\n\ndocker run --rm -e ENV=prod app:70\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Check the running pods in the namespace, then inspect the output for CrashLoopBackOff.\n\nkubectl get pods -n ns71\n",
+    "output": "检查命名空间中的运行中 Pod，然后查看输出以寻找 CrashLoopBackOff。\n\nkubectl get pods -n ns71\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
+    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-73\ndata:\n  LOG_LEVEL: info\n```\n",
+    "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-73\ndata:\n  LOG_LEVEL: info\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
+    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Run the container with production settings and check the startup logs.\n\ndocker run --rm -e ENV=prod app:75\n",
+    "output": "使用生产设置运行容器并检查启动日志。\n\ndocker run --rm -e ENV=prod app:75\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Check the running pods in the namespace, then inspect the output for CrashLoopBackOff.\n\nkubectl get pods -n ns76\n",
+    "output": "检查命名空间中的运行中 Pod，然后查看输出以寻找 CrashLoopBackOff。\n\nkubectl get pods -n ns76\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
+    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-78\ndata:\n  LOG_LEVEL: info\n```\n",
+    "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-78\ndata:\n  LOG_LEVEL: info\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
+    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Run the container with production settings and check the startup logs.\n\ndocker run --rm -e ENV=prod app:80\n",
+    "output": "使用生产设置运行容器并检查启动日志。\n\ndocker run --rm -e ENV=prod app:80\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Check the running pods in the namespace, then inspect the output for CrashLoopBackOff.\n\nkubectl get pods -n ns81\n",
+    "output": "检查命名空间中的运行中 Pod，然后查看输出以寻找 CrashLoopBackOff。\n\nkubectl get pods -n ns81\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
+    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-83\ndata:\n  LOG_LEVEL: info\n```\n",
+    "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-83\ndata:\n  LOG_LEVEL: info\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
+    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Run the container with production settings and check the startup logs.\n\ndocker run --rm -e ENV=prod app:85\n",
+    "output": "使用生产设置运行容器并检查启动日志。\n\ndocker run --rm -e ENV=prod app:85\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Check the running pods in the namespace, then inspect the output for CrashLoopBackOff.\n\nkubectl get pods -n ns86\n",
+    "output": "检查命名空间中的运行中 Pod，然后查看输出以寻找 CrashLoopBackOff。\n\nkubectl get pods -n ns86\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
+    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-88\ndata:\n  LOG_LEVEL: info\n```\n",
+    "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-88\ndata:\n  LOG_LEVEL: info\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
+    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Run the container with production settings and check the startup logs.\n\ndocker run --rm -e ENV=prod app:90\n",
+    "output": "使用生产设置运行容器并检查启动日志。\n\ndocker run --rm -e ENV=prod app:90\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Check the running pods in the namespace, then inspect the output for CrashLoopBackOff.\n\nkubectl get pods -n ns91\n",
+    "output": "检查命名空间中的运行中 Pod，然后查看输出以寻找 CrashLoopBackOff。\n\nkubectl get pods -n ns91\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
+    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-93\ndata:\n  LOG_LEVEL: info\n```\n",
+    "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-93\ndata:\n  LOG_LEVEL: info\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
+    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Run the container with production settings and check the startup logs.\n\ndocker run --rm -e ENV=prod app:95\n",
+    "output": "使用生产设置运行容器并检查启动日志。\n\ndocker run --rm -e ENV=prod app:95\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Check the running pods in the namespace, then inspect the output for CrashLoopBackOff.\n\nkubectl get pods -n ns96\n",
+    "output": "检查命名空间中的运行中 Pod，然后查看输出以寻找 CrashLoopBackOff。\n\nkubectl get pods -n ns96\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
+    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-98\ndata:\n  LOG_LEVEL: info\n```\n",
+    "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-98\ndata:\n  LOG_LEVEL: info\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
+    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Run the container with production settings and check the startup logs.\n\ndocker run --rm -e ENV=prod app:100\n",
+    "output": "使用生产设置运行容器并检查启动日志。\n\ndocker run --rm -e ENV=prod app:100\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Check the running pods in the namespace, then inspect the output for CrashLoopBackOff.\n\nkubectl get pods -n ns101\n",
+    "output": "检查命名空间中的运行中 Pod，然后查看输出以寻找 CrashLoopBackOff。\n\nkubectl get pods -n ns101\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
+    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-103\ndata:\n  LOG_LEVEL: info\n```\n",
+    "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-103\ndata:\n  LOG_LEVEL: info\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
+    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Run the container with production settings and check the startup logs.\n\ndocker run --rm -e ENV=prod app:105\n",
+    "output": "使用生产设置运行容器并检查启动日志。\n\ndocker run --rm -e ENV=prod app:105\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Check the running pods in the namespace, then inspect the output for CrashLoopBackOff.\n\nkubectl get pods -n ns106\n",
+    "output": "检查命名空间中的运行中 Pod，然后查看输出以寻找 CrashLoopBackOff。\n\nkubectl get pods -n ns106\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
+    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-108\ndata:\n  LOG_LEVEL: info\n```\n",
+    "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-108\ndata:\n  LOG_LEVEL: info\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
+    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Run the container with production settings and check the startup logs.\n\ndocker run --rm -e ENV=prod app:110\n",
+    "output": "使用生产设置运行容器并检查启动日志。\n\ndocker run --rm -e ENV=prod app:110\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Check the running pods in the namespace, then inspect the output for CrashLoopBackOff.\n\nkubectl get pods -n ns111\n",
+    "output": "检查命名空间中的运行中 Pod，然后查看输出以寻找 CrashLoopBackOff。\n\nkubectl get pods -n ns111\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
+    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-113\ndata:\n  LOG_LEVEL: info\n```\n",
+    "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-113\ndata:\n  LOG_LEVEL: info\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
+    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Run the container with production settings and check the startup logs.\n\ndocker run --rm -e ENV=prod app:115\n",
+    "output": "使用生产设置运行容器并检查启动日志。\n\ndocker run --rm -e ENV=prod app:115\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Check the running pods in the namespace, then inspect the output for CrashLoopBackOff.\n\nkubectl get pods -n ns116\n",
+    "output": "检查命名空间中的运行中 Pod，然后查看输出以寻找 CrashLoopBackOff。\n\nkubectl get pods -n ns116\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
+    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-118\ndata:\n  LOG_LEVEL: info\n```\n",
+    "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-118\ndata:\n  LOG_LEVEL: info\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
+    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Run the container with production settings and check the startup logs.\n\ndocker run --rm -e ENV=prod app:120\n",
+    "output": "使用生产设置运行容器并检查启动日志。\n\ndocker run --rm -e ENV=prod app:120\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Check the running pods in the namespace, then inspect the output for CrashLoopBackOff.\n\nkubectl get pods -n ns121\n",
+    "output": "检查命名空间中的运行中 Pod，然后查看输出以寻找 CrashLoopBackOff。\n\nkubectl get pods -n ns121\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
+    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-123\ndata:\n  LOG_LEVEL: info\n```\n",
+    "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-123\ndata:\n  LOG_LEVEL: info\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
+    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Run the container with production settings and check the startup logs.\n\ndocker run --rm -e ENV=prod app:125\n",
+    "output": "使用生产设置运行容器并检查启动日志。\n\ndocker run --rm -e ENV=prod app:125\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Check the running pods in the namespace, then inspect the output for CrashLoopBackOff.\n\nkubectl get pods -n ns126\n",
+    "output": "检查命名空间中的运行中 Pod，然后查看输出以寻找 CrashLoopBackOff。\n\nkubectl get pods -n ns126\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
+    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-128\ndata:\n  LOG_LEVEL: info\n```\n",
+    "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-128\ndata:\n  LOG_LEVEL: info\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
+    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Run the container with production settings and check the startup logs.\n\ndocker run --rm -e ENV=prod app:130\n",
+    "output": "使用生产设置运行容器并检查启动日志。\n\ndocker run --rm -e ENV=prod app:130\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Check the running pods in the namespace, then inspect the output for CrashLoopBackOff.\n\nkubectl get pods -n ns131\n",
+    "output": "检查命名空间中的运行中 Pod，然后查看输出以寻找 CrashLoopBackOff。\n\nkubectl get pods -n ns131\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
+    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-133\ndata:\n  LOG_LEVEL: info\n```\n",
+    "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-133\ndata:\n  LOG_LEVEL: info\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
+    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Run the container with production settings and check the startup logs.\n\ndocker run --rm -e ENV=prod app:135\n",
+    "output": "使用生产设置运行容器并检查启动日志。\n\ndocker run --rm -e ENV=prod app:135\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Check the running pods in the namespace, then inspect the output for CrashLoopBackOff.\n\nkubectl get pods -n ns136\n",
+    "output": "检查命名空间中的运行中 Pod，然后查看输出以寻找 CrashLoopBackOff。\n\nkubectl get pods -n ns136\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
+    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-138\ndata:\n  LOG_LEVEL: info\n```\n",
+    "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-138\ndata:\n  LOG_LEVEL: info\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
+    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Run the container with production settings and check the startup logs.\n\ndocker run --rm -e ENV=prod app:140\n",
+    "output": "使用生产设置运行容器并检查启动日志。\n\ndocker run --rm -e ENV=prod app:140\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Check the running pods in the namespace, then inspect the output for CrashLoopBackOff.\n\nkubectl get pods -n ns141\n",
+    "output": "检查命名空间中的运行中 Pod，然后查看输出以寻找 CrashLoopBackOff。\n\nkubectl get pods -n ns141\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
+    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-143\ndata:\n  LOG_LEVEL: info\n```\n",
+    "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-143\ndata:\n  LOG_LEVEL: info\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
+    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Run the container with production settings and check the startup logs.\n\ndocker run --rm -e ENV=prod app:145\n",
+    "output": "使用生产设置运行容器并检查启动日志。\n\ndocker run --rm -e ENV=prod app:145\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Check the running pods in the namespace, then inspect the output for CrashLoopBackOff.\n\nkubectl get pods -n ns146\n",
+    "output": "检查命名空间中的运行中 Pod，然后查看输出以寻找 CrashLoopBackOff。\n\nkubectl get pods -n ns146\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
+    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-148\ndata:\n  LOG_LEVEL: info\n```\n",
+    "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-148\ndata:\n  LOG_LEVEL: info\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
+    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Run the container with production settings and check the startup logs.\n\ndocker run --rm -e ENV=prod app:150\n",
+    "output": "使用生产设置运行容器并检查启动日志。\n\ndocker run --rm -e ENV=prod app:150\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Check the running pods in the namespace, then inspect the output for CrashLoopBackOff.\n\nkubectl get pods -n ns151\n",
+    "output": "检查命名空间中的运行中 Pod，然后查看输出以寻找 CrashLoopBackOff。\n\nkubectl get pods -n ns151\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
+    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-153\ndata:\n  LOG_LEVEL: info\n```\n",
+    "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-153\ndata:\n  LOG_LEVEL: info\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
+    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Run the container with production settings and check the startup logs.\n\ndocker run --rm -e ENV=prod app:155\n",
+    "output": "使用生产设置运行容器并检查启动日志。\n\ndocker run --rm -e ENV=prod app:155\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Check the running pods in the namespace, then inspect the output for CrashLoopBackOff.\n\nkubectl get pods -n ns156\n",
+    "output": "检查命名空间中的运行中 Pod，然后查看输出以寻找 CrashLoopBackOff。\n\nkubectl get pods -n ns156\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
+    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-158\ndata:\n  LOG_LEVEL: info\n```\n",
+    "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-158\ndata:\n  LOG_LEVEL: info\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
+    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Run the container with production settings and check the startup logs.\n\ndocker run --rm -e ENV=prod app:160\n",
+    "output": "使用生产设置运行容器并检查启动日志。\n\ndocker run --rm -e ENV=prod app:160\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Check the running pods in the namespace, then inspect the output for CrashLoopBackOff.\n\nkubectl get pods -n ns161\n",
+    "output": "检查命名空间中的运行中 Pod，然后查看输出以寻找 CrashLoopBackOff。\n\nkubectl get pods -n ns161\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
+    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-163\ndata:\n  LOG_LEVEL: info\n```\n",
+    "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-163\ndata:\n  LOG_LEVEL: info\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
+    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Run the container with production settings and check the startup logs.\n\ndocker run --rm -e ENV=prod app:165\n",
+    "output": "使用生产设置运行容器并检查启动日志。\n\ndocker run --rm -e ENV=prod app:165\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Check the running pods in the namespace, then inspect the output for CrashLoopBackOff.\n\nkubectl get pods -n ns166\n",
+    "output": "检查命名空间中的运行中 Pod，然后查看输出以寻找 CrashLoopBackOff。\n\nkubectl get pods -n ns166\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
+    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-168\ndata:\n  LOG_LEVEL: info\n```\n",
+    "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-168\ndata:\n  LOG_LEVEL: info\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
+    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Run the container with production settings and check the startup logs.\n\ndocker run --rm -e ENV=prod app:170\n",
+    "output": "使用生产设置运行容器并检查启动日志。\n\ndocker run --rm -e ENV=prod app:170\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Check the running pods in the namespace, then inspect the output for CrashLoopBackOff.\n\nkubectl get pods -n ns171\n",
+    "output": "检查命名空间中的运行中 Pod，然后查看输出以寻找 CrashLoopBackOff。\n\nkubectl get pods -n ns171\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
+    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-173\ndata:\n  LOG_LEVEL: info\n```\n",
+    "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-173\ndata:\n  LOG_LEVEL: info\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
+    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Run the container with production settings and check the startup logs.\n\ndocker run --rm -e ENV=prod app:175\n",
+    "output": "使用生产设置运行容器并检查启动日志。\n\ndocker run --rm -e ENV=prod app:175\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Check the running pods in the namespace, then inspect the output for CrashLoopBackOff.\n\nkubectl get pods -n ns176\n",
+    "output": "检查命名空间中的运行中 Pod，然后查看输出以寻找 CrashLoopBackOff。\n\nkubectl get pods -n ns176\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
+    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-178\ndata:\n  LOG_LEVEL: info\n```\n",
+    "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-178\ndata:\n  LOG_LEVEL: info\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
+    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Run the container with production settings and check the startup logs.\n\ndocker run --rm -e ENV=prod app:180\n",
+    "output": "使用生产设置运行容器并检查启动日志。\n\ndocker run --rm -e ENV=prod app:180\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Check the running pods in the namespace, then inspect the output for CrashLoopBackOff.\n\nkubectl get pods -n ns181\n",
+    "output": "检查命名空间中的运行中 Pod，然后查看输出以寻找 CrashLoopBackOff。\n\nkubectl get pods -n ns181\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
+    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-183\ndata:\n  LOG_LEVEL: info\n```\n",
+    "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-183\ndata:\n  LOG_LEVEL: info\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
+    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Run the container with production settings and check the startup logs.\n\ndocker run --rm -e ENV=prod app:185\n",
+    "output": "使用生产设置运行容器并检查启动日志。\n\ndocker run --rm -e ENV=prod app:185\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Check the running pods in the namespace, then inspect the output for CrashLoopBackOff.\n\nkubectl get pods -n ns186\n",
+    "output": "检查命名空间中的运行中 Pod，然后查看输出以寻找 CrashLoopBackOff。\n\nkubectl get pods -n ns186\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
+    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-188\ndata:\n  LOG_LEVEL: info\n```\n",
+    "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-188\ndata:\n  LOG_LEVEL: info\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
+    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Run the container with production settings and check the startup logs.\n\ndocker run --rm -e ENV=prod app:190\n",
+    "output": "使用生产设置运行容器并检查启动日志。\n\ndocker run --rm -e ENV=prod app:190\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Check the running pods in the namespace, then inspect the output for CrashLoopBackOff.\n\nkubectl get pods -n ns191\n",
+    "output": "检查命名空间中的运行中 Pod，然后查看输出以寻找 CrashLoopBackOff。\n\nkubectl get pods -n ns191\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
+    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-193\ndata:\n  LOG_LEVEL: info\n```\n",
+    "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-193\ndata:\n  LOG_LEVEL: info\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
+    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Run the container with production settings and check the startup logs.\n\ndocker run --rm -e ENV=prod app:195\n",
+    "output": "使用生产设置运行容器并检查启动日志。\n\ndocker run --rm -e ENV=prod app:195\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Check the running pods in the namespace, then inspect the output for CrashLoopBackOff.\n\nkubectl get pods -n ns196\n",
+    "output": "检查命名空间中的运行中 Pod，然后查看输出以寻找 CrashLoopBackOff。\n\nkubectl get pods -n ns196\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
+    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-198\ndata:\n  LOG_LEVEL: info\n```\n",
+    "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-198\ndata:\n  LOG_LEVEL: info\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
+    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Run the container with production settings and check the startup logs.\n\ndocker run --rm -e ENV=prod app:200\n",
+    "output": "使用生产设置运行容器并检查启动日志。\n\ndocker run --rm -e ENV=prod app:200\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Check the running pods in the namespace, then inspect the output for CrashLoopBackOff.\n\nkubectl get pods -n ns201\n",
+    "output": "检查命名空间中的运行中 Pod，然后查看输出以寻找 CrashLoopBackOff。\n\nkubectl get pods -n ns201\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
+    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-203\ndata:\n  LOG_LEVEL: info\n```\n",
+    "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-203\ndata:\n  LOG_LEVEL: info\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
+    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Run the container with production settings and check the startup logs.\n\ndocker run --rm -e ENV=prod app:205\n",
+    "output": "使用生产设置运行容器并检查启动日志。\n\ndocker run --rm -e ENV=prod app:205\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Check the running pods in the namespace, then inspect the output for CrashLoopBackOff.\n\nkubectl get pods -n ns206\n",
+    "output": "检查命名空间中的运行中 Pod，然后查看输出以寻找 CrashLoopBackOff。\n\nkubectl get pods -n ns206\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
+    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-208\ndata:\n  LOG_LEVEL: info\n```\n",
+    "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-208\ndata:\n  LOG_LEVEL: info\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
+    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Run the container with production settings and check the startup logs.\n\ndocker run --rm -e ENV=prod app:210\n",
+    "output": "使用生产设置运行容器并检查启动日志。\n\ndocker run --rm -e ENV=prod app:210\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Check the running pods in the namespace, then inspect the output for CrashLoopBackOff.\n\nkubectl get pods -n ns211\n",
+    "output": "检查命名空间中的运行中 Pod，然后查看输出以寻找 CrashLoopBackOff。\n\nkubectl get pods -n ns211\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
+    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-213\ndata:\n  LOG_LEVEL: info\n```\n",
+    "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-213\ndata:\n  LOG_LEVEL: info\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
+    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Run the container with production settings and check the startup logs.\n\ndocker run --rm -e ENV=prod app:215\n",
+    "output": "使用生产设置运行容器并检查启动日志。\n\ndocker run --rm -e ENV=prod app:215\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Check the running pods in the namespace, then inspect the output for CrashLoopBackOff.\n\nkubectl get pods -n ns216\n",
+    "output": "检查命名空间中的运行中 Pod，然后查看输出以寻找 CrashLoopBackOff。\n\nkubectl get pods -n ns216\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
+    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-218\ndata:\n  LOG_LEVEL: info\n```\n",
+    "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-218\ndata:\n  LOG_LEVEL: info\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
+    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Run the container with production settings and check the startup logs.\n\ndocker run --rm -e ENV=prod app:220\n",
+    "output": "使用生产设置运行容器并检查启动日志。\n\ndocker run --rm -e ENV=prod app:220\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Check the running pods in the namespace, then inspect the output for CrashLoopBackOff.\n\nkubectl get pods -n ns221\n",
+    "output": "检查命名空间中的运行中 Pod，然后查看输出以寻找 CrashLoopBackOff。\n\nkubectl get pods -n ns221\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
+    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-223\ndata:\n  LOG_LEVEL: info\n```\n",
+    "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-223\ndata:\n  LOG_LEVEL: info\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
+    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Run the container with production settings and check the startup logs.\n\ndocker run --rm -e ENV=prod app:225\n",
+    "output": "使用生产设置运行容器并检查启动日志。\n\ndocker run --rm -e ENV=prod app:225\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Check the running pods in the namespace, then inspect the output for CrashLoopBackOff.\n\nkubectl get pods -n ns226\n",
+    "output": "检查命名空间中的运行中 Pod，然后查看输出以寻找 CrashLoopBackOff。\n\nkubectl get pods -n ns226\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
+    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-228\ndata:\n  LOG_LEVEL: info\n```\n",
+    "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-228\ndata:\n  LOG_LEVEL: info\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
+    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Run the container with production settings and check the startup logs.\n\ndocker run --rm -e ENV=prod app:230\n",
+    "output": "使用生产设置运行容器并检查启动日志。\n\ndocker run --rm -e ENV=prod app:230\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Check the running pods in the namespace, then inspect the output for CrashLoopBackOff.\n\nkubectl get pods -n ns231\n",
+    "output": "检查命名空间中的运行中 Pod，然后查看输出以寻找 CrashLoopBackOff。\n\nkubectl get pods -n ns231\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
+    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-233\ndata:\n  LOG_LEVEL: info\n```\n",
+    "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-233\ndata:\n  LOG_LEVEL: info\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
+    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Run the container with production settings and check the startup logs.\n\ndocker run --rm -e ENV=prod app:235\n",
+    "output": "使用生产设置运行容器并检查启动日志。\n\ndocker run --rm -e ENV=prod app:235\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Check the running pods in the namespace, then inspect the output for CrashLoopBackOff.\n\nkubectl get pods -n ns236\n",
+    "output": "检查命名空间中的运行中 Pod，然后查看输出以寻找 CrashLoopBackOff。\n\nkubectl get pods -n ns236\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
+    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-238\ndata:\n  LOG_LEVEL: info\n```\n",
+    "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-238\ndata:\n  LOG_LEVEL: info\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
+    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Run the container with production settings and check the startup logs.\n\ndocker run --rm -e ENV=prod app:240\n",
+    "output": "使用生产设置运行容器并检查启动日志。\n\ndocker run --rm -e ENV=prod app:240\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Check the running pods in the namespace, then inspect the output for CrashLoopBackOff.\n\nkubectl get pods -n ns241\n",
+    "output": "检查命名空间中的运行中 Pod，然后查看输出以寻找 CrashLoopBackOff。\n\nkubectl get pods -n ns241\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
+    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-243\ndata:\n  LOG_LEVEL: info\n```\n",
+    "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-243\ndata:\n  LOG_LEVEL: info\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
+    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Run the container with production settings and check the startup logs.\n\ndocker run --rm -e ENV=prod app:245\n",
+    "output": "使用生产设置运行容器并检查启动日志。\n\ndocker run --rm -e ENV=prod app:245\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Check the running pods in the namespace, then inspect the output for CrashLoopBackOff.\n\nkubectl get pods -n ns246\n",
+    "output": "检查命名空间中的运行中 Pod，然后查看输出以寻找 CrashLoopBackOff。\n\nkubectl get pods -n ns246\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
+    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-248\ndata:\n  LOG_LEVEL: info\n```\n",
+    "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-248\ndata:\n  LOG_LEVEL: info\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
+    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
+  },
+  {
+    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
+    "input": "Run the container with production settings and check the startup logs.\n\ndocker run --rm -e ENV=prod app:250\n",
+    "output": "使用生产设置运行容器并检查启动日志。\n\ndocker run --rm -e ENV=prod app:250\n"
+  }
+]
