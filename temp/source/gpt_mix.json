@@ -31,18 +31,8 @@
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
-    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
     "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-8\ndata:\n  LOG_LEVEL: info\n```\n",
     "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-8\ndata:\n  LOG_LEVEL: info\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
-    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
@@ -56,18 +46,8 @@
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
-    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
     "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-13\ndata:\n  LOG_LEVEL: info\n```\n",
     "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-13\ndata:\n  LOG_LEVEL: info\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
-    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
@@ -81,18 +61,8 @@
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
-    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
     "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-18\ndata:\n  LOG_LEVEL: info\n```\n",
     "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-18\ndata:\n  LOG_LEVEL: info\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
-    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
@@ -106,18 +76,8 @@
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
-    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
     "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-23\ndata:\n  LOG_LEVEL: info\n```\n",
     "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-23\ndata:\n  LOG_LEVEL: info\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
-    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
@@ -131,18 +91,8 @@
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
-    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
     "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-28\ndata:\n  LOG_LEVEL: info\n```\n",
     "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-28\ndata:\n  LOG_LEVEL: info\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
-    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
@@ -156,18 +106,8 @@
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
-    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
     "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-33\ndata:\n  LOG_LEVEL: info\n```\n",
     "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-33\ndata:\n  LOG_LEVEL: info\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
-    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
@@ -181,18 +121,8 @@
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
-    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
     "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-38\ndata:\n  LOG_LEVEL: info\n```\n",
     "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-38\ndata:\n  LOG_LEVEL: info\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
-    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
@@ -206,18 +136,8 @@
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
-    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
     "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-43\ndata:\n  LOG_LEVEL: info\n```\n",
     "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-43\ndata:\n  LOG_LEVEL: info\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
-    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
@@ -231,18 +151,8 @@
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
-    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
     "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-48\ndata:\n  LOG_LEVEL: info\n```\n",
     "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-48\ndata:\n  LOG_LEVEL: info\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
-    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
@@ -256,18 +166,8 @@
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
-    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
     "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-53\ndata:\n  LOG_LEVEL: info\n```\n",
     "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-53\ndata:\n  LOG_LEVEL: info\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
-    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
@@ -281,18 +181,8 @@
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
-    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
     "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-58\ndata:\n  LOG_LEVEL: info\n```\n",
     "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-58\ndata:\n  LOG_LEVEL: info\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
-    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
@@ -306,18 +196,8 @@
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
-    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
     "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-63\ndata:\n  LOG_LEVEL: info\n```\n",
     "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-63\ndata:\n  LOG_LEVEL: info\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
-    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
@@ -331,18 +211,8 @@
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
-    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
     "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-68\ndata:\n  LOG_LEVEL: info\n```\n",
     "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-68\ndata:\n  LOG_LEVEL: info\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
-    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
@@ -356,18 +226,8 @@
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
-    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
     "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-73\ndata:\n  LOG_LEVEL: info\n```\n",
     "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-73\ndata:\n  LOG_LEVEL: info\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
-    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
@@ -381,18 +241,8 @@
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
-    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
     "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-78\ndata:\n  LOG_LEVEL: info\n```\n",
     "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-78\ndata:\n  LOG_LEVEL: info\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
-    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
@@ -406,18 +256,8 @@
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
-    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
     "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-83\ndata:\n  LOG_LEVEL: info\n```\n",
     "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-83\ndata:\n  LOG_LEVEL: info\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
-    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
@@ -431,18 +271,8 @@
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
-    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
     "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-88\ndata:\n  LOG_LEVEL: info\n```\n",
     "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-88\ndata:\n  LOG_LEVEL: info\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
-    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
@@ -456,18 +286,8 @@
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
-    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
     "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-93\ndata:\n  LOG_LEVEL: info\n```\n",
     "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-93\ndata:\n  LOG_LEVEL: info\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
-    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
@@ -481,18 +301,8 @@
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
-    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
     "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-98\ndata:\n  LOG_LEVEL: info\n```\n",
     "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-98\ndata:\n  LOG_LEVEL: info\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
-    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
@@ -506,18 +316,8 @@
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
-    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
     "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-103\ndata:\n  LOG_LEVEL: info\n```\n",
     "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-103\ndata:\n  LOG_LEVEL: info\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
-    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
@@ -531,18 +331,8 @@
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
-    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
     "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-108\ndata:\n  LOG_LEVEL: info\n```\n",
     "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-108\ndata:\n  LOG_LEVEL: info\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
-    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
@@ -556,18 +346,8 @@
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
-    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
     "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-113\ndata:\n  LOG_LEVEL: info\n```\n",
     "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-113\ndata:\n  LOG_LEVEL: info\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
-    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
@@ -581,18 +361,8 @@
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
-    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
     "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-118\ndata:\n  LOG_LEVEL: info\n```\n",
     "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-118\ndata:\n  LOG_LEVEL: info\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
-    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
@@ -606,18 +376,8 @@
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
-    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
     "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-123\ndata:\n  LOG_LEVEL: info\n```\n",
     "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-123\ndata:\n  LOG_LEVEL: info\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
-    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
@@ -631,18 +391,8 @@
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
-    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
     "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-128\ndata:\n  LOG_LEVEL: info\n```\n",
     "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-128\ndata:\n  LOG_LEVEL: info\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
-    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
@@ -656,18 +406,8 @@
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
-    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
     "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-133\ndata:\n  LOG_LEVEL: info\n```\n",
     "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-133\ndata:\n  LOG_LEVEL: info\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
-    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
@@ -681,18 +421,8 @@
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
-    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
     "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-138\ndata:\n  LOG_LEVEL: info\n```\n",
     "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-138\ndata:\n  LOG_LEVEL: info\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
-    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
@@ -706,18 +436,8 @@
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
-    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
     "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-143\ndata:\n  LOG_LEVEL: info\n```\n",
     "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-143\ndata:\n  LOG_LEVEL: info\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
-    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
@@ -731,18 +451,8 @@
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
-    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
     "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-148\ndata:\n  LOG_LEVEL: info\n```\n",
     "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-148\ndata:\n  LOG_LEVEL: info\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
-    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
@@ -756,18 +466,8 @@
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
-    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
     "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-153\ndata:\n  LOG_LEVEL: info\n```\n",
     "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-153\ndata:\n  LOG_LEVEL: info\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
-    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
@@ -781,18 +481,8 @@
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
-    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
     "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-158\ndata:\n  LOG_LEVEL: info\n```\n",
     "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-158\ndata:\n  LOG_LEVEL: info\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
-    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
@@ -806,18 +496,8 @@
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
-    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
     "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-163\ndata:\n  LOG_LEVEL: info\n```\n",
     "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-163\ndata:\n  LOG_LEVEL: info\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
-    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
@@ -831,18 +511,8 @@
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
-    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
     "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-168\ndata:\n  LOG_LEVEL: info\n```\n",
     "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-168\ndata:\n  LOG_LEVEL: info\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
-    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
@@ -856,18 +526,8 @@
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
-    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
     "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-173\ndata:\n  LOG_LEVEL: info\n```\n",
     "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-173\ndata:\n  LOG_LEVEL: info\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
-    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
@@ -881,18 +541,8 @@
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
-    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
     "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-178\ndata:\n  LOG_LEVEL: info\n```\n",
     "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-178\ndata:\n  LOG_LEVEL: info\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
-    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
@@ -906,18 +556,8 @@
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
-    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
     "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-183\ndata:\n  LOG_LEVEL: info\n```\n",
     "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-183\ndata:\n  LOG_LEVEL: info\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
-    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
@@ -931,18 +571,8 @@
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
-    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
     "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-188\ndata:\n  LOG_LEVEL: info\n```\n",
     "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-188\ndata:\n  LOG_LEVEL: info\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
-    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
@@ -956,18 +586,8 @@
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
-    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
     "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-193\ndata:\n  LOG_LEVEL: info\n```\n",
     "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-193\ndata:\n  LOG_LEVEL: info\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
-    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
@@ -981,18 +601,8 @@
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
-    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
     "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-198\ndata:\n  LOG_LEVEL: info\n```\n",
     "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-198\ndata:\n  LOG_LEVEL: info\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
-    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
@@ -1006,18 +616,8 @@
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
-    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
     "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-203\ndata:\n  LOG_LEVEL: info\n```\n",
     "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-203\ndata:\n  LOG_LEVEL: info\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
-    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
@@ -1031,18 +631,8 @@
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
-    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
     "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-208\ndata:\n  LOG_LEVEL: info\n```\n",
     "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-208\ndata:\n  LOG_LEVEL: info\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
-    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
@@ -1056,18 +646,8 @@
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
-    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
     "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-213\ndata:\n  LOG_LEVEL: info\n```\n",
     "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-213\ndata:\n  LOG_LEVEL: info\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
-    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
@@ -1081,18 +661,8 @@
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
-    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
     "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-218\ndata:\n  LOG_LEVEL: info\n```\n",
     "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-218\ndata:\n  LOG_LEVEL: info\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
-    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
@@ -1106,18 +676,8 @@
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
-    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
     "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-223\ndata:\n  LOG_LEVEL: info\n```\n",
     "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-223\ndata:\n  LOG_LEVEL: info\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
-    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
@@ -1131,18 +691,8 @@
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
-    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
     "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-228\ndata:\n  LOG_LEVEL: info\n```\n",
     "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-228\ndata:\n  LOG_LEVEL: info\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
-    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
@@ -1156,18 +706,8 @@
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
-    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
     "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-233\ndata:\n  LOG_LEVEL: info\n```\n",
     "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-233\ndata:\n  LOG_LEVEL: info\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
-    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
@@ -1181,18 +721,8 @@
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
-    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
     "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-238\ndata:\n  LOG_LEVEL: info\n```\n",
     "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-238\ndata:\n  LOG_LEVEL: info\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
-    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
@@ -1206,18 +736,8 @@
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
-    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
     "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-243\ndata:\n  LOG_LEVEL: info\n```\n",
     "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-243\ndata:\n  LOG_LEVEL: info\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
-    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
@@ -1231,18 +751,8 @@
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Use this script to verify the service health endpoint before deploying.\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n",
-    "output": "在部署之前使用此脚本验证服务的健康检查端点。\n\n```python\nimport requests\nresp = requests.get('https://api.example.com/v1/health')\nprint(resp.status_code)\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
     "input": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-248\ndata:\n  LOG_LEVEL: info\n```\n",
     "output": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-248\ndata:\n  LOG_LEVEL: info\n```\n"
-  },
-  {
-    "instruction": "Translate the following technical content into Chinese while preserving code and commands.",
-    "input": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n",
-    "output": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```\n"
   },
   {
     "instruction": "Translate the following technical content into Chinese while preserving code and commands.",

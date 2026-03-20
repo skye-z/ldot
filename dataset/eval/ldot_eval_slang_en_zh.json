@@ -1,0 +1,315 @@
+[
+  {
+    "instruction": "将下面的英文内容翻译成自然、准确、完整的中文，保持原意，保留语气、术语、代码、命令、链接和格式，不漏译、不乱译、不过度意译。",
+    "input": "Thanks, big cheese. The problem is solved.",
+    "output": "感谢佬，问题解决了。",
+    "meta": {
+      "eval_split": "slang_en_zh",
+      "source": "slang",
+      "bucket": "community_slang",
+      "sample_id": "slang_en_zh-001",
+      "difficulty_score": 46,
+      "difficulty_band": "easy",
+      "difficulty_signals": [
+        "slang_register",
+        "short_input"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的英文内容翻译成自然、准确、完整的中文，保持原意，保留语气、术语、代码、命令、链接和格式，不漏译、不乱译、不过度意译。",
+    "input": "Could one of the big wheels take a look at my config?",
+    "output": "有佬帮我看一下配置吗？",
+    "meta": {
+      "eval_split": "slang_en_zh",
+      "source": "slang",
+      "bucket": "community_slang",
+      "sample_id": "slang_en_zh-002",
+      "difficulty_score": 50,
+      "difficulty_band": "medium",
+      "difficulty_signals": [
+        "slang_register",
+        "short_input",
+        "tone_or_symbol_preservation"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的英文内容翻译成自然、准确、完整的中文，保持原意，保留语气、术语、代码、命令、链接和格式，不漏译、不乱译、不过度意译。",
+    "input": "Thanks for sharing, big cheese.",
+    "output": "感谢大佬分享。",
+    "meta": {
+      "eval_split": "slang_en_zh",
+      "source": "slang",
+      "bucket": "community_slang",
+      "sample_id": "slang_en_zh-003",
+      "difficulty_score": 46,
+      "difficulty_band": "easy",
+      "difficulty_signals": [
+        "slang_register",
+        "short_input"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的英文内容翻译成自然、准确、完整的中文，保持原意，保留语气、术语、代码、命令、链接和格式，不漏译、不乱译、不过度意译。",
+    "input": "Does any big wheel know how to fix this?",
+    "output": "有没有大佬知道怎么修？",
+    "meta": {
+      "eval_split": "slang_en_zh",
+      "source": "slang",
+      "bucket": "community_slang",
+      "sample_id": "slang_en_zh-004",
+      "difficulty_score": 50,
+      "difficulty_band": "medium",
+      "difficulty_signals": [
+        "slang_register",
+        "short_input",
+        "tone_or_symbol_preservation"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的英文内容翻译成自然、准确、完整的中文，保持原意，保留语气、术语、代码、命令、链接和格式，不漏译、不乱译、不过度意译。",
+    "input": "Morning, folks.",
+    "output": "佬友们早上好。",
+    "meta": {
+      "eval_split": "slang_en_zh",
+      "source": "slang",
+      "bucket": "community_slang",
+      "sample_id": "slang_en_zh-005",
+      "difficulty_score": 41,
+      "difficulty_band": "easy",
+      "difficulty_signals": [
+        "slang_register",
+        "very_short_input"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的英文内容翻译成自然、准确、完整的中文，保持原意，保留语气、术语、代码、命令、链接和格式，不漏译、不乱译、不过度意译。",
+    "input": "That's rough, buddy.",
+    "output": "太惨了佬友。",
+    "meta": {
+      "eval_split": "slang_en_zh",
+      "source": "slang",
+      "bucket": "community_slang",
+      "sample_id": "slang_en_zh-006",
+      "difficulty_score": 41,
+      "difficulty_band": "easy",
+      "difficulty_signals": [
+        "slang_register",
+        "very_short_input"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的英文内容翻译成自然、准确、完整的中文，保持原意，保留语气、术语、代码、命令、链接和格式，不漏译、不乱译、不过度意译。",
+    "input": "This weirdo is back again.",
+    "output": "这位神人又来了。",
+    "meta": {
+      "eval_split": "slang_en_zh",
+      "source": "slang",
+      "bucket": "community_slang",
+      "sample_id": "slang_en_zh-007",
+      "difficulty_score": 45,
+      "difficulty_band": "easy",
+      "difficulty_signals": [
+        "slang_register",
+        "very_short_input",
+        "tone_or_symbol_preservation"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的英文内容翻译成自然、准确、完整的中文，保持原意，保留语气、术语、代码、命令、链接和格式，不漏译、不乱译、不过度意译。",
+    "input": "He's really quite a character.",
+    "output": "他真是个神人。",
+    "meta": {
+      "eval_split": "slang_en_zh",
+      "source": "slang",
+      "bucket": "community_slang",
+      "sample_id": "slang_en_zh-008",
+      "difficulty_score": 46,
+      "difficulty_band": "easy",
+      "difficulty_signals": [
+        "slang_register",
+        "short_input"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的英文内容翻译成自然、准确、完整的中文，保持原意，保留语气、术语、代码、命令、链接和格式，不漏译、不乱译、不过度意译。",
+    "input": "Front row, watching the drama unfold.",
+    "output": "前排吃瓜。",
+    "meta": {
+      "eval_split": "slang_en_zh",
+      "source": "slang",
+      "bucket": "community_slang",
+      "sample_id": "slang_en_zh-009",
+      "difficulty_score": 50,
+      "difficulty_band": "medium",
+      "difficulty_signals": [
+        "slang_register",
+        "short_input",
+        "tone_or_symbol_preservation"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的英文内容翻译成自然、准确、完整的中文，保持原意，保留语气、术语、代码、命令、链接和格式，不漏译、不乱译、不过度意译。",
+    "input": "They're pulling stunts again.",
+    "output": "又开始整活了。",
+    "meta": {
+      "eval_split": "slang_en_zh",
+      "source": "slang",
+      "bucket": "community_slang",
+      "sample_id": "slang_en_zh-010",
+      "difficulty_score": 41,
+      "difficulty_band": "easy",
+      "difficulty_signals": [
+        "slang_register",
+        "very_short_input"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的英文内容翻译成自然、准确、完整的中文，保持原意，保留语气、术语、代码、命令、链接和格式，不漏译、不乱译、不过度意译。",
+    "input": "The entertainment value is off the charts this time.",
+    "output": "这波节目效果拉满。",
+    "meta": {
+      "eval_split": "slang_en_zh",
+      "source": "slang",
+      "bucket": "community_slang",
+      "sample_id": "slang_en_zh-011",
+      "difficulty_score": 46,
+      "difficulty_band": "easy",
+      "difficulty_signals": [
+        "slang_register",
+        "short_input"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的英文内容翻译成自然、准确、完整的中文，保持原意，保留语气、术语、代码、命令、链接和格式，不漏译、不乱译、不过度意译。",
+    "input": "This is so absurd I honestly don't know how to process it.",
+    "output": "太抽象了，我有点看不懂。",
+    "meta": {
+      "eval_split": "slang_en_zh",
+      "source": "slang",
+      "bucket": "community_slang",
+      "sample_id": "slang_en_zh-012",
+      "difficulty_score": 50,
+      "difficulty_band": "medium",
+      "difficulty_signals": [
+        "slang_register",
+        "short_input",
+        "tone_or_symbol_preservation"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的英文内容翻译成自然、准确、完整的中文，保持原意，保留语气、术语、代码、命令、链接和格式，不漏译、不乱译、不过度意译。",
+    "input": "The way he talks is getting more and more surreal.",
+    "output": "他说话越来越抽象了。",
+    "meta": {
+      "eval_split": "slang_en_zh",
+      "source": "slang",
+      "bucket": "community_slang",
+      "sample_id": "slang_en_zh-013",
+      "difficulty_score": 50,
+      "difficulty_band": "medium",
+      "difficulty_signals": [
+        "slang_register",
+        "short_input",
+        "tone_or_symbol_preservation"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的英文内容翻译成自然、准确、完整的中文，保持原意，保留语气、术语、代码、命令、链接和格式，不漏译、不乱译、不过度意译。",
+    "input": "He's getting a little unhinged.",
+    "output": "他已经有点魔怔了。",
+    "meta": {
+      "eval_split": "slang_en_zh",
+      "source": "slang",
+      "bucket": "community_slang",
+      "sample_id": "slang_en_zh-014",
+      "difficulty_score": 46,
+      "difficulty_band": "easy",
+      "difficulty_signals": [
+        "slang_register",
+        "short_input"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的英文内容翻译成自然、准确、完整的中文，保持原意，保留语气、术语、代码、命令、链接和格式，不漏译、不乱译、不过度意译。",
+    "input": "Sending you 50 so you can recover a little.",
+    "output": "v你50回回血。",
+    "meta": {
+      "eval_split": "slang_en_zh",
+      "source": "slang",
+      "bucket": "community_slang",
+      "sample_id": "slang_en_zh-015",
+      "difficulty_score": 46,
+      "difficulty_band": "easy",
+      "difficulty_signals": [
+        "slang_register",
+        "short_input"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的英文内容翻译成自然、准确、完整的中文，保持原意，保留语气、术语、代码、命令、链接和格式，不漏译、不乱译、不过度意译。",
+    "input": "This is a community-run VPN service, not a commercial one.",
+    "output": "这是公益机场，不是商家卖的。",
+    "meta": {
+      "eval_split": "slang_en_zh",
+      "source": "slang",
+      "bucket": "community_slang",
+      "sample_id": "slang_en_zh-016",
+      "difficulty_score": 46,
+      "difficulty_band": "easy",
+      "difficulty_signals": [
+        "slang_register",
+        "short_input"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的英文内容翻译成自然、准确、完整的中文，保持原意，保留语气、术语、代码、命令、链接和格式，不漏译、不乱译、不过度意译。",
+    "input": "This thread is basically just low-content chatter.",
+    "output": "这帖基本就是纯水。",
+    "meta": {
+      "eval_split": "slang_en_zh",
+      "source": "slang",
+      "bucket": "community_slang",
+      "sample_id": "slang_en_zh-017",
+      "difficulty_score": 50,
+      "difficulty_band": "medium",
+      "difficulty_signals": [
+        "slang_register",
+        "short_input",
+        "tone_or_symbol_preservation"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的英文内容翻译成自然、准确、完整的中文，保持原意，保留语气、术语、代码、命令、链接和格式，不漏译、不乱译、不过度意译。",
+    "input": "Recovered a bit, time to keep tinkering.",
+    "output": "回血成功，继续折腾。",
+    "meta": {
+      "eval_split": "slang_en_zh",
+      "source": "slang",
+      "bucket": "community_slang",
+      "sample_id": "slang_en_zh-018",
+      "difficulty_score": 46,
+      "difficulty_band": "easy",
+      "difficulty_signals": [
+        "slang_register",
+        "short_input"
+      ]
+    }
+  }
+]

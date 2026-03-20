@@ -1,0 +1,17 @@
+{
+  "community_zh_en_count": 16,
+  "community_en_zh_count": 16,
+  "tech_en_zh_count": 32,
+  "tech_zh_en_count": 32,
+  "slang_zh_en_count": 18,
+  "slang_en_zh_count": 18,
+  "eval_total_count": 132,
+  "community_zh_en_avg_difficulty": 46.0,
+  "community_en_zh_avg_difficulty": 46.0,
+  "tech_en_zh_avg_difficulty": 51.0,
+  "tech_zh_en_avg_difficulty": 55.62,
+  "slang_zh_en_avg_difficulty": 53.44,
+  "slang_en_zh_avg_difficulty": 46.44,
+  "train_without_eval_count": 5062,
+  "train_without_eval_path": "dataset/ldot_train_clean_bilingual_train.json"
+}

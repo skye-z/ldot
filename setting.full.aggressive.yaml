@@ -40,8 +40,8 @@ train.gradient_accumulation_steps: 8
 train.hub_private_repo: false
 train.image_max_pixels: 768*768
 train.image_min_pixels: 32*32
-train.learning_rate: 1e-5
-train.logging_steps: 10
+train.learning_rate: 2e-5
+train.logging_steps: 5
 train.lora_alpha: 16
 train.lora_dropout: 0
 train.lora_rank: 8
@@ -53,7 +53,7 @@ train.max_grad_norm: '1.0'
 train.max_samples: '100000'
 train.neat_packing: false
 train.neftune_alpha: 0
-train.num_train_epochs: '3.0'
+train.num_train_epochs: '4.0'
 train.packing: false
 train.ppo_score_norm: false
 train.ppo_whiten_rewards: false
@@ -64,7 +64,7 @@ train.project: huggingface
 train.report_to: none
 train.resize_vocab: false
 train.reward_model: []
-train.save_steps: 100
+train.save_steps: 50
 train.swanlab_api_key: ''
 train.swanlab_link: null
 train.swanlab_mode: cloud
@@ -85,4 +85,4 @@ train.use_swanlab: false
 train.val_size: 0.05
 train.video_max_pixels: 256*256
 train.video_min_pixels: 16*16
-train.warmup_steps: 100
+train.warmup_steps: 20

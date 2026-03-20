@@ -1,0 +1,25 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Local temp artifacts
+temp/*
+!temp/.gitkeep
+!temp/source/
+!temp/source/**
+!temp/ldot_linuxdo_v002.json

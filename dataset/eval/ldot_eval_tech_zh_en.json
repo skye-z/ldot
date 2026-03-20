@@ -1,0 +1,609 @@
+[
+  {
+    "instruction": "将下面的中文内容翻译成自然、准确、完整的英文，保持原意，保留语气、术语、代码、命令、链接和格式，不漏译、不乱译、不过度意译。",
+    "input": "在重载之前使用 `nginx -t` 验证配置语法是否正确。",
+    "output": "Use `nginx -t` to validate configuration syntax before reloading.",
+    "meta": {
+      "eval_split": "tech_zh_en",
+      "source": "tech",
+      "bucket": "technical",
+      "sample_id": "tech_zh_en-001",
+      "difficulty_score": 58,
+      "difficulty_band": "medium",
+      "difficulty_signals": [
+        "technical_accuracy",
+        "short_input",
+        "format_or_code_preservation",
+        "mixed_language"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的中文内容翻译成自然、准确、完整的英文，保持原意，保留语气、术语、代码、命令、链接和格式，不漏译、不乱译、不过度意译。",
+    "input": "使用 `jq -r '.status' pod.json` 以原始文本形式从 JSON 中提取字段。",
+    "output": "Use `jq -r '.status' pod.json` to extract a field from JSON as raw text.",
+    "meta": {
+      "eval_split": "tech_zh_en",
+      "source": "tech",
+      "bucket": "technical",
+      "sample_id": "tech_zh_en-002",
+      "difficulty_score": 58,
+      "difficulty_band": "medium",
+      "difficulty_signals": [
+        "technical_accuracy",
+        "short_input",
+        "format_or_code_preservation",
+        "mixed_language"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的中文内容翻译成自然、准确、完整的英文，保持原意，保留语气、术语、代码、命令、链接和格式，不漏译、不乱译、不过度意译。",
+    "input": "在 Kubernetes YAML 中，在 worker 容器的配置下设置 `image: nginx:1.25-alpine` 以指定容器镜像。",
+    "output": "In Kubernetes YAML, set `image: nginx:1.25-alpine` under the container spec for the worker container.",
+    "meta": {
+      "eval_split": "tech_zh_en",
+      "source": "tech",
+      "bucket": "technical",
+      "sample_id": "tech_zh_en-003",
+      "difficulty_score": 62,
+      "difficulty_band": "medium",
+      "difficulty_signals": [
+        "technical_accuracy",
+        "short_input",
+        "format_or_code_preservation",
+        "mixed_language",
+        "tone_or_symbol_preservation"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的中文内容翻译成自然、准确、完整的英文，保持原意，保留语气、术语、代码、命令、链接和格式，不漏译、不乱译、不过度意译。",
+    "input": "使用 `v3.1.7` 这类语义化版本标签，便于复现部署结果。",
+    "output": "Use semantic version tags like `v3.1.7` so deployments can be reproduced.",
+    "meta": {
+      "eval_split": "tech_zh_en",
+      "source": "tech",
+      "bucket": "technical",
+      "sample_id": "tech_zh_en-004",
+      "difficulty_score": 58,
+      "difficulty_band": "medium",
+      "difficulty_signals": [
+        "technical_accuracy",
+        "short_input",
+        "format_or_code_preservation",
+        "mixed_language"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的中文内容翻译成自然、准确、完整的英文，保持原意，保留语气、术语、代码、命令、链接和格式，不漏译、不乱译、不过度意译。",
+    "input": "在 Kubernetes YAML 中，在 worker 容器的配置下设置 `image: hashicorp/vault:1.15` 以指定容器镜像。",
+    "output": "In Kubernetes YAML, set `image: hashicorp/vault:1.15` under the container spec for the worker container.",
+    "meta": {
+      "eval_split": "tech_zh_en",
+      "source": "tech",
+      "bucket": "technical",
+      "sample_id": "tech_zh_en-005",
+      "difficulty_score": 62,
+      "difficulty_band": "medium",
+      "difficulty_signals": [
+        "technical_accuracy",
+        "short_input",
+        "format_or_code_preservation",
+        "mixed_language",
+        "tone_or_symbol_preservation"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的中文内容翻译成自然、准确、完整的英文，保持原意，保留语气、术语、代码、命令、链接和格式，不漏译、不乱译、不过度意译。",
+    "input": "在 Kubernetes YAML 中，在 api 容器的配置下设置 `image: alpine:3.19` 以指定容器镜像。",
+    "output": "In Kubernetes YAML, set `image: alpine:3.19` under the container spec for the api container.",
+    "meta": {
+      "eval_split": "tech_zh_en",
+      "source": "tech",
+      "bucket": "technical",
+      "sample_id": "tech_zh_en-006",
+      "difficulty_score": 62,
+      "difficulty_band": "medium",
+      "difficulty_signals": [
+        "technical_accuracy",
+        "short_input",
+        "format_or_code_preservation",
+        "mixed_language",
+        "tone_or_symbol_preservation"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的中文内容翻译成自然、准确、完整的英文，保持原意，保留语气、术语、代码、命令、链接和格式，不漏译、不乱译、不过度意译。",
+    "input": "`grep -R \"listen\" /etc/systemd` 进行递归搜索；加上 `-n` 可显示行号。",
+    "output": "`grep -R \"listen\" /etc/systemd` searches recursively; add `-n` to include line numbers.",
+    "meta": {
+      "eval_split": "tech_zh_en",
+      "source": "tech",
+      "bucket": "technical",
+      "sample_id": "tech_zh_en-007",
+      "difficulty_score": 58,
+      "difficulty_band": "medium",
+      "difficulty_signals": [
+        "technical_accuracy",
+        "short_input",
+        "format_or_code_preservation",
+        "mixed_language"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的中文内容翻译成自然、准确、完整的英文，保持原意，保留语气、术语、代码、命令、链接和格式，不漏译、不乱译、不过度意译。",
+    "input": "使用 `kubectl logs api-6c7b9d4f5b-abcde -c api -n dev` 查看 Pod 中指定容器的日志。",
+    "output": "Use `kubectl logs api-6c7b9d4f5b-abcde -c api -n dev` to view logs from a specific container in a Pod.",
+    "meta": {
+      "eval_split": "tech_zh_en",
+      "source": "tech",
+      "bucket": "technical",
+      "sample_id": "tech_zh_en-008",
+      "difficulty_score": 58,
+      "difficulty_band": "medium",
+      "difficulty_signals": [
+        "technical_accuracy",
+        "short_input",
+        "format_or_code_preservation",
+        "mixed_language"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的中文内容翻译成自然、准确、完整的英文，保持原意，保留语气、术语、代码、命令、链接和格式，不漏译、不乱译、不过度意译。",
+    "input": "使用生产设置运行容器并检查启动日志。\n\ndocker run --rm -e ENV=prod app:55",
+    "output": "Run the container with production settings and check the startup logs.\n\ndocker run --rm -e ENV=prod app:55",
+    "meta": {
+      "eval_split": "tech_zh_en",
+      "source": "tech",
+      "bucket": "technical",
+      "sample_id": "tech_zh_en-009",
+      "difficulty_score": 58,
+      "difficulty_band": "medium",
+      "difficulty_signals": [
+        "technical_accuracy",
+        "short_input",
+        "multi_line_structure",
+        "mixed_language",
+        "tone_or_symbol_preservation"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的中文内容翻译成自然、准确、完整的英文，保持原意，保留语气、术语、代码、命令、链接和格式，不漏译、不乱译、不过度意译。",
+    "input": "更新配置以减少超时时间（毫秒）。\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```",
+    "output": "Update the configuration to reduce the timeout in milliseconds.\n\n```json\n{\n  \"service\": \"payments\",\n  \"retries\": 3,\n  \"timeoutMs\": 1500\n}\n```",
+    "meta": {
+      "eval_split": "tech_zh_en",
+      "source": "tech",
+      "bucket": "technical",
+      "sample_id": "tech_zh_en-010",
+      "difficulty_score": 74,
+      "difficulty_band": "hard",
+      "difficulty_signals": [
+        "technical_accuracy",
+        "short_input",
+        "multi_section_structure",
+        "format_or_code_preservation",
+        "mixed_language",
+        "tone_or_symbol_preservation"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的中文内容翻译成自然、准确、完整的英文，保持原意，保留语气、术语、代码、命令、链接和格式，不漏译、不乱译、不过度意译。",
+    "input": "检查命名空间中的运行中 Pod，然后查看输出以寻找 CrashLoopBackOff。\n\nkubectl get pods -n ns181",
+    "output": "Check the running pods in the namespace, then inspect the output for CrashLoopBackOff.\n\nkubectl get pods -n ns181",
+    "meta": {
+      "eval_split": "tech_zh_en",
+      "source": "tech",
+      "bucket": "technical",
+      "sample_id": "tech_zh_en-011",
+      "difficulty_score": 54,
+      "difficulty_band": "medium",
+      "difficulty_signals": [
+        "technical_accuracy",
+        "short_input",
+        "multi_line_structure",
+        "mixed_language"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的中文内容翻译成自然、准确、完整的英文，保持原意，保留语气、术语、代码、命令、链接和格式，不漏译、不乱译、不过度意译。",
+    "input": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-193\ndata:\n  LOG_LEVEL: info\n```",
+    "output": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-193\ndata:\n  LOG_LEVEL: info\n```",
+    "meta": {
+      "eval_split": "tech_zh_en",
+      "source": "tech",
+      "bucket": "technical",
+      "sample_id": "tech_zh_en-012",
+      "difficulty_score": 82,
+      "difficulty_band": "hard",
+      "difficulty_signals": [
+        "technical_accuracy",
+        "medium_input",
+        "multi_section_structure",
+        "format_or_code_preservation",
+        "mixed_language",
+        "tone_or_symbol_preservation"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的中文内容翻译成自然、准确、完整的英文，保持原意，保留语气、术语、代码、命令、链接和格式，不漏译、不乱译、不过度意译。",
+    "input": "检查命名空间中的运行中 Pod，然后查看输出以寻找 CrashLoopBackOff。\n\nkubectl get pods -n ns81",
+    "output": "Check the running pods in the namespace, then inspect the output for CrashLoopBackOff.\n\nkubectl get pods -n ns81",
+    "meta": {
+      "eval_split": "tech_zh_en",
+      "source": "tech",
+      "bucket": "technical",
+      "sample_id": "tech_zh_en-013",
+      "difficulty_score": 54,
+      "difficulty_band": "medium",
+      "difficulty_signals": [
+        "technical_accuracy",
+        "short_input",
+        "multi_line_structure",
+        "mixed_language"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的中文内容翻译成自然、准确、完整的英文，保持原意，保留语气、术语、代码、命令、链接和格式，不漏译、不乱译、不过度意译。",
+    "input": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-28\ndata:\n  LOG_LEVEL: info\n```",
+    "output": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-28\ndata:\n  LOG_LEVEL: info\n```",
+    "meta": {
+      "eval_split": "tech_zh_en",
+      "source": "tech",
+      "bucket": "technical",
+      "sample_id": "tech_zh_en-014",
+      "difficulty_score": 82,
+      "difficulty_band": "hard",
+      "difficulty_signals": [
+        "technical_accuracy",
+        "medium_input",
+        "multi_section_structure",
+        "format_or_code_preservation",
+        "mixed_language",
+        "tone_or_symbol_preservation"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的中文内容翻译成自然、准确、完整的英文，保持原意，保留语气、术语、代码、命令、链接和格式，不漏译、不乱译、不过度意译。",
+    "input": "使用生产设置运行容器并检查启动日志。\n\ndocker run --rm -e ENV=prod app:105",
+    "output": "Run the container with production settings and check the startup logs.\n\ndocker run --rm -e ENV=prod app:105",
+    "meta": {
+      "eval_split": "tech_zh_en",
+      "source": "tech",
+      "bucket": "technical",
+      "sample_id": "tech_zh_en-015",
+      "difficulty_score": 58,
+      "difficulty_band": "medium",
+      "difficulty_signals": [
+        "technical_accuracy",
+        "short_input",
+        "multi_line_structure",
+        "mixed_language",
+        "tone_or_symbol_preservation"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的中文内容翻译成自然、准确、完整的英文，保持原意，保留语气、术语、代码、命令、链接和格式，不漏译、不乱译、不过度意译。",
+    "input": "创建一个 ConfigMap 来存储应用的日志级别。\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-178\ndata:\n  LOG_LEVEL: info\n```",
+    "output": "Create a ConfigMap to store the logging level for the app.\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config-178\ndata:\n  LOG_LEVEL: info\n```",
+    "meta": {
+      "eval_split": "tech_zh_en",
+      "source": "tech",
+      "bucket": "technical",
+      "sample_id": "tech_zh_en-016",
+      "difficulty_score": 82,
+      "difficulty_band": "hard",
+      "difficulty_signals": [
+        "technical_accuracy",
+        "medium_input",
+        "multi_section_structure",
+        "format_or_code_preservation",
+        "mixed_language",
+        "tone_or_symbol_preservation"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的中文内容翻译成自然、准确、完整的英文，保持原意，保留语气、术语、代码、命令、链接和格式，不漏译、不乱译、不过度意译。",
+    "input": "如果 `docker build` 因 SSL 失败，请仅在临时调试时设置 `GIT_SSL_NO_VERIFY=1`。",
+    "output": "If `docker build` fails due to SSL, set `GIT_SSL_NO_VERIFY=1` only for temporary debugging.",
+    "meta": {
+      "eval_split": "tech_zh_en",
+      "source": "tech",
+      "bucket": "technical",
+      "sample_id": "tech_zh_en-017",
+      "difficulty_score": 58,
+      "difficulty_band": "medium",
+      "difficulty_signals": [
+        "technical_accuracy",
+        "short_input",
+        "format_or_code_preservation",
+        "mixed_language"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的中文内容翻译成自然、准确、完整的英文，保持原意，保留语气、术语、代码、命令、链接和格式，不漏译、不乱译、不过度意译。",
+    "input": "如果 Nginx 无法绑定 80，请检查 `apache2` 是否在运行，并用 `systemctl stop apache2` 停止。",
+    "output": "If Nginx can't bind to 80, check whether `apache2` is running and stop it with `systemctl stop apache2`.",
+    "meta": {
+      "eval_split": "tech_zh_en",
+      "source": "tech",
+      "bucket": "technical",
+      "sample_id": "tech_zh_en-018",
+      "difficulty_score": 58,
+      "difficulty_band": "medium",
+      "difficulty_signals": [
+        "technical_accuracy",
+        "short_input",
+        "format_or_code_preservation",
+        "mixed_language"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的中文内容翻译成自然、准确、完整的英文，保持原意，保留语气、术语、代码、命令、链接和格式，不漏译、不乱译、不过度意译。",
+    "input": "ArgoCD 同步失败是因为仓库 URL 使用 SSH；将私钥添加到 argocd-secret，并用 `ssh -T git@github.com` 测试。",
+    "output": "The ArgoCD sync fails because the repo URL uses SSH; add the private key in argocd-secret and test with `ssh -T git@github.com`.",
+    "meta": {
+      "eval_split": "tech_zh_en",
+      "source": "tech",
+      "bucket": "technical",
+      "sample_id": "tech_zh_en-019",
+      "difficulty_score": 58,
+      "difficulty_band": "medium",
+      "difficulty_signals": [
+        "technical_accuracy",
+        "short_input",
+        "format_or_code_preservation",
+        "mixed_language"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的中文内容翻译成自然、准确、完整的英文，保持原意，保留语气、术语、代码、命令、链接和格式，不漏译、不乱译、不过度意译。",
+    "input": "如果 `iptables` 阻止 DNS，请用 `iptables -A OUTPUT -p udp --dport 53 -j ACCEPT` 放行 UDP 53。",
+    "output": "If `iptables` blocks DNS, allow UDP 53 with `iptables -A OUTPUT -p udp --dport 53 -j ACCEPT`.",
+    "meta": {
+      "eval_split": "tech_zh_en",
+      "source": "tech",
+      "bucket": "technical",
+      "sample_id": "tech_zh_en-020",
+      "difficulty_score": 58,
+      "difficulty_band": "medium",
+      "difficulty_signals": [
+        "technical_accuracy",
+        "short_input",
+        "format_or_code_preservation",
+        "mixed_language"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的中文内容翻译成自然、准确、完整的英文，保持原意，保留语气、术语、代码、命令、链接和格式，不漏译、不乱译、不过度意译。",
+    "input": "Rust 二进制依赖 OpenSSL；请打包依赖或设置 `LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu`。",
+    "output": "The Rust binary depends on OpenSSL; bundle it or set `LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu`.",
+    "meta": {
+      "eval_split": "tech_zh_en",
+      "source": "tech",
+      "bucket": "technical",
+      "sample_id": "tech_zh_en-021",
+      "difficulty_score": 58,
+      "difficulty_band": "medium",
+      "difficulty_signals": [
+        "technical_accuracy",
+        "short_input",
+        "format_or_code_preservation",
+        "mixed_language"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的中文内容翻译成自然、准确、完整的英文，保持原意，保留语气、术语、代码、命令、链接和格式，不漏译、不乱译、不过度意译。",
+    "input": "MySQL 服务器忽略 `sql_mode` 是因为重复项；从 /etc/mysql/my.cnf 中删除重复配置，仅保留 `sql_mode=STRICT_TRANS_TABLES`。",
+    "output": "The MySQL server ignores `sql_mode` because of a duplicate entry; remove it from /etc/mysql/my.cnf and keep only `sql_mode=STRICT_TRANS_TABLES`.",
+    "meta": {
+      "eval_split": "tech_zh_en",
+      "source": "tech",
+      "bucket": "technical",
+      "sample_id": "tech_zh_en-022",
+      "difficulty_score": 58,
+      "difficulty_band": "medium",
+      "difficulty_signals": [
+        "technical_accuracy",
+        "short_input",
+        "format_or_code_preservation",
+        "mixed_language"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的中文内容翻译成自然、准确、完整的英文，保持原意，保留语气、术语、代码、命令、链接和格式，不漏译、不乱译、不过度意译。",
+    "input": "如果 `kubectl logs` 截断，请使用 `--limit-bytes` 和 `--tail` 获取上下文。",
+    "output": "If `kubectl logs` truncates, use `--limit-bytes` and `--tail` for context.",
+    "meta": {
+      "eval_split": "tech_zh_en",
+      "source": "tech",
+      "bucket": "technical",
+      "sample_id": "tech_zh_en-023",
+      "difficulty_score": 58,
+      "difficulty_band": "medium",
+      "difficulty_signals": [
+        "technical_accuracy",
+        "short_input",
+        "format_or_code_preservation",
+        "mixed_language"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的中文内容翻译成自然、准确、完整的英文，保持原意，保留语气、术语、代码、命令、链接和格式，不漏译、不乱译、不过度意译。",
+    "input": "如果 `kubectl apply` 因 `error validating data` 失败，请仅为诊断 schema 问题使用 `kubectl apply --validate=false`。",
+    "output": "If `kubectl apply` fails with `error validating data`, run `kubectl apply --validate=false` only for diagnosing schema issues.",
+    "meta": {
+      "eval_split": "tech_zh_en",
+      "source": "tech",
+      "bucket": "technical",
+      "sample_id": "tech_zh_en-024",
+      "difficulty_score": 58,
+      "difficulty_band": "medium",
+      "difficulty_signals": [
+        "technical_accuracy",
+        "short_input",
+        "format_or_code_preservation",
+        "mixed_language"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的技术术语准确翻译成英文，优先使用常见、标准、自然的技术表达。",
+    "input": "运行时状态目录",
+    "output": "/var/run",
+    "meta": {
+      "eval_split": "tech_zh_en",
+      "source": "tech",
+      "bucket": "technical",
+      "sample_id": "tech_zh_en-025",
+      "difficulty_score": 35,
+      "difficulty_band": "easy",
+      "difficulty_signals": [
+        "technical_accuracy",
+        "very_short_input"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的技术术语准确翻译成英文，优先使用常见、标准、自然的技术表达。",
+    "input": "调试级别",
+    "output": "debug level",
+    "meta": {
+      "eval_split": "tech_zh_en",
+      "source": "tech",
+      "bucket": "technical",
+      "sample_id": "tech_zh_en-026",
+      "difficulty_score": 35,
+      "difficulty_band": "easy",
+      "difficulty_signals": [
+        "technical_accuracy",
+        "very_short_input"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的技术术语准确翻译成英文，优先使用常见、标准、自然的技术表达。",
+    "input": "延迟",
+    "output": "latency",
+    "meta": {
+      "eval_split": "tech_zh_en",
+      "source": "tech",
+      "bucket": "technical",
+      "sample_id": "tech_zh_en-027",
+      "difficulty_score": 35,
+      "difficulty_band": "easy",
+      "difficulty_signals": [
+        "technical_accuracy",
+        "very_short_input"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的技术术语准确翻译成英文，优先使用常见、标准、自然的技术表达。",
+    "input": "Kubernetes 集群内网 IP",
+    "output": "Kubernetes ClusterIP",
+    "meta": {
+      "eval_split": "tech_zh_en",
+      "source": "tech",
+      "bucket": "technical",
+      "sample_id": "tech_zh_en-028",
+      "difficulty_score": 43,
+      "difficulty_band": "easy",
+      "difficulty_signals": [
+        "technical_accuracy",
+        "very_short_input",
+        "mixed_language"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的技术术语准确翻译成英文，优先使用常见、标准、自然的技术表达。",
+    "input": "MongoDB 分片",
+    "output": "MongoDB shard",
+    "meta": {
+      "eval_split": "tech_zh_en",
+      "source": "tech",
+      "bucket": "technical",
+      "sample_id": "tech_zh_en-029",
+      "difficulty_score": 43,
+      "difficulty_band": "easy",
+      "difficulty_signals": [
+        "technical_accuracy",
+        "very_short_input",
+        "mixed_language"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的技术术语准确翻译成英文，优先使用常见、标准、自然的技术表达。",
+    "input": "告警管理器",
+    "output": "alertmanager",
+    "meta": {
+      "eval_split": "tech_zh_en",
+      "source": "tech",
+      "bucket": "technical",
+      "sample_id": "tech_zh_en-030",
+      "difficulty_score": 35,
+      "difficulty_band": "easy",
+      "difficulty_signals": [
+        "technical_accuracy",
+        "very_short_input"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的技术术语准确翻译成英文，优先使用常见、标准、自然的技术表达。",
+    "input": "签名策略",
+    "output": "sign policy",
+    "meta": {
+      "eval_split": "tech_zh_en",
+      "source": "tech",
+      "bucket": "technical",
+      "sample_id": "tech_zh_en-031",
+      "difficulty_score": 35,
+      "difficulty_band": "easy",
+      "difficulty_signals": [
+        "technical_accuracy",
+        "very_short_input"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的技术术语准确翻译成英文，优先使用常见、标准、自然的技术表达。",
+    "input": "栈溢出",
+    "output": "stack overflow",
+    "meta": {
+      "eval_split": "tech_zh_en",
+      "source": "tech",
+      "bucket": "technical",
+      "sample_id": "tech_zh_en-032",
+      "difficulty_score": 35,
+      "difficulty_band": "easy",
+      "difficulty_signals": [
+        "technical_accuracy",
+        "very_short_input"
+      ]
+    }
+  }
+]

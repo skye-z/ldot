@@ -1,0 +1,23 @@
+{
+  "ldot_translation": {
+    "file_name": "ldot_translation.json"
+  },
+  "gpt_base": {
+    "file_name": "gpt_base.json"
+  },
+  "gpt_mix": {
+    "file_name": "gpt_mix.json"
+  },
+  "gpt_term": {
+    "file_name": "gpt_term.json"
+  },
+  "gpt_high": {
+    "file_name": "gpt_high.json"
+  },
+  "ldot_slang_consistency": {
+    "file_name": "ldot_slang_consistency.json"
+  },
+  "ldot_forum_short_replies": {
+    "file_name": "ldot_forum_short_replies.json"
+  }
+}

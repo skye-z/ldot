@@ -1,0 +1,288 @@
+[
+  {
+    "instruction": "将下面的英文内容翻译成自然、准确、完整的中文，保持原意，保留语气、术语、代码、命令、链接和格式，不漏译、不乱译、不过度意译。",
+    "input": "Running a public service is no easy task :heart: Thanks, big cheese.",
+    "output": "公益不易:heart: 感谢佬",
+    "meta": {
+      "eval_split": "community_en_zh",
+      "source": "community",
+      "bucket": "forum",
+      "sample_id": "community_en_zh-001",
+      "difficulty_score": 42,
+      "difficulty_band": "easy",
+      "difficulty_signals": [
+        "community_context",
+        "short_input",
+        "tone_or_symbol_preservation"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的英文内容翻译成自然、准确、完整的中文，保持原意，保留语气、术语、代码、命令、链接和格式，不漏译、不乱译、不过度意译。",
+    "input": "Thanks for your hard work. What about the unused data?",
+    "output": "感谢佬友，没用完的流量怎么处理呢",
+    "meta": {
+      "eval_split": "community_en_zh",
+      "source": "community",
+      "bucket": "forum",
+      "sample_id": "community_en_zh-002",
+      "difficulty_score": 42,
+      "difficulty_band": "easy",
+      "difficulty_signals": [
+        "community_context",
+        "short_input",
+        "tone_or_symbol_preservation"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的英文内容翻译成自然、准确、完整的中文，保持原意，保留语气、术语、代码、命令、链接和格式，不漏译、不乱译、不过度意译。",
+    "input": "Hahaha, the petty villain has already been dealt with.",
+    "output": "hhhh宵小已斩",
+    "meta": {
+      "eval_split": "community_en_zh",
+      "source": "community",
+      "bucket": "forum",
+      "sample_id": "community_en_zh-003",
+      "difficulty_score": 42,
+      "difficulty_band": "easy",
+      "difficulty_signals": [
+        "community_context",
+        "short_input",
+        "tone_or_symbol_preservation"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的英文内容翻译成自然、准确、完整的中文，保持原意，保留语气、术语、代码、命令、链接和格式，不漏译、不乱译、不过度意译。",
+    "input": "It’s similar to Google Student Verification.",
+    "output": "和谷歌学生认证一样喽",
+    "meta": {
+      "eval_split": "community_en_zh",
+      "source": "community",
+      "bucket": "forum",
+      "sample_id": "community_en_zh-004",
+      "difficulty_score": 38,
+      "difficulty_band": "easy",
+      "difficulty_signals": [
+        "community_context",
+        "short_input"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的英文内容翻译成自然、准确、完整的中文，保持原意，保留语气、术语、代码、命令、链接和格式，不漏译、不乱译、不过度意译。",
+    "input": "What does this mean :thinking:",
+    "output": "这是何意味啊:thinking:",
+    "meta": {
+      "eval_split": "community_en_zh",
+      "source": "community",
+      "bucket": "forum",
+      "sample_id": "community_en_zh-005",
+      "difficulty_score": 42,
+      "difficulty_band": "easy",
+      "difficulty_signals": [
+        "community_context",
+        "short_input",
+        "tone_or_symbol_preservation"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的英文内容翻译成自然、准确、完整的中文，保持原意，保留语气、术语、代码、命令、链接和格式，不漏译、不乱译、不过度意译。",
+    "input": "Did you buy the data? This is a public welfare service.",
+    "output": "流量是你买的吗?这是公益机场啊",
+    "meta": {
+      "eval_split": "community_en_zh",
+      "source": "community",
+      "bucket": "forum",
+      "sample_id": "community_en_zh-006",
+      "difficulty_score": 42,
+      "difficulty_band": "easy",
+      "difficulty_signals": [
+        "community_context",
+        "short_input",
+        "tone_or_symbol_preservation"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的英文内容翻译成自然、准确、完整的中文，保持原意，保留语气、术语、代码、命令、链接和格式，不漏译、不乱译、不过度意译。",
+    "input": "There’s no way around it, mine is the same. Some networks work and some don’t. I can’t access it on my company Wi-Fi, but it works on my mobile data. It’s hit-or-miss.",
+    "output": "没办法把，我的也是呀，有的网路能访问有的不行，我用公司wifi不能访问，自己手机流量就可以访问，有的能访问有的不能访问",
+    "meta": {
+      "eval_split": "community_en_zh",
+      "source": "community",
+      "bucket": "forum",
+      "sample_id": "community_en_zh-007",
+      "difficulty_score": 50,
+      "difficulty_band": "medium",
+      "difficulty_signals": [
+        "community_context",
+        "medium_input",
+        "tone_or_symbol_preservation"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的英文内容翻译成自然、准确、完整的中文，保持原意，保留语气、术语、代码、命令、链接和格式，不漏译、不乱译、不过度意译。",
+    "input": "What the hell? Meme generated instantly :rofl::rofl:",
+    "output": "什么鬼啊，秒生吊图:rofl::rofl:",
+    "meta": {
+      "eval_split": "community_en_zh",
+      "source": "community",
+      "bucket": "forum",
+      "sample_id": "community_en_zh-008",
+      "difficulty_score": 42,
+      "difficulty_band": "easy",
+      "difficulty_signals": [
+        "community_context",
+        "short_input",
+        "tone_or_symbol_preservation"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的英文内容翻译成自然、准确、完整的中文，保持原意，保留语气、术语、代码、命令、链接和格式，不漏译、不乱译、不过度意译。",
+    "input": "Because the page shows the referrer's profile, he thinks that basically makes the referrer his American sponsor. In his mind, only a recommendation letter written by someone important really counts and looks prestigious enough.",
+    "output": "因为页面会显示推荐人资料，他觉得相当于美国推荐人了，大牌说话写的介绍信才有用，看着才有牌面",
+    "meta": {
+      "eval_split": "community_en_zh",
+      "source": "community",
+      "bucket": "forum",
+      "sample_id": "community_en_zh-009",
+      "difficulty_score": 50,
+      "difficulty_band": "medium",
+      "difficulty_signals": [
+        "community_context",
+        "medium_input",
+        "tone_or_symbol_preservation"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的英文内容翻译成自然、准确、完整的中文，保持原意，保留语气、术语、代码、命令、链接和格式，不漏译、不乱译、不过度意译。",
+    "input": "If CDN is not enabled, the domain should resolve to your IP. You can ping the domain to check if the resolved IP matches your server’s IP.",
+    "output": "如果没有开cdn的话，域名解析应该是你的ip，你可以ping一下域名看看解析出来的IP是不是你服务器的IP",
+    "meta": {
+      "eval_split": "community_en_zh",
+      "source": "community",
+      "bucket": "forum",
+      "sample_id": "community_en_zh-010",
+      "difficulty_score": 46,
+      "difficulty_band": "easy",
+      "difficulty_signals": [
+        "community_context",
+        "medium_input"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的英文内容翻译成自然、准确、完整的中文，保持原意，保留语气、术语、代码、命令、链接和格式，不漏译、不乱译、不过度意译。",
+    "input": "Ridiculous. The more people there are, the more weirdos you get; the fewer people there are, the weirder each weirdo becomes.",
+    "output": "离谱，人越多神人越多，人越少神人越神",
+    "meta": {
+      "eval_split": "community_en_zh",
+      "source": "community",
+      "bucket": "forum",
+      "sample_id": "community_en_zh-011",
+      "difficulty_score": 50,
+      "difficulty_band": "medium",
+      "difficulty_signals": [
+        "community_context",
+        "medium_input",
+        "tone_or_symbol_preservation"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的英文内容翻译成自然、准确、完整的中文，保持原意，保留语气、术语、代码、命令、链接和格式，不漏译、不乱译、不过度意译。",
+    "input": "Following insider tips, reporters found GEO services online. Providers claim paying clients can rank high in AI models and make ads the 'standard answers'. Can GEO really make AI promote hidden ads or spread false information?",
+    "output": "按照业内人士的爆料，记者在多个网络平台进行查询，很快就搜索到了名为GEO的业务。网络平台上从事该项业务的服务商号称，用户只需支付相应的费用，就能在各大主流AI大模型里，让客户的产品榜上有名；让客户的商品广告，成为AI模型给出的“标准答案”。通过GEO技术真的能让AI“夹带私货”，甚至投放虚假信息吗？",
+    "meta": {
+      "eval_split": "community_en_zh",
+      "source": "community",
+      "bucket": "forum",
+      "sample_id": "community_en_zh-012",
+      "difficulty_score": 50,
+      "difficulty_band": "medium",
+      "difficulty_signals": [
+        "community_context",
+        "medium_input",
+        "tone_or_symbol_preservation"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的英文内容翻译成自然、准确、完整的中文，保持原意，保留语气、术语、代码、命令、链接和格式，不漏译、不乱译、不过度意译。",
+    "input": "Wow, you’re amazing. But open-sourcing may lead to abuse. Better not open-source it. Team accounts are the only ones left, it’ll be a disaster if they’re gone too:sob:",
+    "output": "我去佬友这么牛逼，不过开源会被滥用吧，最好还是别开源了佬，现在就剩下 team 能用了，如果 team 也没了那就惨了:sob:",
+    "meta": {
+      "eval_split": "community_en_zh",
+      "source": "community",
+      "bucket": "forum",
+      "sample_id": "community_en_zh-013",
+      "difficulty_score": 50,
+      "difficulty_band": "medium",
+      "difficulty_signals": [
+        "community_context",
+        "medium_input",
+        "tone_or_symbol_preservation"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的英文内容翻译成自然、准确、完整的中文，保持原意，保留语气、术语、代码、命令、链接和格式，不漏译、不乱译、不过度意译。",
+    "input": "Content: Factories including Chengdu Mingyang Food have foul, dirty workshops but produce snow-white chicken feet by illegally using hydrogen peroxide for bleaching. Chinese regulations ban hydrogen peroxide in chicken foot processing. Long-term consumption causes oral mucosal damage, liver and kidney impairment, and can be life-threatening in severe cases.",
+    "output": "内容： 成都市明扬食品等企业的生产车间臭气弥漫、环境脏乱，但出产的鸡爪却色泽白净，原因在于违规使用了双氧水（过氧化氢）进行漂白。国家规定加工鸡爪严禁使用双氧水，长期食用经其浸泡的食品，会导致口腔黏膜损伤及肝肾功能损害，严重者危及生命。",
+    "meta": {
+      "eval_split": "community_en_zh",
+      "source": "community",
+      "bucket": "forum",
+      "sample_id": "community_en_zh-014",
+      "difficulty_score": 50,
+      "difficulty_band": "medium",
+      "difficulty_signals": [
+        "community_context",
+        "medium_input",
+        "tone_or_symbol_preservation"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的英文内容翻译成自然、准确、完整的中文，保持原意，保留语气、术语、代码、命令、链接和格式，不漏译、不乱译、不过度意译。",
+    "input": "The Codex App is smooth but closed-source; there’s no telling when new features will be added, so I had to give it up. In the AI era, open-source is better—you can add any features you want directly.",
+    "output": "Codex App虽然体验流畅但不开源，想要的各种feature都不知道什么时候才能塞进去，还是只能忍痛放弃了。AI时代还是选择开源的更舒服一些，有什么想加的都能直接加。",
+    "meta": {
+      "eval_split": "community_en_zh",
+      "source": "community",
+      "bucket": "forum",
+      "sample_id": "community_en_zh-015",
+      "difficulty_score": 50,
+      "difficulty_band": "medium",
+      "difficulty_signals": [
+        "community_context",
+        "medium_input",
+        "tone_or_symbol_preservation"
+      ]
+    }
+  },
+  {
+    "instruction": "将下面的英文内容翻译成自然、准确、完整的中文，保持原意，保留语气、术语、代码、命令、链接和格式，不漏译、不乱译、不过度意译。",
+    "input": "Content: The 2025 e-bike standard limits speed to 25 km/h, but Hello Bike and others rent over-speed vehicles. Some reach 75–80 km/h. Streamers promote illegal speeds openly, ignoring standards and creating huge safety hazards.",
+    "output": "内容： 2025年《电动自行车安全技术规范》新国标规定时速不超25公里，但调查发现，哈啰租电动车等连锁品牌及地方门店，公开租赁违规超标车辆。实测显示，部分租赁车辆车速竟然高达75至80公里/小时。电商主播在直播间也公然宣传违规超标性能，完全无视国家标准，安全隐患极大。",
+    "meta": {
+      "eval_split": "community_en_zh",
+      "source": "community",
+      "bucket": "forum",
+      "sample_id": "community_en_zh-016",
+      "difficulty_score": 50,
+      "difficulty_band": "medium",
+      "difficulty_signals": [
+        "community_context",
+        "medium_input",
+        "tone_or_symbol_preservation"
+      ]
+    }
+  }
+]

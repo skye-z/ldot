@@ -1,0 +1,543 @@
+[
+  {
+    "instruction": "将下面这段来自 Linux Do 社区讨论的中文内容翻译成英文，保留原有语气、梗、代码、命令、链接和格式。",
+    "input": "哈喽佬友们，又又又好久不见。之前立了一个PPT Agent的Flag，折腾了好几个月，终于可以来给大家交作业了。\n\n先给大家看一些我们目前能生成的效果，后面我会把完整的思路分享出来。那以下页面，都是AI自动生成的，模型用的是Gemini 3的Flash版本。\n\n封面-1-设计稿 (1)\n1920×1080 135 KB\n\n分层架构设计：从数据层到编排层-7-设计稿\n1920×1080 248 KB\n\n核心硬件：AIoT智能家居与人车家全生态闭环-8-设计稿\n1920×1080 247 KB\n\n可以搞定各种风格的设计：\n\n微信图片_20260317175828_1476_1\n1920×1030 296 KB\n\n微信图片_20260317175833_1477_1\n1920×1217 276 KB\n\n你可能会想，这不就是又一个AI PPT玩具吗？\n\n不。你只需要给它一个主题，比如“Dify企业介绍”，然后就可以去泡杯咖啡了。它会像一个真正的专家团队那样，自己跑完从需求调研 → 资料搜集 → 大纲策划 → 生成策划稿 → 生成设计稿的全流程。\n\n最后做出这样一套完整的设计：\n\n因为是商业项目，发在这里不太合规矩，我也不提名字了。但是我还是挺想把我们做这个的完整思路，包括用到的一部分提示词分享给大家的。\n\n我可以非常自信地说，这绝对是一个你从未见过的PPT Agent思路。接下来的内容，希望能对你有所启发。\n\n1.忘了“一键生成”，从“提问”开始\n\n市面上几乎所有的AI PPT工具，都犯了一个致命的错误。\n\n你一输入主题，它就猴急地给你丢出一个粗糙大纲，然后用一堆现成的模板糊弄你，恨不得马上把花里胡哨的设计怼到你脸上。\n\n但说真的，PPT的灵魂是内容，不是皮囊。\n\n想想我们自己做PPT的流程：是不是得先搞清楚“为谁做？做什么？达到什么目的？”\n\n所以，我们让AI做的第一件事，就是像一个专业顾问一样去“需求调研” 。它会先去网上扒一圈相关资料，然后像模像样地问你几个关键问题，让你把真正的需求说清楚。\n\n640 (3)\n1080×608 29.6 KB\n\n只有当我们把需求聊透了，它才会结合搜集到的资料，去生成一份真正“有的放矢”的大纲。\n\n聊到大纲，我又把我用了多年的一个“笨方法”教给了AI——便利贴法。\n\n过去我做复杂PPT时，会把每一页的核心内容写在一张张便利贴上，贴满一墙。这样逻辑结构一目了然，哪里不好就撕掉，顺序不对就调换，高效又直观。\n\n现在，我们把它做进了产品里。每一个页面，就是一张“数字便利贴”，让你看得清清楚楚，调得明明白白。\n\n这个思路，你完全可以自己复现。在你动工前，先别急着打开PPT软件，试试把你的需求完整地告诉AI，让它扮演你的“PPT规划师”。\n\n下面这个我们项目在用的正式版Prompt，也直接开源给你，让你也能拥有一个顶级的“PPT结构架构师”：\n\n# Role: 顶级的PPT结构架构师\n\n## Profile\n- 版本：2.0 (Context-Aware)\n- 专业：PPT逻辑结构设计\n- 特长：运用金字塔原理，结合**背景调研信息**构建清晰的演示逻辑\n\n## Goals\n基于用户提供的 **PPT主题** 和 **背景调研信息 (Context)**，设计一份逻辑严密、层次清晰的PPT大纲。\n\n## Core Methodology: 金字塔原理\n1. 结论先行：每个部分以核心观点开篇\n2. 以上统下：上层观点是下层内容的总结\n3. 归类分组：同一层级的内容属于同一逻辑范畴\n4. 逻辑递进：内容按照某种逻辑顺序展开\n\n## 重要：利用调研信息\n你将获得一些关于主题的搜索摘要。请务必参考这些信息来规划大纲，使其切合当前的市场现状或技术事实，而不是凭空捏造。\n例如：如果调研显示\"某技术已过时\"，则不要将其作为核心推荐。\n\n## 输出规范\n请严格按照以下JSON格式输出，结果用[PPT_OUTLINE]和[/PPT_OUTLINE]包裹：\n\n[PPT_OUTLINE]\n{\n  \"ppt_outline\": {\n    \"cover\": {\n      \"title\": \"引人注目的主标题\",\n      \"sub_title\": \"副标题\",\n      \"content\": []\n    },\n    \"table_of_contents\": {\n      \"title\": \"目录\",\n      \"content\": [\"第一部分标题\", \"第二部分标题\", \"...\"]\n    },\n    \"parts\": [\n      {\n        \"part_title\": \"第一部分：章节标题\",\n        \"pages\": [\n          { \"title\": \"页面标题1\", \"content\": [] },\n          { \"title\": \"页面标题2\", \"content\": [] }\n        ]\n      }\n    ],\n    \"end_page\": {\n      \"title\": \"总结与展望\",\n      \"content\": []\n    }\n  }\n}\n[/PPT_OUTLINE]\n\n## Constraints\n1. 必须严格遵循JSON格式。\n2. **页数要求*：{{PAGE_REQUIREMENTS}}\n\n2.去大量检索资料。\n\n大纲只是骨架，血肉需要真实、准确的信息来填充。这个因为很多工程上的问题，我们自己项目用的是国内的搜索接口。\n\n640 (4)\n1080×522 50.9 KB\n\n但如果你想自己DIY这个流程，我墙裂推荐一个神器：Grok 。\n\n别的不说，它是我目前用过搜索和信息总结能力最强的AI，没有之一。用法简单到发指：把上一步生成的大纲标题，一个一个丢给Grok，它就能帮你把所需资料搜集、整理得妥妥帖帖。\n\nScreenShot_2026-03-19_104103_358\n3414×1536 459 KB\n\n3.PPT居然还有策划稿？\n\n拿到内容后，多数人就直接让AI上设计了。但我们多加了一个操作——策划 。\n\n啥，PPT还要做策划呢？我想这个词很多PPT设计师都没听过，五年前，我也一样。\n\n那时候我去到了一家国内顶尖的PPT设计公司，他们的PPT报价是1万+一页。\n\n他们有一个专门的岗位，叫策划师。没错，你前面看到的，需求调研、资料检索，大纲规划，这事儿都归他们干。\n\n640 (5)\n1080×387 20.7 KB\n\n他们最终会提供一个PPT草稿给到设计师，每页什么位置要放什么元素，用什么样的版式，全都固定好。\n\n就像这样：\n\n640 (7)\n1080×580 32 KB\n\n真正让AI去做PPT的时候，你也可以试试一样的处理。先让AI生成一个，不要各种复杂效果，简简单单，清清爽爽的页面初稿。\n\n640 (6)\n1080×763 33.2 KB\n\n到后面再去加设计的效果：\n\n640 (8)\n1080×763 38.4 KB\n\n我们做了大量测试，发现这套人类专家的工作流，AI完全能理解！策划部分负责版面规划，设计部分来做风格样式，跑下来的效果非常好。\n\n你啥都不用干，等AI跑完这套流程就能用，甚至都不太需要改。\n\n那当然，如果是一些特别重要的PPT，你也可以在策划稿阶段精调内容，再去让AI跑最终的设计，把效率和颜值都最大化。\n\n4.用这个PPT技巧让AI跑设计。\n\n我之前做PPT课程的时候，有一个可以给到“夯爆了”的PPT技巧，叫卡片式布局。\n\n啥是卡片式布局呢，喏，你在苹果的发布会上经常能看到。把内容放进了一个个卡片里。\n\n640 (9)\n1080×607 46.2 KB\n\n之前在论坛发了两篇文章，用的也是一样的卡片式布局的思路。\n\n把小米379页的年报转为可视化网页，附完整提示词\n开发调优\n前两天，小米发布了2024年度的完整年报。 三顿本来想挑其中一些重要的内容，给大家做一份完整的PPT。但我打开一看，有整整379页： [dca97a421426b656c3911c2ebde05a16] 手动整理？吭哧吭哧地读、提取、再做成PPT？那估计得熬好几天，头发都得掉一把。 就在我感觉快要被这379页“活埋”的时候，脑子里突然闪过一个念头：这种事，能不能让AI来帮我扛？ 折腾研…\n\n640 (10)\n1080×608 39.2 KB\n\n这样做有三大好处：\n\n能装： 一页里能清晰地承载大量信息。\n灵活： 卡片数量、大小、位置可以随意组合，版式变化无穷。\nAI能懂： 这是最关键的！我们发现，“卡片”是AI最容易理解和掌握的一种设计语言。\n\n我们把这套方法论，写成了一段精确的指令，告诉AI如何像顶级设计师一样思考布局。这可以说是我们项目的核心壁垒之一，今天也一并分享了：\n\n内容页的便当网格 (Bento Grid) 布局\n这是一种灵活的网格系统，其布局应由内容本身的需求驱动，而非僵硬的模板。通过组合不同尺寸的卡片，创造出动态且视觉有趣的布局。\n- 核心原则:\n    - 灵活性: 卡片数量不固定。可以是 1, 2, 3, 4, 5 或更多个，取决于如何更好地呈现信息。\n    - 层级感: 使用卡片尺寸建立视觉层级。最重要的信息放在最大的卡片上。\n    - 留白: 在所有卡片之间保持至少 20px 的间距。\n- 布局组合示例:\n    - 单一焦点: 一张大卡片覆盖大部分区域 (w=1200, h=580)。适用于单一、有力的信息或详细的图表。\n    - 两栏布局:\n        - 50/50 对称: 两张等宽的卡片。\n        - 非对称: 一张较宽的卡片（如 2/3 宽度）用于主内容，一张较窄的（1/3 宽度）用于辅助信息、数据或图片。\n    - 三栏布局: 三张等宽的卡片，适合并列比较三项内容。\n    - 主次结合: 一张大的居中卡片，两侧各一张小的垂直卡片。\n    - 顶部英雄式: 顶部一张宽幅“英雄”卡片，下方是 2-4 个较小的等宽卡片网格。\n    - 混合网格 (自由度最高): 自由混合各种尺寸的卡片，例如一个中等方块、两个小的水平矩形和一个垂直矩形。这种方式可以极大地适应不同内容的需求。\n\n如果大家自己去跑也很简单，拿你刚刚用Grok检索到的内容结果，加上我下面这段提示词：\n\n作为精通信息架构与 SVG 编码的专家，你的任务是将完整的文字内容转化为一张高质量、结构化、具备高级感、简洁感和专业感的 SVG 演示文稿页面。要求如下：\n\n1.画布: SVG viewBox 必须是 0 0 1280 720。\n\n2.内容页的便当网格 (Bento Grid) 布局\n这是一种灵活的网格系统，其布局应由内容本身的需求驱动，而非僵硬的模板。通过组合不同尺寸的卡片，创造出动态且视觉有趣的布局。\n- 核心原则:\n    - 灵活性: 卡片数量不固定。可以是 1, 2, 3, 4, 5 或更多个，取决于如何更好地呈现信息。\n    - 层级感: 使用卡片尺寸建立视觉层级。最重要的信息放在最大的卡片上。\n    - 留白: 在所有卡片之间保持至少 20px 的间距。\n- 布局组合示例:\n    - 单一焦点: 一张大卡片覆盖大部分区域 (w=1200, h=580)。适用于单一、有力的信息或详细的图表。\n    - 两栏布局:\n        - 50/50 对称: 两张等宽的卡片。\n        - 非对称: 一张较宽的卡片（如 2/3 宽度）用于主内容，一张较窄的（1/3 宽度）用于辅助信息、数据或图片。\n    - 三栏布局: 三张等宽的卡片，适合并列比较三项内容。\n    - 主次结合: 一张大的居中卡片，两侧各一张小的垂直卡片。\n    - 顶部英雄式: 顶部一张宽幅“英雄”卡片，下方是 2-4 个较小的等宽卡片网格。\n    - 混合网格 (自由度最高): 自由混合各种尺寸的卡片，例如一个中等方块、两个小的水平矩形和一个垂直矩形。这种方式可以极大地适应不同内容的需求。\n\n请你根据我的内容输出SVG代码，我的内容是：\n\n直接发送Gemini处理，我们用的是3 Flash，有条件可以直接上3.1 Pro:\n\nScreenShot_2026-03-19_104134_376\n1254×1124 147 KB\n\n它直接就能生成这样一整个页面的SVG代码了：\n\nScreenShot_2026-03-19_103904_044\n1920×968 375 KB\n\n市面上的 AIPPT 大多是调用 Banana 或者生成 html，我们采用了生成整页 SVG 的方案。\n\nSVG是一种PPT里兼容性最好的格式，生成的这个SVG代码你可以直接拖到Office 2016以上的版本里去做使用。\n\n为什么选了这种SVG格式呢？说起来也是泪。\n\n好处是可以导入 PPT，完全可编辑，甚至各种设计软件都支持，而且可以无限放大，保证清晰度。代价是，三个多月里我们花了大量时间处理 SVG，因为没人做过，一切都得从零开始，不断摸索。\n\n如果你是自己使用，也不太需要可编辑性，我更推荐让AI生成HTML格式的，这个部分的提示词在之前的文章里有，感兴趣的佬友可以看看。\n\n最后也想聊聊，为什么想把这个思路分享出来呢，特别是发的提示词已经是我们项目里用的。同事觉得我傻，不怕别人马上抄走吗。\n\n那第一，我觉得，我现在做的这个东西，也只是挖掘了AI做PPT，大概5%的能力，我们还有非常多棒的思路，会去一一实现，这些对于PPT的理解和积累，是没办法复制的。\n\n第二，我是真的不太服气。市面上这些AI PPT工具，他们的开发根本都不懂PPT。给个大纲，硬套模板，让很多人用完都说：AI PPT，也就这样了，不行。\n\n不该是这样的。\n\n我教了7年PPT，做了3年AI产品，我坚信，AI有能力也已经在改变我们制作和演示信息的方式。这些效果是现在我平衡成本和效果下，能跑出来的极限，但远远不是AI的极限。\n\n我会持续在这里分享我的关于AI PPT的思考和探索，希望这些内容，能对同样在路上的你，有所帮助。",
+    "output": "Hello, folks, long time no see yet again. I planted the flag of building a PPT Agent before, and after tinkering with it for months, I can finally turn in my homework to everyone.\n\nFirst, let me show you some of the results we can generate right now. Later on, I'll share the full approach. The pages below were all generated automatically by AI, and the model used was the Flash version of Gemini 3.\n\n封面-1-设计稿 (1)\n1920×1080 135 KB\n\n分层架构设计：从数据层到编排层-7-设计稿\n1920×1080 248 KB\n\n核心硬件：AIoT智能家居与人车家全生态闭环-8-设计稿\n1920×1080 247 KB\n\nIt can handle all kinds of design styles:\n\n微信图片_20260317175828_1476_1\n1920×1030 296 KB\n\n微信图片_20260317175833_1477_1\n1920×1217 276 KB\n\nYou might be thinking, isn't this just another AI PPT toy?\n\nNo. You only need to give it a topic, such as \"a company introduction for Dify\", then go make yourself a cup of coffee. It will run the entire workflow on its own like a real expert team, from requirements research → information gathering → outline planning → generating a planning draft → generating the final design draft.\n\nIn the end, it can produce a complete deck like this.\n\nSince this is a commercial project, it would be a bit inappropriate to name it here, so I won't mention the product. But I still really want to share the full thinking behind what we built, including some of the prompts we used.\n\nI can say with absolute confidence that this is definitely a PPT Agent approach you've never seen before. I hope the rest of this post gives you some useful inspiration.\n\n1. Forget \"one-click generation\" and start with asking questions.\n\nAlmost every AI PPT tool on the market makes one fatal mistake.\n\nThe moment you enter a topic, it eagerly throws a rough outline at you, then tries to fool you with a pile of ready-made templates, as if it can't wait to shove flashy visuals right into your face.\n\nBut honestly, the soul of a PPT is the content, not the skin.\n\nThink about how we make PPTs ourselves. Don't we first need to figure out \"Who is this for? What is it about? What result does it need to achieve?\"\n\nSo the very first thing we ask AI to do is conduct \"requirements research\" like a professional consultant. It first goes online and digs through relevant information, then it asks you several key questions in a very proper way so you can clearly explain your real needs.\n\n640 (3)\n1080×608 29.6 KB\n\nOnly after the requirements have been fully clarified does it combine the information it gathered and generate an outline that is actually targeted and purposeful.\n\nSpeaking of outlines, I also taught AI one of the \"clumsy but effective\" methods I've used for years: the sticky-note method.\n\nWhen I used to make complex PPTs, I would write the core content of each page on separate sticky notes and cover an entire wall with them. That way, the logical structure became obvious at a glance. If something didn't work, I could tear it off. If the order was wrong, I could rearrange it. Efficient and intuitive.\n\nNow we've built that into the product. Every page becomes a \"digital sticky note\", letting you see everything clearly and adjust it cleanly.\n\nYou can absolutely replicate this idea yourself. Before you even open PowerPoint, try giving AI your full requirements first and let it act as your \"PPT planner\".\n\nI'm also directly open-sourcing the production prompt we use in our project below, so you can have a top-tier \"PPT structure architect\" as well:\n\n# Role: Top-tier PPT Structure Architect\n\n## Profile\n- Version: 2.0 (Context-Aware)\n- Specialty: PPT logical structure design\n- Strength: Using the pyramid principle and **background research information** to build a clear presentation logic\n\n## Goals\nBased on the **PPT topic** provided by the user and the **background research information (Context)**, design a PPT outline that is logically rigorous and clearly structured.\n\n## Core Methodology: Pyramid Principle\n1. Lead with the conclusion: each section starts with a core point\n2. Top-down structure: upper-level points summarize lower-level content\n3. Group by category: content at the same level belongs to the same logical category\n4. Logical progression: content unfolds in a clear logical order\n\n## Important: Make use of the research information\nYou will receive some search summaries about the topic. You must refer to this information when planning the outline so it matches the current market reality or technical facts instead of inventing things out of thin air.\nFor example, if the research shows that \"a certain technology is outdated\", do not make it a core recommendation.\n\n## Output format\nPlease strictly output in the following JSON format, wrapped with [PPT_OUTLINE] and [/PPT_OUTLINE]:\n\n[PPT_OUTLINE]\n{\n  \"ppt_outline\": {\n    \"cover\": {\n      \"title\": \"An eye-catching main title\",\n      \"sub_title\": \"Subtitle\",\n      \"content\": []\n    },\n    \"table_of_contents\": {\n      \"title\": \"Table of Contents\",\n      \"content\": [\"Part One Title\", \"Part Two Title\", \"...\"]\n    },\n    \"parts\": [\n      {\n        \"part_title\": \"Part One: Section Title\",\n        \"pages\": [\n          { \"title\": \"Page Title 1\", \"content\": [] },\n          { \"title\": \"Page Title 2\", \"content\": [] }\n        ]\n      }\n    ],\n    \"end_page\": {\n      \"title\": \"Summary and Outlook\",\n      \"content\": []\n    }\n  }\n}\n[/PPT_OUTLINE]\n\n## Constraints\n1. You must strictly follow the JSON format.\n2. **Page count requirement**: {{PAGE_REQUIREMENTS}}\n\n2. Do a large amount of research.\n\nAn outline is only the skeleton. Real and accurate information is what gives it flesh and blood. Because of various engineering constraints, our own project uses a domestic search API for this part.\n\n640 (4)\n1080×522 50.9 KB\n\nBut if you want to DIY this workflow yourself, I strongly, strongly recommend a killer tool: Grok.\n\nNothing else needs to be said. It is currently the strongest AI I have used for search and information summarization, bar none. The usage is ridiculously simple: take the outline headings generated in the previous step and throw them into Grok one by one, and it will gather and organize the needed information for you properly.\n\nScreenShot_2026-03-19_104103_358\n3414×1536 459 KB\n\n3. PPT planning drafts are a real thing?\n\nAfter getting the content, most people would let AI jump straight to design. But we added one more step: planning.\n\nWait, PPTs need planning too? I think many PPT designers have never even heard that term. Five years ago, neither had I.\n\nBack then, I joined one of the top PPT design companies in China, where a single PPT page could cost over 10,000 RMB.\n\nThey had a dedicated role called a planner. That's right. The requirements research, information retrieval, and outline planning you saw earlier were all handled by them.\n\n640 (5)\n1080×387 20.7 KB\n\nIn the end, they would hand a PPT draft over to the designers, with what elements should go where on each page and what kind of layout to use all fully fixed in advance.\n\nLike this:\n\n640 (7)\n1080×580 32 KB\n\nWhen AI actually makes the PPT, you can try the same treatment. First let AI generate a page draft with no fancy effects, just something simple, clean, and straightforward.\n\n640 (6)\n1080×763 33.2 KB\n\nThen add the design effects afterward:\n\n640 (8)\n1080×763 38.4 KB\n\nWe ran a huge number of tests and found that AI can fully understand this human-expert workflow. The planning stage handles the page structure, and the design stage handles the style. The results are excellent.\n\nYou don't have to do anything. Just wait for AI to finish the whole process and you can use it directly, often with almost no revisions needed.\n\nOf course, if it's a particularly important PPT, you can still fine-tune the content during the planning stage and then let AI generate the final design, maximizing both efficiency and polish.\n\n4. Use this PPT trick to let AI handle design.\n\nWhen I used to teach PPT courses, there was one technique that absolutely crushed it: the card-based layout.\n\nWhat is a card-based layout? Well, you often see it in Apple keynotes. Content gets placed into individual cards.\n\n640 (9)\n1080×607 46.2 KB\n\nI used the same card-based layout thinking in two posts I published on the forum before.\n\nTurning Xiaomi's 379-page annual report into a visual web page, with the full prompt included\nDevelopment & Optimization\nA few days ago, Xiaomi released its full 2024 annual report. At first, I wanted to pick out some of the most important parts and turn them into a full PPT for everyone. But when I opened it, there were 379 pages in total: [dca97a421426b656c3911c2ebde05a16] Manually整理? Reading it laboriously, extracting the points, then making a PPT? That would probably take days, and I'd lose a chunk of my hair in the process. Just when I felt like I was about to be buried alive by those 379 pages, a thought suddenly flashed through my mind: could AI take this burden for me? After a lot of tinkering...\n\n640 (10)\n1080×608 39.2 KB\n\nDoing it this way has three major advantages:\n\nCapacity: A single page can clearly carry a lot of information.\nFlexibility: The number, size, and position of the cards can be combined freely, so the layout variations are endless.\nAI-friendly: This is the most critical point. We found that \"cards\" are one of the easiest design languages for AI to understand and master.\n\nWe turned this methodology into a precise instruction set, telling AI how to think about layout like a top designer. This is arguably one of the core moats of our project, and today I'm sharing it as well:\n\nBento Grid layout for content pages\nThis is a flexible grid system whose layout should be driven by the needs of the content itself rather than by rigid templates. By combining cards of different sizes, it creates a dynamic and visually interesting composition.\n- Core principles:\n    - Flexibility: The number of cards is not fixed. It can be 1, 2, 3, 4, 5, or more, depending on what best presents the information.\n    - Hierarchy: Use card size to establish visual hierarchy. Put the most important information in the largest card.\n    - Whitespace: Keep at least 20px of spacing between all cards.\n- Example layout combinations:\n    - Single focal point: One large card occupies most of the page (w=1200, h=580). Suitable for a single powerful message or a detailed chart.\n    - Two-column layout:\n        - 50/50 symmetry: two cards of equal width.\n        - Asymmetry: one wider card (for example, two-thirds width) for the main content, and one narrower card (one-third width) for supporting information, data, or images.\n    - Three-column layout: three equal-width cards, suitable for comparing three pieces of content side by side.\n    - Primary-secondary combination: one large centered card with one small vertical card on each side.\n    - Top hero style: one wide \"hero\" card on top, with a grid of 2-4 smaller equal-width cards below.\n    - Mixed grid (maximum freedom): freely mix cards of various sizes, such as one medium square, two small horizontal rectangles, and one vertical rectangle. This greatly improves adaptability to different kinds of content.\n\nIf you want to run this yourself, it's actually very simple. Take the search results you just got from Grok and add the following prompt I provide below:\n\nAs an expert in information architecture and SVG coding, your task is to turn complete textual content into a high-quality, well-structured SVG presentation page with a premium, clean, and professional feel. Requirements are as follows:\n\n1. Canvas: the SVG viewBox must be 0 0 1280 720.\n\n2. Bento Grid layout for content pages\nThis is a flexible grid system whose layout should be driven by the needs of the content itself rather than by rigid templates. By combining cards of different sizes, it creates a dynamic and visually interesting composition.\n- Core principles:\n    - Flexibility: The number of cards is not fixed. It can be 1, 2, 3, 4, 5, or more, depending on what best presents the information.\n    - Hierarchy: Use card size to establish visual hierarchy. Put the most important information in the largest card.\n    - Whitespace: Keep at least 20px of spacing between all cards.\n- Example layout combinations:\n    - Single focal point: One large card occupies most of the page (w=1200, h=580). Suitable for a single powerful message or a detailed chart.\n    - Two-column layout:\n        - 50/50 symmetry: two cards of equal width.\n        - Asymmetry: one wider card (for example, two-thirds width) for the main content, and one narrower card (one-third width) for supporting information, data, or images.\n    - Three-column layout: three equal-width cards, suitable for comparing three pieces of content side by side.\n    - Primary-secondary combination: one large centered card with one small vertical card on each side.\n    - Top hero style: one wide \"hero\" card on top, with a grid of 2-4 smaller equal-width cards below.\n    - Mixed grid (maximum freedom): freely mix cards of various sizes, such as one medium square, two small horizontal rectangles, and one vertical rectangle. This greatly improves adaptability to different kinds of content.\n\nPlease output SVG code based on my content. My content is:\n\nSend it directly to Gemini. We use 3 Flash, and if you have the conditions, you can go straight to 3.1 Pro:\n\nScreenShot_2026-03-19_104134_376\n1254×1124 147 KB\n\nIt can directly generate a full page of SVG code like this:\n\nScreenShot_2026-03-19_103904_044\n1920×968 375 KB\n\nMost AI PPT tools on the market call Banana or generate HTML. We chose a full-page SVG generation approach.\n\nSVG is one of the formats with the best compatibility inside PPT. You can drag the generated SVG code directly into Office 2016 or later and use it there.\n\nWhy did we choose SVG? Honestly, it has been a painful road.\n\nThe upside is that it can be imported into PPT, fully edited, supported by all kinds of design software, and scaled infinitely while staying sharp. The downside is that we spent more than three months wrestling with SVG, because nobody had really done this before, so everything had to be explored from scratch.\n\nIf you're using it only for yourself and don't care too much about editability, I would actually recommend having AI generate HTML instead. The prompt for that part is in one of my earlier posts, so interested folks can take a look.\n\nIn the end, I also want to talk about why I wanted to share this whole approach, especially since the prompts I posted are already the ones we use in the project. My colleagues think I'm stupid. Aren't I afraid people will just copy it immediately?\n\nWell, first, I think what I'm doing right now has only uncovered maybe 5% of AI's capability for making PPTs. We still have many more great ideas to implement, and that understanding and accumulation around PPTs can't simply be copied.\n\nSecond, I really am not convinced by the current market. The people building those AI PPT tools don't understand PPT at all. They give you an outline, slap on a template, and make lots of people walk away saying, \"AI PPT? That's all it can do? It doesn't work.\"\n\nIt shouldn't be like that.\n\nI taught PPT for seven years and worked on AI products for three years. I firmly believe that AI already has the ability to change how we create and present information. The results I'm showing here are the limit of what I can get today while balancing cost and quality, but they are nowhere near AI's real limit.\n\nI will keep sharing my thinking and exploration around AI PPT here, and I hope these ideas can help you if you're walking the same road.",
+    "meta": {
+      "source": "linux.do",
+      "period": "daily",
+      "capture_date": "2026-03-20",
+      "captured_at": "2026-03-20T05:01:07Z",
+      "topic_id": 1782304,
+      "topic_title": "应该是目前最强的PPT Agent，附上完整思路分享",
+      "topic_url": "https://linux.do/t/topic/1782304",
+      "topic_rank": 1,
+      "category_id": "开发调优",
+      "tags": [
+        "人工智能",
+        "软件开发",
+        "精华神帖",
+        "人工智能",
+        "软件开发",
+        "精华神帖"
+      ],
+      "post_id": 15313980,
+      "post_number": 0,
+      "username": "",
+      "created_at": "",
+      "reply_to_post_number": null,
+      "translation_status": "translated"
+    }
+  },
+  {
+    "instruction": "将下面这段来自 Linux Do 社区讨论的中文内容翻译成英文，保留原有语气、梗、代码、命令、链接和格式。",
+    "input": "哎呀，之前抽奖的帖子被删了（说是不能把开源和抽奖混到一起），这个红包还是送出去吧，感谢之前回复的兄弟，麻烦再回复一下，明天晚上抽掉～ 祝各位天天开心\n\n 奖品详情：\n\n100口令红包*3\n\n 活动时间：\n\n开始时间：[3月19日18:30]\n截止时间：[3月20日18:30]\n\n 参与方式：\n\n在本帖下回复任意内容。\n\n 抽奖规则：\n\n每位用户仅允许参与一次。\n使用LinuxDo官方工具随机抽取中奖者。\n\n 注意事项：\n\n本活动将在活动截止时间后关闭回帖，以确保公正性。\n中奖者将在活动结束后12小时内在本帖公布，并通过站内私信通知领奖方式。\n所有规则及抽奖结果由活动发起人和论坛管理团队最终解释。\n\n期待您的积极参与，祝您好运！如有任何疑问，欢迎随时联系抽奖发起人。",
+    "output": "Oops, the previous giveaway thread got deleted (I was told open-source content and giveaways can't be mixed together), but I'd still like to send these red packets out. Thanks to the brothers who replied before, and sorry to trouble you, but please reply again. I'll draw the winners tomorrow evening~ Wishing all of you happiness every day.\n\nPrize details:\n\n3 × 100 RMB Alipay passphrase red packets\n\nEvent time:\n\nStart: [March 19, 18:30]\nEnd: [March 20, 18:30]\n\nHow to participate:\n\nReply with any content under this thread.\n\nLucky draw rules:\n\nEach user may participate only once.\nThe winners will be selected randomly using the official LinuxDo tool.\n\nNotes:\n\nThis thread will be closed after the event deadline to ensure fairness.\nThe winners will be announced in this thread within 12 hours after the event ends, and the prize claim instructions will be sent via forum private message.\nAll rules and the final interpretation of the draw results are reserved by the event organizer and the forum moderation team.\n\nLooking forward to your participation, and good luck! If you have any questions, feel free to contact the giveaway organizer at any time.",
+    "meta": {
+      "source": "linux.do",
+      "period": "daily",
+      "capture_date": "2026-03-20",
+      "captured_at": "2026-03-20T05:01:07Z",
+      "topic_id": 1783917,
+      "topic_title": "抽3个100元支付宝红包",
+      "topic_url": "https://linux.do/t/topic/1783917",
+      "topic_rank": 3,
+      "category_id": "福利羊毛",
+      "tags": [
+        "纯水",
+        "抽奖"
+      ],
+      "post_id": 15331620,
+      "post_number": 0,
+      "username": "",
+      "created_at": "",
+      "reply_to_post_number": null,
+      "translation_status": "translated"
+    }
+  },
+  {
+    "instruction": "将下面这段来自 Linux Do 社区讨论的中文内容翻译成英文，保留原有语气、梗、代码、命令、链接和格式。",
+    "input": "image\n3840×2160 329 KB\n\n前几天有人跑来问我，为什么他的服务器没有屏幕、看不到桌面——我这才意识到：好像一直没有一篇文章，是真正从零开始、专门写给小白看的服务器科普。\n\n大多数教程都默认你已经知道什么是VPS、什么是SSH，上来就直接开干，但对于真正的新手来说，这道门槛其实挺高的。\n\n于是这个系列就这么来了：写给小白的，从0开始的VPS科普。\n\n本文较长，分成很多板块，目标只有一个：让你读完之后，对VPS有一个完整、清晰的认知，不再一头雾水。内容较多，会分块持续更新。\n\n目前规划的章节如下：\n\n初识VPS：什么是VPS？\n拿到VPS之后——第一次连接\n服务器的安全防护\n服务器的常见应用\n服务器的进阶玩法\n……\n\n那就让我们开始吧。\n\n本文无需任何前置知识即可食用，小白友好向科普~\n\n笔者水平有限，如有问题还请直接指正，猫猫会及时修改避免误导小白\n\n初识VPS：什么是VPS？\n1.1 VPS的概念\n\nVPS，全称Virtual Private Server，中文叫虚拟专用服务器。\n\n有点绕？没关系，我们用拆词法去理解这个名词。\n\n先说服务器，这个东西听起来非常高大上，但其实就是“专门对外提供服务的机器”。例如你用你的电脑看视频时，会访问一个网站，网站把视频发送给你，亦或者你正在看这篇文章，网站方会把这篇文章发送给你，在这个场合下，你是被服务对象，接受别人给你提供的视频服务，文章服务，既然有被服务方，自然就有服务方，也就是服务提供商，这个服务提供商，也是由机器组成的，而我们就称之为“服务器”，即“专门对外提供服务的机器”。\n\n其实严格的说，你的电脑也可以是服务器的一员，比如你在你的电脑上搭建了一个MC游戏服务器，你的室友连接进来游玩，这个时候你的电脑就会提供给你的室友MC游戏服务，你的电脑此时即是“服务器”。\n\n服务器的本质，不过是一台能响应请求、提供服务的计算机。你的电脑有 CPU、有内存、有硬盘、能联网，完全可以胜任这个需求，自然也可以划入服务器的范围。\n\n那为什么我们平时不用自己的电脑来\"当服务器\"呢？\n\n很简单：\n\n你的电脑不会24小时开机，电脑一关，别人就无法访问你的MC服务器\n你的电脑网络不稳定会波动，比如家里的网线断了，停电了，都会导致别人无法连接你的MC游戏服务器亦或者是游戏体验很卡\n你的电脑还有很多其他活要干，你不可能只用来跑MC服务器，比如你要用来办公/看视频，性能可能会不够用\n\n哎，这个时候你自然会想：能不能专门搞一台24小时不关机，网络稳定，性能好，一直提供服务的机器？\n\n这个就是我们常规意义上所指的服务器：一直开机，一直在线，随时响应的机器\n\n”服务器“的事情聊完了，那我们接着聊专用的事\n\n既然需要服务器，最直接的办法是自己买一台，放在机房里。 但这对大多数人来说太贵了：硬件机器要钱，拉网线要钱，电费要钱，维护也要花时间，WTF？这也太麻烦了，能不能请一个人专门干这事？他买个1000台服务器放在机房里统一维护，然后租给有这些需求的人？但是又面临一个问题：服务器机器往往是非常大型的机器，动辄64核+512GB内存+4TB存储，一个人租也太贵了，每个月光是电费都是一笔昂贵的开销，而且关键是：根本用不上这么多配置。我跑个MC只要其中的4核+8GB内存+20GB存储，能不能单独卖这一部分给我？\n\n于是出现了一种折中方案：一台强劲的机器，被切割成许多份， 每份独立租给不同的人使用。 你租下其中一份，它就是你的——有独立的操作系统，独立的 IP 地址， 独立的存储空间，别的租客看不到你的数据，也干扰不了你的服务，任凭隔壁租户把自己的服务器都弄冒烟了，也和你没有关系。\n\n这就是**Private(专用)**的含义：它是你私有的、专属的一台机器\n\n哎呀，猫猫猫猫，这个方案确实挺不错的，但是还是太贵了，我的MC服务器每天只有固定时间我才玩，其他时间我压根就不用，这个机器我租了也是闲置的，CPU/内存完全用不上，难道我还要为这些我用不上的性能付费吗？可以我不用的时候给别人吗？这样可以省下一笔钱，有这样的方案吗？\n\n有的，兄弟，有的\n\n答案是虚拟化技术。通过软件模拟，一台物理服务器可以同时运行 多个相互隔离的\"虚拟机\"，每个虚拟机都以为自己是一台独立的电脑， 拥有自己的 CPU 份额、内存、硬盘。 这就是**Virtual(虚拟)**的含义：它不是一台真实存在的独立机器， 而是从一台专用机器上虚拟出来的。\n\n比如说刚刚你租下的4核+8GB内存+20GB存储机器(这对跑一个MC服务器来说绰绰有余)，你一般只会用到20%的性能，那我们就把这个机器虚拟出来5台，租给5个人，虽然每个人的性能会下降(其实只有大家一起用的高峰期才会下降，如果没别的人用那么这些资源你也可以充分利用，发挥100%的性能)，但是价格又降低了5倍啊，这也太划算了！\n\n这个时候，你买到的这台机器，就是我们所说的VPS(虚拟专用服务器)\n\nVPS = 从一台物理服务器上虚拟出来的、属于你私有的、专门用来提供服务的小型计算机\n\n它 24 小时开机，网络稳定， 你可以随时通过网络连进去，在上面做任何你想做的事，即使你去干别的活，这台服务器仍然会继续运行，随时提供服务，让别人随时进入你的MC服务器进行游玩，而且这个方案你也能承担价格，非常折中的方案。\n\n1.2 VPS的配置\n\nVPS都包含哪些东西啊？\n\n前面我提到了VPS的配置：4核+8GB内存+20GB存储\n\n这个是什么？\n\n一台VPS的构成非常多，我们关注的核心参数一般是：\n\nCPU：服务器的大脑，负责处理所有的计算任务。CPU越强大，服务器处理任务的速度就越快。\n内存：服务器的工作台，程序运行的时候，需要把数据临时放在内存里，内存越大，能同时跑的程序就越多、越流畅。内存不够的时候，服务器会开始响应变慢，严重的时候程序直接崩掉，系统死机。\n硬盘：服务器的仓库，硬盘是长期存储的地方，各种程序、文件、数据库、日志、音频文件……所有需要长期保存下来的东西都放在这里。\n带宽：服务器的数据传输的最大速度，比如说会看到1Gbps(1000Mbps)速度，就是这个服务器可以对外传输的速度最大为1000Mbps\n流量：有些VPS会限制你每月的总流量，比如\"每月1TB流量\"，超了之后要么限速，要么额外收费。\n公网IP：用于定位服务器在互联网具体位置的一个标记，比如说我想要连接这台服务器，我就得知道它的IP地址，不然谁知道要连接到哪台VPS。\n位置：这台VPS到底托管在哪里？在香港/上海/东京/洛杉矶…还是什么别的地方\n\n举个典型的服务器配置例子：\n\nCPU | 2 核\n内存 | 1GB x DDR5 ECC\n硬盘 | 15GB x NVMe SSD\n带宽 | 1 Gbps\n流量 | 3 TB (双向)\n位置 | 美国盐湖城\nIP分配 | 1 IPv4 & 1 IPv6 (/128)\n\n我来给你掰开讲讲里面的门道\n\nCPU | 2核2个虚拟核心，个人用途够用。这里没有标型号，非常正常，VPS商家一般不会告诉你具体是哪颗物理CPU，如果CPU特别强力可以作为卖点往往会明确给出，不给出的默认比较一般的CPU就行。这个是核心决策因素，会很直接的决定VPS性能\n\nVPS上的CPU核心是\"虚拟核心\"，和我们电脑上的物理核心不完全一样。多个VPS租户共用同一颗物理CPU(一颗物理核心可以模拟出多个虚拟核心分配给多个用户)，高峰期可能会互相抢资源，这是VPS便宜的代价之一，不过正规服务商都会控制好这个问题，一般不用太担心。\n\n内存 | 1GB x DDR5 ECC 1GB的内存大小，内存大小也是核心决策因素，会很直接的决定VPS性能。DDR5则是指内存的代数(数字越大越新，价格相应更高)，DDR5是目前比较新的一代，比DDR4更快(其实感知不太出来，除非你的程序很依赖内存速度)，个别商家甚至会用DDR3，这个就有点太卡了。\n\n一般来说，商家都会用DDR4，这意味着”这不是一台特别老的机器，属于比较正常、靠谱的主流配置“，DDR3的话就是明摆着”这机器不太行，你别猛用，你轻量使用即可，重负载完全跑不动“，DDR5作为最新款，各项参数强于DDR4，但DDR5 是加分项，但通常不是决定你买不买这台VPS的核心因素，因为说实话，DDR5和DDR4的差别体感不太明显，没必要追求DDR5。\n\n至于ECC这个玩意，就是”自动检测并纠正内存中的数据错误“，有ECC意味着这台机器的硬件规格更接近正经服务器，数据更可靠，是个加分项，但不能作为是否购买的核心因素。ECC对于普通用户而言，有用，但不大，因为它提升的是“可靠性”而不是速度，体验并不明显，有些商家会标明Non-ECC或者干脆不标有无ECC的事，因为这个确实不太重要(除非你需要很专业稳定的服务)\n\n有些商家还会标频率，例如DDR4-3200或DDR5-4800，这个数字就是频率，例如2400MHz/3200MHz/4800MT/s等，数字越大，通常越快。这个参数也是“有用，但不是核心决策因素”，因为你买的是一台“被虚拟出来的机器”，最终体验不只取决于这一个数字。\n\n硬盘 | 15GB x NVMe SSD 15GB的存储空间大小，后面这个NVMe的参数就要展开说说。\n\n硬盘分为HDD(机械硬盘)和SSD(固态硬盘)两种\n\nHDD(机械硬盘)：容量大而且便宜，但是速度慢\nSSD(固态硬盘)：速度快但是价格较为昂贵\n\n这个SSD里会再根据通道协议区别一下，分为\n\nSATA SSD：普通的SSD，只不过走的是SATA这套老一些的通道协议，成本较低，最常见的选择\nNVMe SSD：走的是 NVMe 这套更快的通道协议，成本较高，但速度更快\n\n前者可以理解为“普通固态硬盘”，后者则是走更高速通道的固态硬盘，通常更快\n\n总体而言性能就是NVMe SSD > SATA SSD >> HDD\n\n大部分商家都只会说SSD，这就默认是SATA，因为如果是NVMe一定会标明的，这个是卖点，一般不会藏起来。说个题外话，劝你真别买HDD盘，真的慢的夸张，我都受不了了，卡成啥了…\n\n后面的流量带宽地理位置都很好理解，就不展开了，我只说说流量计费的事\n\n流量分为单向/双向流量，带你分析一种最典型的流量形式即可\n\n用户->VPS->网站然后网站->VPS->用户\n\n这种情况下VPS先收到你的流量，然后发送给网站，然后网站收到后送回给你的VPS，然后VPS再发送给你\n\n这个情况下，你和网站传输了10GB流量，但服务器需要进行两次转发，这个时候，服务器就消耗了20GB的流量，这就是双向的含义，也就是最常见的形式，服务商不说明就是默认双向，流量进入VPS和流量发出VPS都需要计入流量。部分厂商只计算发出的流量，流入的流量并不计算，这个时候就是单向流量，上面这个例子中，第一段的用户->VPS的流量不会被计入，第二段的网站->VPS流量不会被计入，这个时候服务器只会消耗10GB流量。\n\n具体到这个配置的流量 | 3 TB (双向)或不标明流量 | 3TB就是双向，有些商家会说明事流量 | 500 GB (出站)或者流量 | 500 GB (only-out)，就是单向计算。\n\nIP分配 | 1 IPv4 & 1 IPv6 (/128)：这个就是说有一个IPv4+一个IPv6的意思。我们的服务器在庞大的互联网需要一个标识符才能找到，不然谁知道你的服务器在哪里，而IP就是解决这个问题的，告诉了IP地址，我们就可以确认服务器在互联网的位置，从而与这个服务器进行交互。IPv4和IPv6是两种不同的IP协议，前者IP资源有限，全球IPv4地址已经严重不足，所以现在VPS能分到一个独立IPv4是基本标配，但也有一些超便宜的VPS开始不给IPv4了，而IPv6数量多到几乎用不完，价格很低廉，但目前不是所有网站/服务都支持IPv6，所以IPv6通常是IPv4的补充，不能完全替代。\n\n有IPv4就能正常用，IPv6是额外加分，对新手来说，买 VPS 时优先关注有没有独立 IPv4，IPv6 有当然更好，但不是第一优先级。没IPv4非常不方便，当然我们可以考虑某些技术方案来获取IPv4，比如warp/sf tunnel技术，但这个是后话，我只点到为止，有需求的自行研究哦(或者等我的教程也行)\n\n好啦，看到这里你已经知道了VPS的常见配置了，我再来带你读一些常见商家的配置吧，顺便给你补充点细枝末节的知识\n\n第一个：\n\n1 vCPU Core\n1 GB Dedicated RAM //Dedicated是独享的意思，这个内存只分配给你用，不是共享内存\n14 GB Pure SSD Disk //Pure SSD是纯SSD，不是混合了HDD/SSD的\nOn RAID-10 Configuration //RAID-10 = 兼顾速度和数据安全的一种硬盘阵列方案,商家很爱写但其实不必关注，它只能提高容错性，不能代替你自己做备份\n1 TB/Mo Bandwidth at 1 Gb/s\n1x IPv4 and 3x IPv6 //这次有一个独立IPv4+三个独立IPv6了\nUpgradable CPU Before Creation\nCategory: VPS\nVirtualization: KVM //KVM 是一种虚拟化技术，前面我们说了从物理机器上虚拟出很多VPS，这种虚拟方法就有KVM技术，\nLos Angeles, US\n\n第二个：\n\nCPU | 2 vCore (x86) //X86是架构，与之对应还有ARM架构，一般都是X86的，因为X86兼容性好\nRAM | 4GB DDR5 ECC\nLocation | Germany/Austria/United States/Netherlands/Singapore\nStorage space | 128GB NVMe\nInterface Speed | 1Gbps or 2.5Gbps\nTraffic flat rate | included // 商家这里的意思是流量 flat rate，也就是流量不按 TB 单独计费，包在月费里。但不限量不等于无限速度，仍可能受端口速度或公平使用策略限制\nHour-based billing | included // 支持按小时计费，可以按实际使用时长收费，你可以用一个小时付一个小时的钱\nLocal Block Storage | included // 支持额外挂载数据盘来扩容。简单理解就是：除了系统盘之外，还能再加硬盘\nAdditional domains | included // 支持额外绑定域名\nSnapshots | included // 快照相当于给整台 VPS 做“存档”。以后如果你把系统折腾坏了，通常可以恢复到拍快照时的状态\nSnapshot export | included // 不只是能在平台内保存快照，还能把快照导出，方便备份或迁移\nRemote console | included // 即使 SSH 连不上，也通常还能通过网页控制台进入机器，相当于服务器的“应急后门”\nRescue system | included // 当系统损坏、无法正常启动时，可以进入一个独立的修复环境来抢救数据或修系统\nPreconfigured images | included //商家提供现成的系统模板，比如 Ubuntu、Debian 等，点一下就能安装\nDVD drive | included //这里更准确理解为支持 ISO 镜像挂载。意思不是给你真光驱，而是可以挂载 ISO 系统镜像，手动装系统\nCustom images | included // 你可以上传或导入自己的系统镜像，而不只是使用商家提供的模板\nDDoS protection | included //用来抵御大流量攻击，避免服务器被恶意流量冲垮\nFirewall | included //可以控制哪些端口开放、哪些连接允许访问，是后续安全加固时很重要的功能\nIPv4 addresses | 1 optionally included // optionally included 的意思通常是：可以选配 1 个 IPv4，但不一定默认免费送，可能要勾选，甚至可能额外收费，买前一定要看清楚\nIPv6 addresses | /64 subnet optionally included // 不是只给你 1 个 IPv6，而是给你一整段 IPv6 地址范围；对普通用户来说完全够用，甚至根本用不完\nFailover IPs | possible // 可以把某个 IP 在不同服务器之间切换，通常用于高可用场景，新手暂时不用太关注\nOwn VLAN | possible // 可以把多台服务器拉进同一个内部小网络里，让它们私下互通，偏进阶玩法\nMinimum availability | 99.6% // 商家承诺的最低服务可用率。数值越高通常越稳，但这是承诺值，不等于实际永远不出问题\n\n这里基本都用了，更多的，自己去探索吧年轻的MJJ(对于喜爱服务器的人的一种戏称)，没必要让我一一解释了\n\n现在你已经可以看懂配置了，可以考虑购买一台自己喜欢的服务器来尝试玩耍啦，其实这个才是最复杂和MJJ最喜欢的一个环节，上面这么多的配置参数只能让你了解VPS的基本配置，具体情况全都要自己尝试后才知道\n\n当你买了很多机器却买不到心仪机器的你belike：\n\nimage\n120×104 3.03 KB\n\n简单给一个购买策略：\n\n先问问有搜索功能的ai，询问一下“我打算购买XX家的XX机器，你可以帮我搜索一下它的评价和测评吗？”\n自行搜索一下相关测评，注意不要太过信任测评，相当多的测评都是纯粹的软网广告，要看具体数据是否适合自己\n购买前确认商家的TOS，例如使用条款/退款政策等，免得购买后发现不适合却无法退款的情况发生\n太便宜明显不符合价位的机器就不要购买了，商家说不定会跑路的(这真的很常见)\n没事的，就算你看再多的再好的测评你也会遇到买错机器吃灰的经历，这很MJJ\n1.3 操作系统\n\n买VPS时，商家往往会问我需要什么系统？这些是什么玩意？\n\nVPS只是“机器”，你不给它装系统，它就只是一个空壳，根本没有交互的地方，就像你新买了一台电脑，不装Windows或Linux，它也没法正常干活。\n\n很多小白第一次看到系统列表时都会懵：\n\nUbuntu 20.04 / 22.04 / 24.04\nDebian 11 / 12\nCentOS 7 / 8\nRocky Linux\nAlmaLinux\nWindows Server 2019 / 2022\n\n大家的疑惑都是：什么玩意都是？我就认识一个windows…\n\n1.3.1 Linux 和 Windows 有什么区别？\n\n购买VPS时最常见的两大类系统就是Windows/Linux，它们不分高级低级，而是根据VPS的任务来决定的\n\nLinux\n\nVPS绝对的主流系统。大多数 VPS 商家默认提供的系统，基本都是各种 Linux 发行版\n\n例如：\n\nimage\n1318×645 28.4 KB\n\nLinux 的特点是：省资源+稳定+免费+教程多+兼容性好，它就是为服务器而生的。很多 Linux 服务器甚至默认没有图形界面，只有一个黑色的命令行窗口，因为图形界面会额外吃掉 CPU、内存和硬盘资源，为了节省资源，图形化界面也该被删除。\n\nWindows\n\nWindows VPS 也不是不能用，但通常更适合这些场景：\n\n必须跑只支持 Windows 的软件\n需要远程桌面图形界面\n根本不会命令行，想先用熟悉的桌面环境\n要跑某些 .NET / IIS / Windows 专属程序\n\nWindows的优点很明显：简单易上手，和你的电脑没有两样，谁都可以拿来就用。当然缺点也很明显：吃资源而且不适合作为服务器\n\n总结的说就是：没有特殊需求，就优先选 Linux；只有你明确需要 Windows 软件时，再考虑 Windows。\n\n本文主要围绕Linux系统展开，几乎不会提及windows相关的内容\n\n1.3.2 Linux要选择什么系统？\n\nLinux系统有很多很多的选择，各个分支种类之多，数不胜数，我们通常不会细细的讨论某个分支，而是直接指代某个大类，进而选择其具体版本，因为同一个大类使用起来大致相同，只需要把握主要特点即可。\n\nUbuntu\n\nUbuntu 是现在最常见、最适合新手起步的 Linux 发行版之一。教程多+社区大+资料好找=对新手最友好，缺点也很明显：比较吃资源，但只要不是配置特别低的VPS，都推荐使用Ubuntu系统，优先选择 Ubuntu LTS 版本即可，比如 22.04 LTS 或 24.04 LTS 这类长期支持版本。\n\nDebian\n\nDebian是非常经典的服务器发行版，Ubuntu 本身也是 Debian体系发展出来的。稳定+轻量+保守+干净=老手最爱。\n\n我的测评和教程全部都是基于Debian12测试的，确实非常不错，但不推荐新手，玩Ubuntu玩的熟练了再来吧~\n\n其他系统例如CentOS/CentOS Stream/Rocky Linux/AlmaLinux等等等等，就不进行一一介绍了，新手并不需要了解他们，只需要知道它们更偏企业 Linux 路线。如果没有特别明确的需求，一般不需要把它们当成第一选择。\n\n这里再补充一个新手有可能会遇到的Linux系统\n\nAlpine\n\nAlpine Linux很适合那种内存特别小、硬盘也特别小的机器(128MB内存 1G硬盘这样的)，它的优势是体积小、资源占用低，在超小配置 VPS或容器场景里很受欢迎，但它和Ubuntu/Debian的生态不太一样，很多教程不能直接照抄，所以更适合已经有一点 Linux 基础、或者明确知道自己为什么选它的人。\n\n那为什么我会放在这里呢？因为有些新手会因为预算的问题购买很小很小的LXC机器，这些机器强制只能安装Alpine系统，所以此处提及一下，避免有些新手看到Alpine感到困惑\n\n1.4 VPS后台面板\n\n这个VPS的面板到底怎么用啊？\n\n当你买下一台VPS之后，商家通常会通过邮件把基础信息发给你，比如 IP 地址、用户名、密码、控制面板入口等。\n不过大多数时候，你真正最先接触到的，还是商家的服务后台面板。\n这些面板看起来按钮很多、选项很多，小白第一次打开时很容易懵掉。\n所以这一节，猫猫就手把手带你认识两款常见的 VPS 面板。\n\n很多商家都会使用自家的后台面板，或者在通用面板基础上做二次开发。虽然界面长得不一样，但核心功能通常都差不多。\n\n至于 Proxmox VE 和 SolusVM，这两者更多出现在服务商或运维侧，普通用户不一定会直接接触到，所以这里就不拿它们举例了\n\nVirtFusion面板\n\nimage\n1505×941 47.6 KB\n\n我个人最喜欢的面板，页面简洁功能多样，你可以在这里进行重启/重建/开关机等基本操作，也可以看到流量的int/out情况\n\n下拉还可以看到VPS各项数据曲线\n\nimage\n1181×731 21.2 KB\n\n如果 SSH 暂时连不上，或者机器刚装好系统、网络配置有问题、需要进入控制台做一些底层操作，就可能需要用到 VNC。这个时候就可以点击option并设置VNC enable\n\nimage\n1238×514 14.7 KB\n\n然后就可以拿到VNC的详细信息，并且可以在此处进行救援模式/重设密码等，在不需要时可以关闭VNC\n\nimage\n1218×563 19.6 KB\n\n有时候如果发现没有IPv6(购买时服务商承诺有IPv6)们就可以打开network板块，手动开启IPv6(有时候默认不开启IPv6)，如果你购买的是NAT机器，端口转发相关的设置也可以在此处进行调整，以便映射合适的端口\n\nimage\n1251×707 21.3 KB\n\n第一次登入或者希望重建实例时，则点击Overview中的rebuild按钮进行重建，输入喜欢的名字并选择需要的操作系统\n\nimage\n1105×850 30.7 KB\n\n设置swap(默认即可，当然也可以不设置，选择none，推荐默认设置)和公钥(不一定要设置公钥，可以不选，就使用密码登录，推荐使用SSH公钥登录)，点击确认即可重建\n\nimage\n846×706 21.2 KB\n\n重建后邮箱会收到基础信息包括IP地址端口用户密码等信息\n\nimage\n628×569 20.6 KB\n\n这个面板大致功能就这么多，初学者完全够用\n\nVirtualizor面板\n\n这个面板的经典款式就是下面这两张图\n\nimage\n1060×564 43.2 KB\n\nimage\n1842×639 70.8 KB\n\nimage\n1842×970 89.5 KB\n\n大部分情况其实不用点击Enduser Panel进入Virtualizor后端，前端完全可以处理常见需求\n\n面板主页Overview可以直接看到当前资源使用情况，包括硬盘使用量/带宽使用量/CPU占用等，点击Graphs可以看到详细信息数据图\n\n点击Setting可以重设Hostname、密码、SSH密钥\n\nimage\n1313×481 32.6 KB\n\n点击Install进行重装系统\n\nimage\n1226×845 40.8 KB\n\n重装设置后会收到邮件，包含VPS基础信息等。\n\nThat’s all,各位，第一板块到此结束，下一板块会介绍VPS的登录和连接哦",
+    "output": "image\n3840×2160 329 KB\n\nA few days ago someone came over and asked me why his server had no screen and no desktop, and that was when I realized: apparently I had never written a proper server primer that truly starts from zero and is specifically for beginners.\n\nMost tutorials assume you already know what a VPS is and what SSH is, and just dive straight in. But for real newcomers, that barrier is actually pretty high.\n\nSo that's how this series came about: a beginner-friendly VPS primer starting from zero.\n\nThis article is long and divided into many sections, but it has only one goal: after reading it, you should have a complete and clear understanding of VPSes instead of feeling totally lost. There's a lot to cover, so it will be updated continuously in sections.\n\nThe currently planned chapters are:\n\nGetting to know VPS: what is a VPS?\nAfter getting a VPS: your first connection\nServer security protection\nCommon server use cases\nMore advanced ways to play with a server\n...\n\nSo let's begin.\n\nThis article requires absolutely no prerequisite knowledge. It's fully beginner-friendly~\n\nMy own level is limited, so if there are mistakes, please point them out directly. This kitty will fix them promptly to avoid misleading beginners.\n\nGetting to know VPS: what is a VPS?\n1.1 The concept of a VPS\n\nVPS stands for Virtual Private Server.\n\nA bit of a mouthful? No worries, let's break the term apart.\n\nLet's talk about the server part first. It sounds fancy, but it's really just “a machine dedicated to providing services to others.” For example, when you watch videos on your computer, you access a website and the website sends the video to you. Or when you're reading this article, the site is sending the article to you. In this situation, you're the one being served, receiving video service or article service. If there's a served party, there's naturally a serving party too, namely the service provider. That provider is also made up of machines, and we call those machines “servers,” meaning “machines dedicated to providing services to others.”\n\nStrictly speaking, your own computer can be a server too. For example, if you host an MC game server on your own computer and your roommate connects to play, then your computer is providing MC game service to your roommate. At that moment, your computer is a “server.”\n\nAt its core, a server is just a computer that can respond to requests and provide services. Your own computer has a CPU, memory, storage, and a network connection, which is enough for the job, so it naturally falls within the scope of what a server can be.\n\nThen why don't we usually use our own computers “as servers”?\n\nSimple:\n\nYour computer doesn't stay on 24/7. Once it shuts down, nobody can access your MC server.\nYour network isn't stable and can fluctuate. If your home internet drops or the power goes out, people won't be able to connect to your MC server, or the gameplay experience will become laggy.\nYour computer has many other jobs to do. You can't dedicate it entirely to an MC server, because you still need it for work or videos, and the performance may not be enough.\n\nAt that point, you'd naturally think: could I just get a machine that stays on 24/7, has stable networking, decent performance, and keeps providing service all the time?\n\nThat is what we usually mean by a server: a machine that stays powered on, stays online, and is always ready to respond.\n\nNow that we've finished talking about the “server” part, let's move on to the “private” part.\n\nIf you need a server, the most direct approach is to buy one yourself and put it in a data center. But for most people, that's too expensive: hardware costs money, networking costs money, electricity costs money, and maintenance costs time. WTF? That's way too much trouble. Couldn't someone just specialize in this? What if they bought a thousand servers, put them in a data center, maintained them centrally, and then rented them out to people who needed them? But then another problem appears: server machines are often very large, with specs like 64 cores + 512 GB RAM + 4 TB storage. Renting an entire one is far too expensive. Even the electricity bill alone would be huge. More importantly, you simply don't need that much. If I only need 4 cores + 8 GB RAM + 20 GB storage to run MC, can you just sell me that portion?\n\nThat led to a compromise: one powerful machine is split into many smaller parts, and each part is rented out independently to a different person. You rent one part, and it becomes yours: it has an independent operating system, an independent IP address, and independent storage. Other tenants can't see your data, and they can't interfere with your service. Even if the tenant next door runs their own server into the ground, it has nothing to do with you.\n\nThat is what **Private** means: it is your own private, dedicated machine.\n\nBut then you might say: kitty kitty kitty, this solution does sound great, but it's still too expensive. I only play on my MC server during certain hours every day, and I don't use it at other times. If I rent a machine and let it sit idle, the CPU and memory go unused. Do I really have to pay for performance I'm not using? Can I let other people use it when I don't, so the cost becomes lower? Is there any solution like that?\n\nYes, brother. There is.\n\nThe answer is virtualization. Through software simulation, a physical server can run multiple isolated “virtual machines” at the same time. Each virtual machine believes it is an independent computer and has its own share of CPU, memory, and disk. That is what **Virtual** means: it is not a truly independent physical machine, but something virtualized out of a dedicated machine.\n\nFor example, suppose you rent that 4-core + 8 GB RAM + 20 GB storage machine we mentioned earlier, which is more than enough for running an MC server. If you normally use only 20% of its performance, then the provider can virtualize that machine into five instances and rent them to five different people. Each person's performance may drop somewhat, but in reality that drop only happens when everyone is using it heavily at the same time. If nobody else is using it, you can still make full use of the resources and enjoy 100% of the performance. Yet the price becomes five times cheaper. That's a fantastic deal.\n\nAnd the machine you buy under this model is what we call a VPS.\n\nA VPS = a small computer virtualized out of a physical server, privately owned by you, and dedicated to providing services.\n\nIt stays powered on 24/7, has stable networking, and you can connect to it over the network whenever you want and do anything you want on it. Even when you're busy with other things, the server keeps running and keeps providing service, so other people can enter your MC server whenever they want. It's a very balanced solution that you can actually afford.\n\n1.2 VPS specifications\n\nWhat exactly comes with a VPS?\n\nEarlier I mentioned a VPS configuration: 4 cores + 8 GB RAM + 20 GB storage.\n\nWhat does that mean?\n\nA VPS contains many components, but the core parameters we generally care about are:\n\nCPU: the brain of the server, responsible for all computational tasks. The stronger the CPU, the faster the server can process work.\nMemory: the server's workbench. When programs run, they need to put data into memory temporarily. The more memory you have, the more programs you can run at the same time, and the smoother everything feels. If memory runs out, the server starts responding slowly. In serious cases, programs crash and the system freezes.\nDisk: the server's warehouse. This is the place for long-term storage. Programs, files, databases, logs, audio files... everything that needs to be kept long-term goes here.\nBandwidth: the server's maximum data transfer speed. For example, if you see 1 Gbps (1000 Mbps), it means the server can transfer data outward at up to 1000 Mbps.\nTraffic: some VPSes limit your total monthly traffic, such as “1 TB per month.” Once you go over, you either get throttled or charged extra.\nPublic IP: an identifier used to locate the server on the internet. If I want to connect to the server, I need to know its IP address; otherwise, how would I know which VPS to connect to?\nLocation: where the VPS is actually hosted, such as Hong Kong, Shanghai, Tokyo, Los Angeles, and so on.\n\nHere's a typical server configuration example:\n\nCPU | 2 cores\nMemory | 1 GB x DDR5 ECC\nDisk | 15 GB x NVMe SSD\nBandwidth | 1 Gbps\nTraffic | 3 TB (bi-directional)\nLocation | Salt Lake City, USA\nIP allocation | 1 IPv4 & 1 IPv6 (/128)\n\nLet me break down the details for you.\n\nCPU | 2 cores means two virtual cores, which is enough for personal use. There's no model listed, which is very normal. VPS providers usually won't tell you exactly which physical CPU it is. If the CPU is especially strong and can be used as a selling point, they usually will say it clearly. If they don't list it, just assume it's a fairly ordinary CPU. CPU is one of the core decision factors because it directly affects VPS performance.\n\nCPU cores on a VPS are “virtual cores,” which are not exactly the same as the physical cores on your own computer. Multiple VPS tenants share the same physical CPU, and one physical core can simulate multiple virtual cores for different users. During peak periods, they may compete for resources. That's one of the trade-offs that makes VPSes cheap. But serious providers generally manage this well, so you usually don't have to worry too much.\n\nMemory | 1 GB x DDR5 ECC means 1 GB of RAM. Memory size is also a core decision factor because it directly affects VPS performance. DDR5 refers to the memory generation. The larger the number, the newer it is, and the price is correspondingly higher. DDR5 is currently relatively new and is faster than DDR4, although in practice the difference isn't especially noticeable unless your workload depends heavily on memory speed. Some providers even use DDR3, which is a bit too outdated and slow.\n\nGenerally speaking, providers usually use DDR4, which basically means “this isn't a particularly old machine; it's a fairly normal and reliable mainstream configuration.” If it's DDR3, that's basically a sign saying “this machine isn't very good, so use it lightly, because it absolutely won't handle heavy workloads well.” DDR5 is a bonus and stronger than DDR4 in many parameters, but to be honest, DDR5 usually isn't the deciding factor in whether you should buy a VPS, because the practical difference between DDR4 and DDR5 isn't very noticeable. There's no real need to chase DDR5.\n\nAs for ECC, that's essentially “automatically detecting and correcting data errors in memory.” If a machine has ECC, it means the hardware is closer to what you'd expect from a serious server, and the data is more reliable. That's a plus, but it still shouldn't be a deciding factor in whether you buy it. For ordinary users, ECC is useful, but not hugely so, because it improves reliability rather than speed, and the experience difference is not obvious. Some providers will explicitly list Non-ECC, or won't mention ECC at all, because unless you need highly professional stability, it really isn't that important.\n\nSome providers also list frequency, such as DDR4-3200 or DDR5-4800. That's the memory frequency, e.g. 2400 MHz / 3200 MHz / 4800 MT/s. Bigger numbers usually mean faster memory. This parameter is also “useful, but not a core decision factor,” because you're buying a virtualized machine, and the final experience doesn't depend on just this one number.\n\nDisk | 15 GB x NVMe SSD means 15 GB of storage. The NVMe part deserves a bit more explanation.\n\nDrives are generally divided into HDD (mechanical hard drives) and SSD (solid-state drives):\n\nHDD: large capacity and cheap, but slow\nSSD: fast, but more expensive\n\nWithin SSD, there is another distinction based on interface protocol:\n\nSATA SSD: an ordinary SSD using the older SATA interface, cheaper and the most common option\nNVMe SSD: an SSD using the faster NVMe interface, more expensive but faster\n\nYou can think of the former as a “regular SSD,” while the latter uses a faster channel and is usually quicker.\n\nIn general, the performance ranking is:\nNVMe SSD > SATA SSD >> HDD\n\nMost providers will simply say SSD, which generally means SATA by default. If it's NVMe, they will usually say so because it's a selling point. And on a side note, seriously, don't buy HDD storage if you can help it. It's absurdly slow. I really can't stand how sluggish it is...\n\nBandwidth, traffic, and geographic location are easy enough to understand, so I won't go too deep into them. I just want to explain traffic billing a bit.\n\nTraffic can be either one-way or two-way. Here's the most typical scenario:\n\nUser -> VPS -> website, then website -> VPS -> user\n\nIn this case, the VPS first receives traffic from you, then forwards it to the website. The website responds back to your VPS, and then the VPS sends it back to you.\n\nIn this situation, you and the website exchanged 10 GB of data, but the server had to forward that traffic twice, so the server consumed 20 GB of traffic. That is what bi-directional traffic means, and it's the most common type. If the provider doesn't explicitly say otherwise, assume it is bi-directional: traffic entering the VPS and traffic leaving the VPS both count. Some providers count only outgoing traffic and don't count incoming traffic. In that case, it is one-way traffic. In the example above, the first leg (user -> VPS) would not be counted, and the second leg (website -> VPS) would not be counted either, so the server would consume only 10 GB of billable traffic.\n\nSo when a config says:\nTraffic | 3 TB (bi-directional)\nor simply doesn't say anything special,\nit usually means 3 TB bi-directional. Some providers instead say:\n500 GB (outbound)\nor 500 GB (only-out),\nwhich means it is one-way billing.\n\nIP allocation | 1 IPv4 & 1 IPv6 (/128): this means one IPv4 and one IPv6. On the huge public internet, a server needs some kind of identifier so people can find it, otherwise nobody would know where your server is. IP addresses solve that problem. Once you know the IP address, you can locate the server on the internet and interact with it. IPv4 and IPv6 are two different IP protocols. IPv4 resources are limited and global IPv4 addresses are already seriously depleted, so a dedicated IPv4 is still basically standard on VPSes, although some ultra-cheap VPSes have started dropping IPv4. IPv6, on the other hand, is so plentiful it's practically inexhaustible and very cheap, but not all websites and services support IPv6 yet, so IPv6 is generally a supplement to IPv4 rather than a full replacement.\n\nIf a VPS has IPv4, it is generally usable. IPv6 is an extra bonus. For beginners, when buying a VPS, the first thing to care about is whether it has an independent IPv4. IPv6 is nice to have, but it is not the top priority. Having no IPv4 is extremely inconvenient. Of course, there are technical workarounds for getting IPv4 connectivity, such as warp or sf tunnel, but that's a topic for later. I'll only mention it in passing here; if you need it, feel free to research it yourself, or wait for my tutorial.\n\nAlright, now that you understand common VPS specifications, let me show you some real provider configs and use them to fill in a few more bits of knowledge.\n\nThe first one:\n\n1 vCPU Core\n1 GB Dedicated RAM // Dedicated means exclusive. This RAM is allocated only to you and is not shared.\n14 GB Pure SSD Disk // Pure SSD means fully SSD, not a hybrid HDD/SSD setup.\nOn RAID-10 Configuration // RAID-10 is a disk array setup that balances speed and data safety. Providers love to write it down, but you don't actually need to care too much. It improves fault tolerance, but it cannot replace your own backups.\n1 TB/Mo Bandwidth at 1 Gb/s\n1x IPv4 and 3x IPv6 // This time you get one dedicated IPv4 plus three dedicated IPv6 addresses.\nUpgradable CPU Before Creation\nCategory: VPS\nVirtualization: KVM // KVM is a virtualization technology. Earlier we talked about carving many VPSes out of a physical machine. KVM is one way of doing that.\nLos Angeles, US\n\nThe second one:\n\nCPU | 2 vCore (x86) // x86 is the architecture. The other common one is ARM. Usually providers use x86 because x86 has better compatibility.\nRAM | 4GB DDR5 ECC\nLocation | Germany / Austria / United States / Netherlands / Singapore\nStorage space | 128GB NVMe\nInterface Speed | 1Gbps or 2.5Gbps\nTraffic flat rate | included // Here the provider means traffic is billed flat-rate, i.e. it's included in the monthly fee rather than charged separately by TB. But “unlimited traffic” doesn't mean unlimited speed. It may still be limited by port speed or fair use rules.\nHour-based billing | included // Supports hourly billing, so you can be charged based on actual usage time. Use it for one hour, pay for one hour.\nLocal Block Storage | included // Supports mounting extra data disks for expansion. In simple terms, besides the system disk, you can add more hard drives.\nAdditional domains | included // Supports binding additional domains.\nSnapshots | included // A snapshot is like making a save state for the whole VPS. If you break the system later, you can usually restore it to the state it was in when the snapshot was taken.\nSnapshot export | included // Not only can you save snapshots inside the platform, you can also export them for backup or migration.\nRemote console | included // Even if SSH stops working, you can usually still enter the machine through a web console, which is basically the server's emergency back door.\nRescue system | included // When the system is broken and won't boot normally, you can enter an independent recovery environment to rescue data or repair the system.\nPreconfigured images | included // The provider offers ready-made OS templates, such as Ubuntu or Debian, which you can install with a click.\nDVD drive | included // More accurately, this means ISO mounting support. It doesn't mean you get a physical optical drive, but that you can mount ISO system images and install systems manually.\nCustom images | included // You can upload or import your own system images instead of being limited to the provider's templates.\nDDoS protection | included // Used to resist large-scale traffic attacks and prevent the server from being overwhelmed by malicious traffic.\nFirewall | included // Lets you control which ports are open and which connections are allowed. This becomes very important later when hardening security.\nIPv4 addresses | 1 optionally included // “Optionally included” usually means you can choose to add one IPv4, but it is not necessarily free by default. You may have to tick it manually, and it may even cost extra. Check carefully before buying.\nIPv6 addresses | /64 subnet optionally included // This doesn't mean just one IPv6 address. It means an entire IPv6 range. For ordinary users, that's more than enough, honestly more than you'll ever use.\nFailover IPs | possible // Lets you switch an IP between different servers, usually for high availability scenarios. Beginners don't need to care too much about this yet.\nOwn VLAN | possible // Lets you place multiple servers into the same private internal network so they can communicate directly. This is more of an advanced use case.\nMinimum availability | 99.6% // The minimum uptime the provider promises. Higher usually means more stable, but it's only a promised value, not a guarantee that nothing will ever go wrong.\n\nThat covers most of the basics. For the rest, go explore it yourself, young MJJ (a joking name for people who love servers). There's no need for me to explain every last item one by one.\n\nAt this point you can already read configurations, so you can start considering buying a server you like just to experiment with. In fact, that is the most complicated part and the part MJJs love the most. All the configuration parameters above only help you understand the basics of VPSes. The real details are something you only truly grasp after using one yourself.\n\nWhat you belike after buying a bunch of machines and still not finding the one you really like:\n\nimage\n120×104 3.03 KB\n\nA simple buying strategy:\n\nAsk an AI with search capability first, something like: “I'm planning to buy provider XX's XX machine. Can you help me search for reviews and benchmarks?”\nLook up relevant reviews yourself too, but don't trust them too much. Quite a lot of reviews are basically soft web ads. Pay attention to whether the actual data fits your needs.\nBefore buying, confirm the provider's TOS, such as terms of service and refund policy, otherwise you may only discover after purchase that it's not suitable and cannot be refunded.\nDon't buy machines that are suspiciously cheap and obviously below normal pricing. The provider might disappear on you. This really is common.\nDon't worry. Even if you read tons of great reviews, you'll still end up buying the wrong machine sometimes and letting it collect dust. That's very MJJ.\n1.3 Operating systems\n\nWhen buying a VPS, providers often ask what system I want. What are these things?\n\nA VPS is only a “machine.” If you don't install an operating system on it, it's just an empty shell with no interface at all, just like a brand new computer that can't do proper work without Windows or Linux installed.\n\nMany beginners freeze the first time they see a system list like this:\n\nUbuntu 20.04 / 22.04 / 24.04\nDebian 11 / 12\nCentOS 7 / 8\nRocky Linux\nAlmaLinux\nWindows Server 2019 / 2022\n\nMost people react with: what even are these things? I only know Windows...\n\n1.3.1 What's the difference between Linux and Windows?\n\nThe two operating-system families you most commonly see when buying a VPS are Windows and Linux. Neither is inherently higher-end than the other. Which one you choose depends on what you want the VPS to do.\n\nLinux\n\nLinux is absolutely the mainstream system for VPSes. The default operating systems most VPS providers offer are basically all kinds of Linux distributions.\n\nFor example:\n\nimage\n1318×645 28.4 KB\n\nLinux is defined by low resource usage, stability, being free, lots of tutorials, and strong compatibility. It was practically born for servers. Many Linux servers don't even have a graphical interface by default and only give you a black terminal window, because graphical interfaces consume extra CPU, memory, and disk space. To save resources, the GUI is stripped away.\n\nWindows\n\nWindows VPSes are not unusable, but they are usually better suited for these situations:\n\nYou must run software that only supports Windows\nYou need a graphical remote desktop environment\nYou don't know the command line at all and want to start with a familiar desktop setup\nYou want to run certain .NET / IIS / Windows-specific programs\n\nThe benefits of Windows are obvious: it's easy to get started with, and it feels just like your own computer. Anyone can pick it up and use it. Of course, the downsides are just as obvious: it consumes more resources and is not especially suitable as a server system.\n\nSo the summary is simple: if you have no special need, choose Linux first. Only consider Windows when you clearly need Windows software.\n\nThis article will mainly revolve around Linux systems and will barely mention Windows-related content.\n\n1.3.2 Which Linux system should I choose?\n\nThere are a great many Linux systems, with countless branches and variants. Usually we don't discuss each branch in fine detail. Instead, we talk about a broader family and then choose a specific version, because systems within the same family are generally used in similar ways. You only need to grasp the main traits.\n\nUbuntu\n\nUbuntu is one of the most common Linux distributions today and one of the best starting points for beginners. Lots of tutorials + a huge community + easy-to-find references = the most beginner-friendly option. Its downside is also obvious: it uses a bit more resources. But as long as your VPS is not extremely low-end, Ubuntu is usually recommended. Prefer Ubuntu LTS releases, such as 22.04 LTS or 24.04 LTS.\n\nDebian\n\nDebian is a classic server distribution, and Ubuntu itself grew out of the Debian ecosystem. Stable + lightweight + conservative + clean = beloved by experienced users.\n\nAll my reviews and tutorials are tested on Debian 12, and it really is excellent, but I wouldn't recommend it to total beginners. Get comfortable with Ubuntu first, then come back to it~\n\nAs for systems such as CentOS / CentOS Stream / Rocky Linux / AlmaLinux and so on, I won't introduce them one by one. Beginners don't need to know them in detail. You only need to know that they lean more toward the enterprise Linux route. Unless you have a very specific need, they usually shouldn't be your first choice.\n\nLet me also mention one Linux system that some beginners may run into:\n\nAlpine\n\nAlpine Linux is very suitable for machines with very little RAM and very little disk space, something like 128 MB of RAM and 1 GB of storage. Its advantages are that it's tiny and uses very few resources, which makes it very popular in ultra-small VPS or container scenarios. But its ecosystem is somewhat different from Ubuntu and Debian, and a lot of tutorials can't be followed directly, so it's more suitable for people who already have some Linux basics or who clearly know why they're choosing it.\n\nSo why am I mentioning it here? Because some beginners, due to budget constraints, buy tiny LXC machines, and those machines may only allow Alpine to be installed. So I'm bringing it up here to keep people from feeling confused when they see Alpine.\n\n1.4 VPS provider control panels\n\nHow do you use the VPS panel, exactly?\n\nAfter you buy a VPS, the provider will usually send the basic information by email, such as the IP address, username, password, and panel login link. But in most cases, the first thing you actually interact with is the provider's service panel.\n\nThese panels often have a lot of buttons and options, and beginners can feel overwhelmed the first time they open one. So in this section, kitty is going to walk you through two common VPS panels step by step.\n\nMany providers use their own custom panels or do secondary development on top of general panels. The interfaces may look different, but the core features are usually quite similar.\n\nAs for Proxmox VE and SolusVM, those appear more often on the provider or ops side. Ordinary users may not interact with them directly, so I won't use them as examples here.\n\nVirtFusion panel\n\nimage\n1505×941 47.6 KB\n\nThis is my personal favorite panel. The page is simple and the features are diverse. You can do basic operations such as rebooting, rebuilding, powering on, and shutting down. You can also see inbound and outbound traffic.\n\nIf you scroll down, you can also view various VPS resource graphs.\n\nimage\n1181×731 21.2 KB\n\nIf SSH is temporarily unavailable, or the machine has just been installed and the network configuration is broken, or you need to enter the console to do some low-level operations, then you may need VNC. At that point, you can click Options and enable VNC.\n\nimage\n1238×514 14.7 KB\n\nThen you'll get the detailed VNC information, and you can also use rescue mode or reset the password here. When you no longer need it, you can disable VNC again.\n\nimage\n1218×563 19.6 KB\n\nSometimes, if you find that IPv6 isn't available even though the provider promised it, you can open the Network section and enable IPv6 manually. Some providers don't enable IPv6 by default. If you bought a NAT machine, this is also where you can adjust port-forwarding settings to map the right ports.\n\nimage\n1251×707 21.3 KB\n\nWhen logging in for the first time, or when you want to rebuild the instance, click the Rebuild button in Overview, enter the name you want, and select the operating system you need.\n\nimage\n1105×850 30.7 KB\n\nSet the swap (the default is fine; you can also choose none, but I recommend the default) and your public key (you don't have to use a public key; password login is still possible, but SSH public key login is recommended), then click confirm to rebuild.\n\nimage\n846×706 21.2 KB\n\nAfter rebuilding, you'll receive an email with the basic information, including the IP address, port, username, and password.\n\nimage\n628×569 20.6 KB\n\nThat's roughly all this panel does, and it's more than enough for beginners.\n\nVirtualizor panel\n\nThe classic look of this panel is basically the two screenshots below.\n\nimage\n1060×564 43.2 KB\n\nimage\n1842×639 70.8 KB\n\nimage\n1842×970 89.5 KB\n\nMost of the time, you don't actually need to click Enduser Panel to enter the Virtualizor backend. The frontend is enough to handle common needs.\n\nOn the Overview page, you can directly see the current resource usage, including disk usage, bandwidth usage, CPU usage, and so on. Click Graphs to view detailed charts.\n\nClick Setting to reset the hostname, password, and SSH keys.\n\nimage\n1313×481 32.6 KB\n\nClick Install to reinstall the system.\n\nimage\n1226×845 40.8 KB\n\nAfter setting up the reinstall, you'll receive an email containing the VPS's basic information and so on.\n\nThat's all, everyone. This concludes the first section. The next section will introduce how to log into and connect to your VPS.",
+    "meta": {
+      "source": "linux.do",
+      "period": "daily",
+      "capture_date": "2026-03-20",
+      "captured_at": "2026-03-20T05:46:49Z",
+      "topic_id": 1785540,
+      "topic_title": "从零开始的VPS科普(1)：认识你的第一台服务器",
+      "topic_url": "https://linux.do/t/topic/1785540",
+      "topic_rank": 4,
+      "category_id": "开发调优",
+      "tags": [
+        "VPS",
+        "VPS"
+      ],
+      "post_id": 15348066,
+      "post_number": 0,
+      "username": "",
+      "created_at": "",
+      "reply_to_post_number": null,
+      "translation_status": "translated"
+    }
+  },
+  {
+    "instruction": "将下面这段来自 Linux Do 社区讨论的中文内容翻译成英文，保留原有语气、梗、代码、命令、链接和格式。",
+    "input": "ICMP不可达喵:\n\n前几天有人跑来问我，为什么他的服务器没有屏幕、看不到桌面\n\n难以置信 居然只是才有人问",
+    "output": "ICMP Destination Unreachable meow:\n\nA few days ago someone came asking why his server had no screen and no desktop.\n\nHard to believe people are only just now asking that.",
+    "meta": {
+      "source": "linux.do",
+      "period": "daily",
+      "capture_date": "2026-03-20",
+      "captured_at": "2026-03-20T05:46:49Z",
+      "topic_id": 1785540,
+      "topic_title": "从零开始的VPS科普(1)：认识你的第一台服务器",
+      "topic_url": "https://linux.do/t/topic/1785540",
+      "topic_rank": 4,
+      "category_id": "开发调优",
+      "tags": [
+        "VPS",
+        "VPS"
+      ],
+      "post_id": 15348076,
+      "post_number": 0,
+      "username": "",
+      "created_at": "",
+      "reply_to_post_number": null,
+      "translation_status": "translated"
+    }
+  },
+  {
+    "instruction": "将下面这段来自 Linux Do 社区讨论的中文内容翻译成英文，保留原有语气、梗、代码、命令、链接和格式。",
+    "input": "应该庆幸还有条秋裤吧，要是大夏天可咋办",
+    "output": "You should be glad you at least still had a pair of long johns on. What would you have done if it were midsummer?",
+    "meta": {
+      "source": "linux.do",
+      "period": "daily",
+      "capture_date": "2026-03-20",
+      "captured_at": "2026-03-20T05:46:49Z",
+      "topic_id": 1782565,
+      "topic_title": "刚才和朋友吃重庆火锅的时候拉了一裤裆",
+      "topic_url": "https://linux.do/t/topic/1782565",
+      "topic_rank": 6,
+      "category_id": "搞七捻三",
+      "tags": [
+        "病友",
+        "树洞",
+        "NSFW",
+        "没有人类了",
+        "病友",
+        "树洞",
+        "NSFW",
+        "没有人类了"
+      ],
+      "post_id": 15317219,
+      "post_number": 0,
+      "username": "",
+      "created_at": "",
+      "reply_to_post_number": null,
+      "translation_status": "translated"
+    }
+  },
+  {
+    "instruction": "将下面这段来自 Linux Do 社区讨论的中文内容翻译成英文，保留原有语气、梗、代码、命令、链接和格式。",
+    "input": "火锅店没厕所吗，先进去处理一下也成吧",
+    "output": "Doesn't the hotpot restaurant have a restroom? You could've gone in and dealt with it first.",
+    "meta": {
+      "source": "linux.do",
+      "period": "daily",
+      "capture_date": "2026-03-20",
+      "captured_at": "2026-03-20T05:46:49Z",
+      "topic_id": 1782565,
+      "topic_title": "刚才和朋友吃重庆火锅的时候拉了一裤裆",
+      "topic_url": "https://linux.do/t/topic/1782565",
+      "topic_rank": 6,
+      "category_id": "搞七捻三",
+      "tags": [
+        "病友",
+        "树洞",
+        "NSFW",
+        "没有人类了",
+        "病友",
+        "树洞",
+        "NSFW",
+        "没有人类了"
+      ],
+      "post_id": 15317226,
+      "post_number": 0,
+      "username": "",
+      "created_at": "",
+      "reply_to_post_number": null,
+      "translation_status": "translated"
+    }
+  },
+  {
+    "instruction": "将下面这段来自 Linux Do 社区讨论的中文内容翻译成英文，保留原有语气、梗、代码、命令、链接和格式。",
+    "input": "不知道还有没有佬友记得，前段时间我们使用 Rust 重构了 message-bus 服务来降低负载的事？\n\n很多佬友也都认同一个观点，Rust 在 vibe coding 时代正在变得流行，因为原先的很多心智负担都可以交给 AI 来做。\n\n由此，我就在想，那 GraphQL 是否也会在 vibe coding 时代兴起，因为 GraphQL 的学习曲线也陡峭，心智负担也重？\n\n我们可以畅想一下以下的组合：GraphQL + REST / GraphQL + MCP\n\n不知道这个暴论是否成立？",
+    "output": "I wonder if any of you folks still remember that a while ago we used Rust to rewrite the message-bus service to reduce load?\n\nA lot of folks also agree on one point: Rust is becoming more popular in the vibe coding era, because much of the original mental overhead can now be handed off to AI.\n\nThat got me thinking: could GraphQL also rise in the vibe coding era? After all, GraphQL also has a steep learning curve and a heavy cognitive burden.\n\nWe can imagine combinations like GraphQL + REST / GraphQL + MCP.\n\nI wonder whether this hot take actually holds up?",
+    "meta": {
+      "source": "linux.do",
+      "period": "daily",
+      "capture_date": "2026-03-20",
+      "captured_at": "2026-03-20T05:46:49Z",
+      "topic_id": 1787329,
+      "topic_title": "一个 Vibe coding 时代的暴论",
+      "topic_url": "https://linux.do/t/topic/1787329",
+      "topic_rank": 8,
+      "category_id": "开发调优",
+      "tags": [
+        "碎碎碎念",
+        "VibeCoding",
+        "GraphQL"
+      ],
+      "post_id": 15366912,
+      "post_number": 0,
+      "username": "",
+      "created_at": "",
+      "reply_to_post_number": null,
+      "translation_status": "translated"
+    }
+  },
+  {
+    "instruction": "将下面这段来自 Linux Do 社区讨论的中文内容翻译成英文，保留原有语气、梗、代码、命令、链接和格式。",
+    "input": "jay\n1075×992 123 KB\n\n虽然AI可以，但是感觉不适合大多数人",
+    "output": "jay\n1075×992 123 KB\n\nAlthough AI can do it, it still feels unsuitable for most people.",
+    "meta": {
+      "source": "linux.do",
+      "period": "daily",
+      "capture_date": "2026-03-20",
+      "captured_at": "2026-03-20T05:46:49Z",
+      "topic_id": 1787329,
+      "topic_title": "一个 Vibe coding 时代的暴论",
+      "topic_url": "https://linux.do/t/topic/1787329",
+      "topic_rank": 8,
+      "category_id": "开发调优",
+      "tags": [
+        "碎碎碎念",
+        "VibeCoding",
+        "GraphQL"
+      ],
+      "post_id": 15366939,
+      "post_number": 0,
+      "username": "",
+      "created_at": "",
+      "reply_to_post_number": null,
+      "translation_status": "translated"
+    }
+  },
+  {
+    "instruction": "将下面这段来自 Linux Do 社区讨论的中文内容翻译成英文，保留原有语气、梗、代码、命令、链接和格式。",
+    "input": "不知道欸w\ngraphql是什么…w\n以后linuxdo负载大了是不是就要怪vibecoding用的ai了欸w",
+    "output": "No idea, lol.\nWhat even is GraphQL... lol.\nIf LinuxDo's load gets too high in the future, are we going to end up blaming the AI used for vibe coding? lol",
+    "meta": {
+      "source": "linux.do",
+      "period": "daily",
+      "capture_date": "2026-03-20",
+      "captured_at": "2026-03-20T05:46:49Z",
+      "topic_id": 1787329,
+      "topic_title": "一个 Vibe coding 时代的暴论",
+      "topic_url": "https://linux.do/t/topic/1787329",
+      "topic_rank": 8,
+      "category_id": "开发调优",
+      "tags": [
+        "碎碎碎念",
+        "VibeCoding",
+        "GraphQL"
+      ],
+      "post_id": 15366941,
+      "post_number": 0,
+      "username": "",
+      "created_at": "",
+      "reply_to_post_number": null,
+      "translation_status": "translated"
+    }
+  },
+  {
+    "instruction": "将下面这段来自 Linux Do 社区讨论的中文内容翻译成英文，保留原有语气、梗、代码、命令、链接和格式。",
+    "input": "实际上有人提了 https://linux.do/t/topic/1783477\nCPA里添加OpenAI兼容供应商：\n\nimage\n1920×1822 153 KB\n\n模型直接点右上角自动获取勾进来\n美美的删掉-free\n至于两个Header 我直接给你准备了个生成器\n\n创建 ~/.claude/settings.mimo.json\n\n~/.claude/settings.mimo.json\n{\n \"env\": {\n   \"ANTHROPIC_BASE_URL\": \"你滴cpa\",\n   \"ANTHROPIC_AUTH_TOKEN\": \"you-token-to-here\",\n   \"ANTHROPIC_DEFAULT_HAIKU_MODEL\": \"mimo-v2-flash\",\n   \"ANTHROPIC_DEFAULT_SONNET_MODEL\": \"mimo-v2-omni\",\n   \"ANTHROPIC_DEFAULT_OPUS_MODEL\": \"mimo-v2-pro\"\n }\n}\n\nclaude --settings ~/.claude/settings.mimo.json\n\nimage\n1920×1226 258 KB",
+    "output": "Someone actually brought this up already: https://linux.do/t/topic/1783477\nAdd an OpenAI-compatible provider in CPA:\n\nimage\n1920×1822 153 KB\n\nFor the models, just click the auto-fetch button in the upper right and tick them in.\nThen nicely remove `-free`.\nAs for the two headers, I already prepared a generator for you.\n\nCreate `~/.claude/settings.mimo.json`\n\n~/.claude/settings.mimo.json\n{\n \"env\": {\n   \"ANTHROPIC_BASE_URL\": \"your CPA\",\n   \"ANTHROPIC_AUTH_TOKEN\": \"you-token-to-here\",\n   \"ANTHROPIC_DEFAULT_HAIKU_MODEL\": \"mimo-v2-flash\",\n   \"ANTHROPIC_DEFAULT_SONNET_MODEL\": \"mimo-v2-omni\",\n   \"ANTHROPIC_DEFAULT_OPUS_MODEL\": \"mimo-v2-pro\"\n }\n}\n\n`claude --settings ~/.claude/settings.mimo.json`\n\nimage\n1920×1226 258 KB",
+    "meta": {
+      "source": "linux.do",
+      "period": "daily",
+      "capture_date": "2026-03-20",
+      "captured_at": "2026-03-20T05:46:49Z",
+      "topic_id": 1785507,
+      "topic_title": "Mimo免费 从OpenCode那薅进CC",
+      "topic_url": "https://linux.do/t/topic/1785507",
+      "topic_rank": 9,
+      "category_id": "开发调优",
+      "tags": [
+        "软件开发",
+        "ClaudeCode",
+        "Anthropic",
+        "软件开发",
+        "ClaudeCode",
+        "Anthropic"
+      ],
+      "post_id": 15347757,
+      "post_number": 0,
+      "username": "",
+      "created_at": "",
+      "reply_to_post_number": null,
+      "translation_status": "translated"
+    }
+  },
+  {
+    "instruction": "将下面这段来自 Linux Do 社区讨论的中文内容翻译成英文，保留原有语气、梗、代码、命令、链接和格式。",
+    "input": "如果在  2026年3月22日下午5点05分 前回复数量超过1k，我会再增加20个账号，即共四十个\n如果在  2026年3月22日下午5点05分 前回复数量超过1.5k，我会再增加10个账号，即共50个\n\n 奖品详情：\n抽telegram混合地区账号x20，无任何质保，不提供换号服务，不解答任何问题\n\n 活动时间：\n\n开始时间：现在\n截止时间： 2026年3月22日下午5点05分\n\n 参与方式：\n\n在本贴下回复即可参与。欢迎点赞（自愿）。\n\n 抽奖规则：\n\n每位用户仅允许参与一次。\n将使用 LINUX DO 抽奖工具在所有回复中随机抽取中奖者。\n\n 注意事项：\n\n本活动将在活动截止时间后关闭回帖，以确保公正性。\n中奖者将在活动结束后48小时内在本帖公布。中奖者请于结果公布后24小时内主动私信联系发起人领取，逾期视为放弃。\n所有规则及抽奖结果由 @quanac_lcx\n 及论坛管理团队最终解释。\n\n 发起人承诺：\n\n作为本次抽奖的发起人 @quanac_lcx\n，我承诺本话题的抽奖活动严格遵守 LINUX DO 社区抽奖规则。因违反上述规定引发的公平性争议或其他问题，均由我独立承担相应的道德与法律责任。\n\n期待您的积极参与，祝您好运！如有任何疑问，欢迎随时联系 @quanac_lcx\n 或论坛管理团队。",
+    "output": "If the number of replies exceeds 1k before 5:05 PM on March 22, 2026, I'll add another 20 accounts, bringing the total to 40.\nIf the number of replies exceeds 1.5k before 5:05 PM on March 22, 2026, I'll add another 10 accounts, bringing the total to 50.\n\nPrize details:\n20 mixed-region Telegram accounts, with no warranty whatsoever, no replacement service, and no questions answered.\n\nEvent time:\n\nStart time: now\nEnd time: 5:05 PM on March 22, 2026\n\nHow to participate:\n\nJust reply in this thread to join. Likes are welcome, but voluntary.\n\nLucky draw rules:\n\nEach user may participate only once.\nThe LINUX DO giveaway tool will be used to randomly select the winners from all replies.\n\nNotes:\n\nThis thread will be closed after the event deadline to ensure fairness.\nThe winners will be announced in this thread within 48 hours after the event ends. Winners must proactively send a private message to the organizer within 24 hours after the results are announced to claim their prize; otherwise it will be deemed forfeited.\nAll rules and the final interpretation of the draw results are reserved by @quanac_lcx and the forum moderation team.\n\nOrganizer's commitment:\n\nAs the organizer of this giveaway, @quanac_lcx, I promise that the giveaway in this thread strictly complies with the LINUX DO community giveaway rules. Any fairness disputes or other issues arising from violations of the above rules shall be borne by me alone, together with the corresponding moral and legal responsibility.\n\nLooking forward to your participation, and good luck! If you have any questions, feel free to contact @quanac_lcx or the forum moderation team at any time.",
+    "meta": {
+      "source": "linux.do",
+      "period": "daily",
+      "capture_date": "2026-03-20",
+      "captured_at": "2026-03-20T05:46:49Z",
+      "topic_id": 1784500,
+      "topic_title": "抽telegram混合地区账号x(20+20+10)",
+      "topic_url": "https://linux.do/t/topic/1784500",
+      "topic_rank": 10,
+      "category_id": "福利羊毛",
+      "tags": [
+        "抽奖",
+        "Telegram"
+      ],
+      "post_id": 15337291,
+      "post_number": 0,
+      "username": "",
+      "created_at": "",
+      "reply_to_post_number": null,
+      "translation_status": "translated"
+    }
+  },
+  {
+    "instruction": "将下面这段来自 Linux Do 社区讨论的中文内容翻译成英文，保留原有语气、梗、代码、命令、链接和格式。",
+    "input": "直呼666.一年可能用不到一次PPT，但是做好看了，以后都得你做，所以，感谢佬的分享。我闪人。",
+    "output": "Straight-up 666. I might not need to make a PPT even once a year, but once you make it look this good, people will expect you to do it forever from now on, so thanks for sharing, big cheese. I'm out.",
+    "meta": {
+      "source": "linux.do",
+      "period": "daily",
+      "capture_date": "2026-03-20",
+      "captured_at": "2026-03-20T06:28:07Z",
+      "topic_id": 1782304,
+      "topic_title": "应该是目前最强的PPT Agent，附上完整思路分享",
+      "topic_url": "https://linux.do/t/topic/1782304",
+      "topic_rank": 1,
+      "category_id": "开发调优",
+      "tags": [
+        "人工智能",
+        "软件开发",
+        "精华神帖",
+        "人工智能",
+        "软件开发",
+        "精华神帖"
+      ],
+      "post_id": 15314222,
+      "post_number": 0,
+      "username": "",
+      "created_at": "",
+      "reply_to_post_number": null,
+      "translation_status": "translated"
+    }
+  },
+  {
+    "instruction": "将下面这段来自 Linux Do 社区讨论的中文内容翻译成英文，保留原有语气、梗、代码、命令、链接和格式。",
+    "input": "撸撸猫猫，这么晚还在科普长文",
+    "output": "Pat pat, kitty. You're still writing long educational posts this late at night.",
+    "meta": {
+      "source": "linux.do",
+      "period": "daily",
+      "capture_date": "2026-03-20",
+      "captured_at": "2026-03-20T06:28:07Z",
+      "topic_id": 1785540,
+      "topic_title": "从零开始的VPS科普(1)：认识你的第一台服务器",
+      "topic_url": "https://linux.do/t/topic/1785540",
+      "topic_rank": 4,
+      "category_id": "开发调优",
+      "tags": [
+        "VPS",
+        "VPS"
+      ],
+      "post_id": 15348109,
+      "post_number": 0,
+      "username": "",
+      "created_at": "",
+      "reply_to_post_number": null,
+      "translation_status": "translated"
+    }
+  },
+  {
+    "instruction": "将下面这段来自 Linux Do 社区讨论的中文内容翻译成英文，保留原有语气、梗、代码、命令、链接和格式。",
+    "input": "能不能多点这种文章呢太棒了",
+    "output": "Could we get more posts like this? This is awesome.",
+    "meta": {
+      "source": "linux.do",
+      "period": "daily",
+      "capture_date": "2026-03-20",
+      "captured_at": "2026-03-20T06:28:07Z",
+      "topic_id": 1785540,
+      "topic_title": "从零开始的VPS科普(1)：认识你的第一台服务器",
+      "topic_url": "https://linux.do/t/topic/1785540",
+      "topic_rank": 4,
+      "category_id": "开发调优",
+      "tags": [
+        "VPS",
+        "VPS"
+      ],
+      "post_id": 15348133,
+      "post_number": 0,
+      "username": "",
+      "created_at": "",
+      "reply_to_post_number": null,
+      "translation_status": "translated"
+    }
+  },
+  {
+    "instruction": "将下面这段来自 Linux Do 社区讨论的中文内容翻译成英文，保留原有语气、梗、代码、命令、链接和格式。",
+    "input": "我还在人间吗？深入L站最深层了说是",
+    "output": "Am I still in the human world? It feels like I've already descended into the deepest layer of L Site.",
+    "meta": {
+      "source": "linux.do",
+      "period": "daily",
+      "capture_date": "2026-03-20",
+      "captured_at": "2026-03-20T06:28:07Z",
+      "topic_id": 1782565,
+      "topic_title": "刚才和朋友吃重庆火锅的时候拉了一裤裆",
+      "topic_url": "https://linux.do/t/topic/1782565",
+      "topic_rank": 6,
+      "category_id": "搞七捻三",
+      "tags": [
+        "病友",
+        "树洞",
+        "NSFW",
+        "没有人类了",
+        "病友",
+        "树洞",
+        "NSFW",
+        "没有人类了"
+      ],
+      "post_id": 15317286,
+      "post_number": 0,
+      "username": "",
+      "created_at": "",
+      "reply_to_post_number": null,
+      "translation_status": "translated"
+    }
+  },
+  {
+    "instruction": "将下面这段来自 Linux Do 社区讨论的中文内容翻译成英文，保留原有语气、梗、代码、命令、链接和格式。",
+    "input": "感谢分享，研究一下。书签备忘， 《codex 并行multi-agent 踩坑与使用经验》",
+    "output": "Thanks for sharing. I'll study it later. Bookmarking this for reference: \"Pitfalls and Usage Experience with Codex Parallel Multi-Agent\".",
+    "meta": {
+      "source": "linux.do",
+      "period": "daily",
+      "capture_date": "2026-03-20",
+      "captured_at": "2026-03-20T06:28:07Z",
+      "topic_id": 1785189,
+      "topic_title": "codex 并行multi-agent 踩坑与使用经验",
+      "topic_url": "https://linux.do/t/topic/1785189",
+      "topic_rank": 7,
+      "category_id": "开发调优",
+      "tags": [
+        "人工智能",
+        "ChatGPT",
+        "人工智能",
+        "ChatGPT"
+      ],
+      "post_id": 15344770,
+      "post_number": 0,
+      "username": "",
+      "created_at": "",
+      "reply_to_post_number": null,
+      "translation_status": "translated"
+    }
+  },
+  {
+    "instruction": "将下面这段来自 Linux Do 社区讨论的中文内容翻译成英文，保留原有语气、梗、代码、命令、链接和格式。",
+    "input": "graphql的好处之一是天生就提供schema，直接就能给ai当工具使用",
+    "output": "One of GraphQL's advantages is that it comes with a schema by nature, which can be handed directly to AI as a tool definition.",
+    "meta": {
+      "source": "linux.do",
+      "period": "daily",
+      "capture_date": "2026-03-20",
+      "captured_at": "2026-03-20T06:28:07Z",
+      "topic_id": 1787329,
+      "topic_title": "一个 Vibe coding 时代的暴论",
+      "topic_url": "https://linux.do/t/topic/1787329",
+      "topic_rank": 8,
+      "category_id": "开发调优",
+      "tags": [
+        "碎碎碎念",
+        "VibeCoding",
+        "GraphQL",
+        "碎碎碎念",
+        "VibeCoding",
+        "GraphQL"
+      ],
+      "post_id": 15366989,
+      "post_number": 0,
+      "username": "",
+      "created_at": "",
+      "reply_to_post_number": null,
+      "translation_status": "translated"
+    }
+  },
+  {
+    "instruction": "将下面这段来自 Linux Do 社区讨论的中文内容翻译成英文，保留原有语气、梗、代码、命令、链接和格式。",
+    "input": "成立 所以l站的app要用这个技术栈吗",
+    "output": "That makes sense. So is the L Site app going to use this tech stack?",
+    "meta": {
+      "source": "linux.do",
+      "period": "daily",
+      "capture_date": "2026-03-20",
+      "captured_at": "2026-03-20T06:28:07Z",
+      "topic_id": 1787329,
+      "topic_title": "一个 Vibe coding 时代的暴论",
+      "topic_url": "https://linux.do/t/topic/1787329",
+      "topic_rank": 8,
+      "category_id": "开发调优",
+      "tags": [
+        "碎碎碎念",
+        "VibeCoding",
+        "GraphQL",
+        "碎碎碎念",
+        "VibeCoding",
+        "GraphQL"
+      ],
+      "post_id": 15366999,
+      "post_number": 0,
+      "username": "",
+      "created_at": "",
+      "reply_to_post_number": null,
+      "translation_status": "translated"
+    }
+  },
+  {
+    "instruction": "将下面这段来自 Linux Do 社区讨论的中文内容翻译成英文，保留原有语气、梗、代码、命令、链接和格式。",
+    "input": "前排前排，GraphQL 给我一种好多年前就见过但是平时一直没看到有什么使用的感觉",
+    "output": "Front row, front row. GraphQL gives me the feeling of something I already saw many years ago, but somehow never really saw used much in everyday practice.",
+    "meta": {
+      "source": "linux.do",
+      "period": "daily",
+      "capture_date": "2026-03-20",
+      "captured_at": "2026-03-20T06:28:07Z",
+      "topic_id": 1787329,
+      "topic_title": "一个 Vibe coding 时代的暴论",
+      "topic_url": "https://linux.do/t/topic/1787329",
+      "topic_rank": 8,
+      "category_id": "开发调优",
+      "tags": [
+        "碎碎碎念",
+        "VibeCoding",
+        "GraphQL",
+        "碎碎碎念",
+        "VibeCoding",
+        "GraphQL"
+      ],
+      "post_id": 15367002,
+      "post_number": 0,
+      "username": "",
+      "created_at": "",
+      "reply_to_post_number": null,
+      "translation_status": "translated"
+    }
+  }
+]
