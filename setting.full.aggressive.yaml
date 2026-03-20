@@ -1,7 +1,7 @@
 top.booster: auto
 top.checkpoint_path: null
 top.finetuning_type: full
-top.model_name: Qwen3.5-0.8B-Base
+top.model_name_or_path: Qwen3.5-0.8B-Base
 top.quantization_bit: none
 top.quantization_method: bnb
 top.rope_scaling: none
