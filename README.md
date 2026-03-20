@@ -95,35 +95,6 @@ llamafactory-cli train setting.full.stable.yaml
 llamafactory-cli train setting.full.aggressive.yaml
 ```
 
-## Kaggle
-
-如果你想在 Kaggle Notebook 的 `2x T4` 环境里训练，直接看：
-
-- `Kaggle-T4双卡训练方案.md`
-
-仓库里还提供了：
-
-- `setting.kaggle.t4x2.yaml`
-- `scripts/export_kaggle_llamafactory_assets.py`
-
-如果你的训练数据已经上传到 Kaggle Input，例如：
-
-- `/kaggle/input/datasets/skye98/ldot-dataset`
-
-那么导出脚本支持通过 `--dataset-root` 直接读取这份外部数据集。
-
-基础模型不一定要提前上传到 Kaggle Dataset，也可以直接把 Hugging Face 模型 ID 传给 LlamaFactory，例如：
-
-- `Qwen/Qwen3.5-0.8B-Base`
-
-前提是 Kaggle Notebook 已开启 `Internet`，并建议设置：
-
-```python
-import os
-os.environ["HF_HOME"] = "/kaggle/working/hf_cache"
-os.environ["HUGGINGFACE_HUB_CACHE"] = "/kaggle/working/hf_cache/hub"
-```
-
 ## 贡献
 
 你可以将你认为模型需要知道的或者需要学习的翻译添加到`dataset`目录中，如果你不懂如何创建数据集可以直接在`dataset\ldot_translation.json`中追加，完成后提交 PR 即可！
